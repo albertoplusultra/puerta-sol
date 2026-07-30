@@ -30,53 +30,28 @@ const icon =
     : "M6 3v8a3 3 0 0 0 6 0V3M9 3v18M18 3c-1.7 0-3 2-3 5s1.3 4 3 4v9";
 ---
 
-<aside
-  class:list={[
-    "not-prose my-8 overflow-hidden rounded-2xl border shadow-[var(--shadow-soft)]",
-    kind === "lodging" ? "border-madrid-200" : "border-terracota-200",
-  ]}
->
-  <div
-    class:list={[
-      "flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between",
-      kind === "lodging" ? "bg-madrid-50" : "bg-terracota-50",
-    ]}
-  >
+<aside class="not-prose my-10 overflow-hidden rounded-lg border border-base bg-elevated shadow-[var(--shadow-soft)]">
+  <div class="flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
     <div class="flex items-start gap-4">
       <span
-        class:list={[
-          "grid h-12 w-12 shrink-0 place-items-center rounded-xl text-white",
-          kind === "lodging" ? "bg-madrid-600" : "bg-terracota-600",
-        ]}
+        class="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-base text-brand"
         aria-hidden="true"
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d={icon} stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d={icon} stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </span>
       <div>
-        <p
-          class:list={[
-            "text-xs font-semibold uppercase tracking-wide",
-            kind === "lodging" ? "text-madrid-700" : "text-terracota-700",
-          ]}
-        >
-          {copy.kicker}
-        </p>
-        <p class="mt-0.5 font-display text-xl font-semibold text-stone-900">
-          {partner.name}
-        </p>
-        <p class="mt-1 max-w-md text-sm text-stone-700">{copy.desc}</p>
+        <p class="kicker">{copy.kicker}</p>
+        <p class="mt-1 font-display text-2xl">{partner.name}</p>
+        <p class="mt-1.5 max-w-md text-[0.95rem] leading-relaxed text-muted">{copy.desc}</p>
       </div>
     </div>
     <a
       href={partner.url}
       rel="dofollow noopener"
       target="_blank"
-      class:list={[
-        "shrink-0 rounded-lg px-5 py-3 text-center font-semibold text-white transition-transform hover:-translate-y-0.5",
-        kind === "lodging" ? "bg-madrid-600" : "bg-terracota-600",
-      ]}
+      class="shrink-0 rounded-md bg-brand px-5 py-3 text-center text-sm font-semibold uppercase tracking-wide text-on-brand transition-transform hover:-translate-y-0.5"
     >
       {copy.cta}
     </a>

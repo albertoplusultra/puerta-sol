@@ -5,7 +5,7 @@ import HomePage from "../components/HomePage.astro";
 import ArticlePage from "../components/ArticlePage.astro";
 import {
   type Locale,
-  locales,
+  activeLocales,
   useTranslations,
   localizedPath,
 } from "../i18n/utils";
@@ -28,7 +28,7 @@ import {
 
 export const getStaticPaths = (async () => {
   const paths: Array<{
-    params: { path: string | undefined };
+    params: { path: string };
     props:
       | { kind: "home"; locale: Locale; alternates: Record<string, string> }
       | {
@@ -39,32 +39,30 @@ export const getStaticPaths = (async () => {
         };
   }> = [];
 
-  // Home de cada idioma
+  // Home de cada idioma activo (todos con prefijo: /es/, /en/...)
   const homeAlternates: Record<string, string> = {};
-  for (const loc of locales) homeAlternates[loc] = localizedPath(loc);
+  for (const loc of activeLocales) homeAlternates[loc] = localizedPath(loc);
 
-  for (const loc of locales) {
+  for (const loc of activeLocales) {
     paths.push({
-      params: { path: loc === "es" ? undefined : loc },
+      params: { path: loc },
       props: { kind: "home", locale: loc, alternates: { ...homeAlternates } },
     });
   }
 
-  // Artículos de cada idioma
-  for (const loc of locales) {
+  // Artículos de cada idioma activo
+  for (const loc of activeLocales) {
     const entries = await getArticlesByLocale(loc);
     for (const entry of entries) {
       const slugMap = await getTranslationSlugs(entry.data.translationKey);
       const alternates: Record<string, string> = {};
       for (const [l, s] of Object.entries(slugMap)) {
-        if (s) alternates[l] = localizedPath(l as Locale, s);
+        if (s && (activeLocales as string[]).includes(l)) {
+          alternates[l] = localizedPath(l as Locale, s);
+        }
       }
-      const path =
-        loc === "es"
-          ? entry.data.slug
-          : `${loc}/${entry.data.slug}`;
       paths.push({
-        params: { path },
+        params: { path: `${loc}/${entry.data.slug}` },
         props: { kind: "article", locale: loc, entry, alternates },
       });
     }

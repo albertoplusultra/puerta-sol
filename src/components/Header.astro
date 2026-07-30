@@ -16,26 +16,26 @@ const home = localizedPath(locale);
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 z-40 border-b border-base bg-elevated/85 backdrop-blur">
+<header class="sticky top-0 z-40 border-b border-base bg-[color:var(--bg)]/90 backdrop-blur">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-brand focus:px-3 focus:py-2 focus:text-on-brand">
     {t("nav.skip")}
   </a>
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
     <a href={home} class="flex items-center gap-2.5" aria-label={SITE_NAME}>
-      <span class="grid h-9 w-9 place-items-center rounded-full bg-brand text-on-brand" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="4.2" fill="currentColor" />
-          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <span class="grid h-8 w-8 place-items-center rounded-full border border-base text-brand" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="4" fill="currentColor" />
+          <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
             <path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9" />
           </g>
         </svg>
       </span>
-      <span class="font-display text-lg font-semibold leading-none">
+      <span class="font-display text-xl leading-none tracking-tight">
         {SITE_NAME}
       </span>
     </a>
 
-    <nav class="hidden items-center gap-1 md:flex" aria-label="Principal">
+    <nav class="hidden items-center gap-6 md:flex" aria-label="Principal">
       {
         nav.map((item) => {
           const active = currentPath === item.href;
@@ -44,7 +44,7 @@ const currentPath = Astro.url.pathname;
               href={item.href}
               aria-current={active ? "page" : undefined}
               class:list={[
-                "rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-surface",
+                "text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:text-brand",
                 active ? "text-brand" : "text-body",
               ]}
             >

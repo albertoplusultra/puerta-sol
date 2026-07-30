@@ -2,7 +2,7 @@
 title: "Planifica tu visita a la Puerta del Sol"
 description: "Todo lo que necesitas para organizar tu visita a la Puerta del Sol: cómo llegar, cuánto tiempo dedicarle, dónde comer y dónde dormir a un paso del kilómetro cero de Madrid."
 lang: "es"
-slug: "planifica-tu-visita"
+slug: "planifica"
 translationKey: "plan"
 category: "nearby"
 order: 95

@@ -14,14 +14,17 @@ export default defineConfig({
     defaultLocale: DEFAULT_LOCALE,
     locales: LOCALES,
     routing: {
-      // El idioma por defecto (ES) vive en la raíz, el resto con prefijo (/en/, /fr/...)
-      prefixDefaultLocale: false,
-      redirectToDefaultLocale: false,
+      // Todos los idiomas con prefijo, incluido español (/es/, /en/...).
+      // La raíz redirige a /es/.
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
     },
   },
   integrations: [
     mdx(),
     sitemap({
+      // Excluir la redirección de la raíz "/" (no es una página indexable)
+      filter: (page) => new URL(page).pathname !== "/",
       i18n: {
         defaultLocale: DEFAULT_LOCALE,
         locales: {

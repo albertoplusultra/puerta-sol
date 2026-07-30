@@ -2,6 +2,7 @@ import { ui, type UiKey } from "./ui";
 import {
   DEFAULT_LOCALE,
   LOCALES,
+  ACTIVE_LOCALES,
   HREFLANG,
   LOCALE_LABELS,
 } from "../config/site.mjs";
@@ -9,6 +10,7 @@ import {
 export type Locale = "es" | "en" | "fr" | "de" | "it" | "pt";
 
 export const locales = LOCALES as readonly Locale[];
+export const activeLocales = ACTIVE_LOCALES as readonly Locale[];
 export const defaultLocale = DEFAULT_LOCALE as Locale;
 
 export function isLocale(value: string | undefined): value is Locale {
@@ -24,17 +26,16 @@ export function useTranslations(locale: Locale) {
 }
 
 /**
- * Construye una URL absoluta-relativa a partir de segmentos, respetando el
- * prefijo de idioma (el idioma por defecto vive en la raíz) y trailingSlash.
+ * Construye una URL a partir de segmentos, con prefijo de idioma para TODOS
+ * los locales (ej. /es/historia/) y trailingSlash.
  */
 export function localizedPath(locale: Locale, ...segments: string[]): string {
   const clean = segments
     .filter(Boolean)
     .flatMap((s) => s.split("/"))
     .filter(Boolean);
-  const prefix = locale === defaultLocale ? [] : [locale];
-  const path = [...prefix, ...clean].join("/");
-  return path ? `/${path}/` : "/";
+  const path = [locale, ...clean].join("/");
+  return `/${path}/`;
 }
 
 export const hreflangFor = (locale: Locale): string => HREFLANG[locale];

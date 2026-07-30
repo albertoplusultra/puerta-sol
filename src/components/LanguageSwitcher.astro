@@ -1,5 +1,5 @@
 ---
-import { locales, labelFor, type Locale } from "../i18n/utils";
+import { activeLocales, labelFor, type Locale } from "../i18n/utils";
 import { useTranslations } from "../i18n/utils";
 import { HREFLANG } from "../config/site.mjs";
 
@@ -10,8 +10,11 @@ interface Props {
 
 const { locale, alternates } = Astro.props;
 const t = useTranslations(locale);
+// Solo tiene sentido mostrar el selector si hay más de un idioma publicado.
+const show = activeLocales.length > 1;
 ---
 
+{show && (
 <div class="lang-switcher">
   <details class="relative">
     <summary
@@ -28,7 +31,7 @@ const t = useTranslations(locale);
       class="absolute right-0 z-50 mt-1 min-w-40 rounded-lg border border-base bg-elevated py-1 shadow-[var(--shadow-lift)]"
     >
       {
-        locales.map((loc) => {
+        activeLocales.map((loc) => {
           const href = alternates[loc];
           const current = loc === locale;
           return (
@@ -53,6 +56,7 @@ const t = useTranslations(locale);
     </ul>
   </details>
 </div>
+)}
 
 <style>
   /* Cerrar el desplegable al perder foco (sin JS de framework) */

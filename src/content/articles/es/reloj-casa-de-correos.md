@@ -2,7 +2,7 @@
 title: "El reloj de la Casa de Correos"
 description: "El reloj de la Real Casa de Correos preside la Puerta del Sol y marca las campanadas de Nochevieja. Historia del edificio y del reloj más famoso de España."
 lang: "es"
-slug: "reloj-casa-de-correos"
+slug: "casa-de-correos"
 translationKey: "reloj"
 category: "attraction"
 order: 40

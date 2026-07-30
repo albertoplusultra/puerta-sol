@@ -10,7 +10,8 @@
       "has": [{ "type": "host", "value": "puertadelsol.com" }],
       "destination": "https://www.puertadelsol.com/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/", "destination": "/es/", "permanent": false }
   ],
   "headers": [
     {

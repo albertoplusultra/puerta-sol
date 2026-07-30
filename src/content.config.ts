@@ -23,8 +23,10 @@ const articles = defineCollection({
     lang: localeEnum,
     slug: z.string(),
     translationKey: z.string(),
-    // guide = página pilar; el resto son satélite del clúster temático
-    category: z.enum(["guide", "attraction", "practical", "nearby"]),
+    // guide = pilar; attraction = elementos de la propia plaza;
+    // around = alrededores/entorno; practical = información práctica;
+    // nearby = comer/dormir/planificar (conversión)
+    category: z.enum(["guide", "attraction", "around", "practical", "nearby"]),
     order: z.number().default(100),
     updated: z.coerce.date(),
     keywords: z.array(z.string()).default([]),

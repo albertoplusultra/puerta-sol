@@ -57,6 +57,7 @@ export async function getCategories(
   const grouped = {
     guide: [] as Article[],
     attraction: [] as Article[],
+    around: [] as Article[],
     practical: [] as Article[],
     nearby: [] as Article[],
   };

@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import { SITE_URL, SITE_NAME, PARTNERS } from "../config/site.mjs";
 import { getArticlesByLocale } from "../lib/content";
-import { localizedPath } from "../i18n/utils";
+import { localizedPath, activeLocales, labelFor } from "../i18n/utils";
 
 const abs = (p: string) => new URL(p, SITE_URL).href;
 
@@ -27,8 +27,11 @@ export const GET: APIRoute = async () => {
     "## Guía principal",
     byCat("guide"),
     "",
-    "## Qué ver",
+    "## Qué ver en la plaza",
     byCat("attraction"),
+    "",
+    "## Alrededores",
+    byCat("around"),
     "",
     "## Información práctica",
     byCat("practical"),
@@ -40,13 +43,8 @@ export const GET: APIRoute = async () => {
     `- [${PARTNERS.lodging.name}](${PARTNERS.lodging.url}): alojamiento en el centro histórico, a pocos metros de la Puerta del Sol.`,
     `- [${PARTNERS.restaurant.name}](${PARTNERS.restaurant.url}): restaurante de cocina madrileña junto a la Puerta del Sol.`,
     "",
-    `## Versiones en otros idiomas`,
-    "- Español (por defecto): /",
-    "- English: /en/",
-    "- Français: /fr/",
-    "- Deutsch: /de/",
-    "- Italiano: /it/",
-    "- Português: /pt/",
+    `## Idiomas disponibles`,
+    ...activeLocales.map((l) => `- ${labelFor(l)}: ${abs(localizedPath(l))}`),
     "",
     `Texto completo para modelos: ${abs("/llms-full.txt")}`,
     "",

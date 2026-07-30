@@ -2,7 +2,7 @@
 title: "El cartel de Tío Pepe"
 description: "El luminoso de Tío Pepe es el anuncio más icónico de la Puerta del Sol. Historia del cartel, sus traslados y por qué se ha convertido en patrimonio visual de Madrid."
 lang: "es"
-slug: "cartel-tio-pepe"
+slug: "tio-pepe"
 translationKey: "tio-pepe"
 category: "attraction"
 order: 60

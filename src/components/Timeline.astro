@@ -1,0 +1,35 @@
+---
+interface Item {
+  year: string;
+  title: string;
+  anchor?: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="not-prose my-10 rounded-lg border border-base bg-surface p-6 sm:p-8">
+  <ol class="relative ml-2 border-l border-base">
+    {
+      items.map((item) => (
+        <li class="relative mb-6 pl-6 last:mb-0">
+          <span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-brand" aria-hidden="true"></span>
+          <p class="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brand">
+            {item.year}
+          </p>
+          <p class="mt-0.5 font-display text-lg leading-snug">
+            {item.anchor ? (
+              <a href={`#${item.anchor}`} class="hover:underline">{item.title}</a>
+            ) : (
+              item.title
+            )}
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+</div>

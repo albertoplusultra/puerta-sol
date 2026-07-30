@@ -3,7 +3,7 @@ import {
   type Locale,
   useTranslations,
   localizedPath,
-  locales,
+  activeLocales,
   labelFor,
 } from "../i18n/utils";
 import { getNav } from "../lib/nav";
@@ -45,18 +45,20 @@ const year = new Date().getFullYear();
       </ul>
     </nav>
 
-    <nav aria-label={t("footer.langs")}>
-      <p class="text-sm font-semibold">{t("footer.langs")}</p>
-      <ul class="mt-3 space-y-2 text-sm text-muted">
-        {locales.map((loc) => (
-          <li>
-            <a class="hover:text-body" hreflang={loc} lang={loc} href={alternates[loc] ?? localizedPath(loc)}>
-              {labelFor(loc)}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    {activeLocales.length > 1 && (
+      <nav aria-label={t("footer.langs")}>
+        <p class="text-sm font-semibold">{t("footer.langs")}</p>
+        <ul class="mt-3 space-y-2 text-sm text-muted">
+          {activeLocales.map((loc) => (
+            <li>
+              <a class="hover:text-body" hreflang={loc} lang={loc} href={alternates[loc] ?? localizedPath(loc)}>
+                {labelFor(loc)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
   </div>
 
   <div class="border-t border-base">

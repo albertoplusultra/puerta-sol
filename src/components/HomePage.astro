@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
-import { getPillar, getCategories } from "../lib/content";
+import { getPillar, getCategories, getArticlesByLocale } from "../lib/content";
+import { getHeroImage } from "../lib/heroImages";
+import { IMAGE_CREDITS } from "../config/credits.mjs";
 import Hero from "./Hero.astro";
 import Card from "./Card.astro";
 import RecommendationCard from "./RecommendationCard.astro";
@@ -14,53 +17,90 @@ const t = useTranslations(locale);
 
 const pillar = await getPillar(locale);
 const categories = await getCategories(locale);
+const all = await getArticlesByLocale(locale);
+const byKey = (k: string) => all.find((a) => a.data.translationKey === k);
+
+const historia = byKey("historia");
+const planEntry = byKey("plan");
+
+const heroImg = getHeroImage("sol-hero.jpg");
+const heroCredit = IMAGE_CREDITS["sol-hero.jpg"];
+const historiaImg = getHeroImage("sol-historia.jpg");
 
 const sections = [
-  { title: t("nav.attractions"), items: categories.attraction },
+  {
+    title: t("nav.attractions"),
+    // Historia se destaca aparte; no la repetimos en la rejilla.
+    items: categories.attraction.filter((a) => a.data.translationKey !== "historia"),
+  },
+  { title: t("nav.around"), items: categories.around },
   { title: t("nav.practical"), items: categories.practical },
-  { title: t("nav.nearby"), items: categories.nearby },
 ].filter((s) => s.items.length > 0);
-
-// Slug de la página "planifica tu visita" para el CTA del hero
-const planEntry = [
-  ...categories.nearby,
-  ...categories.practical,
-  ...categories.attraction,
-  ...categories.guide,
-].find((a) => a.data.translationKey === "plan");
-const planHref = planEntry
-  ? localizedPath(locale, planEntry.data.slug)
-  : pillar
-    ? localizedPath(locale, pillar.data.slug)
-    : localizedPath(locale);
 ---
 
 <Hero
-  kicker="Madrid · Km 0"
+  kicker="Madrid · Kilómetro Cero"
   title="Puerta del Sol"
   subtitle={t("site.tagline")}
-  ctaPrimary={pillar
+  image={heroImg}
+  imageAlt="Vista de la Puerta del Sol de Madrid"
+  credit={heroCredit}
+  ctaPrimary={historia
+    ? { label: t("nav.history"), href: localizedPath(locale, historia.data.slug) }
+    : undefined}
+  ctaSecondary={pillar
     ? { label: t("hero.cta.guide"), href: localizedPath(locale, pillar.data.slug) }
     : undefined}
-  ctaSecondary={{ label: t("hero.cta.plan"), href: planHref }}
 />
 
-<div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+<div class="mx-auto max-w-6xl px-4 sm:px-6">
   {pillar && (
-    <p class="mx-auto mb-14 max-w-3xl text-center text-lg leading-relaxed text-muted">
+    <p class="mx-auto max-w-3xl border-b border-base py-14 text-center font-serif text-2xl leading-relaxed text-body sm:text-[1.6rem]">
       {pillar.data.description}
     </p>
   )}
 
-  <h2 class="mb-8 text-center font-display text-3xl font-semibold">
-    {t("home.sections.title")}
-  </h2>
+  {
+    historia && (
+      <section class="grid items-center gap-8 py-16 md:grid-cols-2 md:gap-12">
+        {historiaImg && (
+          <a href={localizedPath(locale, historia.data.slug)} class="block overflow-hidden rounded-lg border border-base">
+            <Image
+              src={historiaImg}
+              alt="La Puerta del Sol iluminada"
+              widths={[500, 800, 1200]}
+              sizes="(min-width: 768px) 560px, 100vw"
+              loading="lazy"
+              format="avif"
+              class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </a>
+        )}
+        <div>
+          <p class="kicker">{t("nav.history")}</p>
+          <h2 class="mt-3 font-display text-4xl leading-tight sm:text-5xl">
+            {historia.data.title}
+          </h2>
+          <p class="mt-4 font-serif text-lg leading-relaxed text-muted">
+            {historia.data.description}
+          </p>
+          <a
+            href={localizedPath(locale, historia.data.slug)}
+            class="mt-6 inline-flex items-center gap-1.5 font-sans text-sm font-semibold uppercase tracking-wide text-brand"
+          >
+            {t("hero.cta.guide")}
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </section>
+    )
+  }
 
   {
     sections.map((section) => (
-      <section class="mb-12">
-        <h3 class="mb-4 text-xl font-semibold text-brand">{section.title}</h3>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <section class="border-t border-base py-14">
+        <h2 class="mb-8 font-display text-3xl">{section.title}</h2>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {section.items.map((item) => (
             <Card
               href={localizedPath(locale, item.data.slug)}
@@ -73,8 +113,24 @@ const planHref = planEntry
     ))
   }
 
-  <section class="mt-16 grid gap-6 md:grid-cols-2">
-    <RecommendationCard kind="lodging" locale={locale} />
-    <RecommendationCard kind="restaurant" locale={locale} />
+  <section class="border-t border-base py-16">
+    <div class="mb-8 text-center">
+      <p class="kicker">{t("plan.title")}</p>
+      <h2 class="mt-2 font-display text-3xl">{t("plan.subtitle")}</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2">
+      <RecommendationCard kind="lodging" locale={locale} />
+      <RecommendationCard kind="restaurant" locale={locale} />
+    </div>
+    {planEntry && (
+      <p class="mt-8 text-center">
+        <a
+          href={localizedPath(locale, planEntry.data.slug)}
+          class="font-sans text-sm font-semibold uppercase tracking-wide text-brand"
+        >
+          {t("nav.plan")} &rarr;
+        </a>
+      </p>
+    )}
   </section>
 </div>

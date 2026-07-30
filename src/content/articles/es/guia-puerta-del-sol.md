@@ -2,7 +2,7 @@
 title: "Guía de la Puerta del Sol de Madrid"
 description: "Todo sobre la Puerta del Sol: su historia, sus monumentos (Km 0, el Oso y el Madroño, el reloj de las campanadas), cómo llegar y qué ver alrededor de la plaza más emblemática de Madrid."
 lang: "es"
-slug: "guia-puerta-del-sol"
+slug: "guia"
 translationKey: "guia"
 category: "guide"
 order: 1

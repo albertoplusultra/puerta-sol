@@ -2,6 +2,10 @@
 import { render } from "astro:content";
 import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
 import { type Article, getRelated } from "../lib/content";
+import { getHeroImage } from "../lib/heroImages";
+import { IMAGE_CREDITS } from "../config/credits.mjs";
+import { SITE_NAME } from "../config/site.mjs";
+import Hero from "./Hero.astro";
 import Breadcrumbs from "./Breadcrumbs.astro";
 import Toc from "./Toc.astro";
 import Faq from "./Faq.astro";
@@ -20,16 +24,6 @@ const t = useTranslations(locale);
 const { Content, headings } = await render(entry);
 const related = await getRelated(entry);
 
-// Tiempo de lectura estimado (~200 palabras/min)
-const words = (entry.body ?? "").split(/\s+/).filter(Boolean).length;
-const readingTime = Math.max(1, Math.round(words / 200));
-
-const updated = new Intl.DateTimeFormat(locale, {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-}).format(entry.data.updated);
-
 const crumbs = [
   { name: t("breadcrumb.home"), href: localizedPath(locale) },
   { name: entry.data.title, href: localizedPath(locale, entry.data.slug) },
@@ -38,23 +32,41 @@ const crumbs = [
 const showLodging = entry.data.promote === "lodging" || entry.data.promote === "both";
 const showRestaurant = entry.data.promote === "restaurant" || entry.data.promote === "both";
 const showMap = entry.data.category === "practical" || entry.data.translationKey === "plan";
+
+const heroImage = getHeroImage(entry.data.hero);
+const heroCredit = entry.data.hero
+  ? IMAGE_CREDITS[entry.data.hero as keyof typeof IMAGE_CREDITS]
+  : undefined;
 ---
+
+{
+  heroImage ? (
+    <Hero
+      size="compact"
+      kicker={`${SITE_NAME} · Madrid`}
+      title={entry.data.title}
+      subtitle={entry.data.description}
+      image={heroImage}
+      imageAlt={entry.data.heroAlt ?? entry.data.title}
+      credit={heroCredit}
+    />
+  ) : null
+}
 
 <article class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
   <Breadcrumbs items={crumbs} />
 
-  <header class="mt-6 max-w-3xl">
-    <h1 class="text-balance text-4xl font-semibold sm:text-5xl">{entry.data.title}</h1>
-    <p class="mt-4 text-lg text-muted">{entry.data.description}</p>
-    <p class="mt-4 text-sm text-muted">
-      {t("article.updated")} <time datetime={entry.data.updated.toISOString()}>{updated}</time>
-      <span class="mx-2" aria-hidden="true">·</span>
-      {readingTime} {t("article.readingTime")}
-    </p>
-  </header>
+  {
+    !heroImage && (
+      <header class="mt-6 max-w-3xl">
+        <h1 class="text-balance font-display text-4xl sm:text-5xl">{entry.data.title}</h1>
+        <p class="mt-4 font-serif text-lg text-muted">{entry.data.description}</p>
+      </header>
+    )
+  }
 
-  <div class="mt-10 gap-10 lg:grid lg:grid-cols-[1fr_16rem]">
-    <div class="prose-sol max-w-3xl">
+  <div class="mt-8 gap-12 lg:grid lg:grid-cols-[1fr_15rem]">
+    <div class="prose-sol dropcap max-w-none">
       <Content />
 
       {showMap && <MapEmbed />}
@@ -74,8 +86,8 @@ const showMap = entry.data.category === "practical" || entry.data.translationKey
   {
     related.length > 0 && (
       <section class="mt-16 border-t border-base pt-10">
-        <h2 class="mb-6 text-2xl font-semibold">{t("related.title")}</h2>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 class="mb-8 font-display text-3xl">{t("related.title")}</h2>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {related.map((r) => (
             <Card
               href={localizedPath(locale, r.data.slug)}

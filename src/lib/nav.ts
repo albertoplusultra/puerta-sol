@@ -9,7 +9,7 @@ export interface NavItem {
 }
 
 // translationKeys que aparecen en la navegación principal, en orden.
-const NAV_KEYS = ["guia", "que-ver", "como-llegar", "plan"] as const;
+const NAV_KEYS = ["historia", "que-ver", "alrededores", "como-llegar", "plan"] as const;
 
 export async function getNav(locale: Locale): Promise<NavItem[]> {
   const t = useTranslations(locale);
@@ -17,8 +17,9 @@ export async function getNav(locale: Locale): Promise<NavItem[]> {
   const byKey = new Map(articles.map((a) => [a.data.translationKey, a]));
 
   const labelFor: Record<(typeof NAV_KEYS)[number], string> = {
-    guia: t("nav.guide"),
+    historia: t("nav.history"),
     "que-ver": t("nav.attractions"),
+    alrededores: t("nav.around"),
     "como-llegar": t("nav.practical"),
     plan: t("nav.plan"),
   };

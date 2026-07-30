@@ -2,7 +2,7 @@
 title: "Las campanadas de Nochevieja y las uvas de la suerte"
 description: "La Puerta del Sol es el escenario de las campanadas de fin de año en España. Historia de las doce uvas de la suerte, cómo se vive la Nochevieja en Sol y consejos para asistir."
 lang: "es"
-slug: "campanadas-nochevieja"
+slug: "campanadas"
 translationKey: "campanadas"
 category: "attraction"
 order: 50
