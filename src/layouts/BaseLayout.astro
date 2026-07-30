@@ -4,6 +4,8 @@ import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Analytics from "../components/Analytics.astro";
+import VercelAnalytics from "@vercel/analytics/astro";
+import VercelSpeedInsights from "@vercel/speed-insights/astro";
 import type { Locale } from "../i18n/utils";
 
 interface Props {
@@ -58,5 +60,7 @@ const {
       <slot />
     </main>
     <Footer locale={locale} alternates={alternates} />
+    <VercelAnalytics />
+    <VercelSpeedInsights />
   </body>
 </html>

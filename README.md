@@ -58,14 +58,23 @@ Los idiomas FR, DE, IT y PT ya están soportados por la arquitectura: basta con 
 - `sitemap-index.xml` con alternates de idioma.
 - `/llms.txt` y `/llms-full.txt` para buscadores basados en IA; `robots.txt` permite explícitamente a los rastreadores de LLMs.
 
-## Analítica (opcional)
+## Analítica
 
-Copia `.env.example` a `.env` y define **una** de estas opciones:
+### Vercel Analytics + Speed Insights (activo)
+
+El sitio integra **Vercel Web Analytics** y **Speed Insights** (componentes de `@vercel/analytics` y `@vercel/speed-insights` en `BaseLayout.astro`). Para que registren datos:
+
+1. En el dashboard de Vercel, abre el proyecto y activa **Analytics** y **Speed Insights**.
+2. No requiere configuración adicional en el código: solo envían datos cuando el sitio corre en Vercel.
+
+### Alternativa sin cookies (opcional)
+
+Adicionalmente puedes activar Plausible o Umami. Copia `.env.example` a `.env` y define **una** de estas opciones:
 
 - `PUBLIC_PLAUSIBLE_DOMAIN=www.puertadelsol.com` (Plausible, sin cookies).
 - `PUBLIC_UMAMI_SRC` + `PUBLIC_UMAMI_ID` (Umami auto-alojado).
 
-Si se dejan vacías, no se carga ningún script de terceros.
+Si se dejan vacías, no se carga ningún script de terceros adicional.
 
 ## Despliegue (Vercel)
 
