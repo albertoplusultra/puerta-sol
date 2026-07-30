@@ -1,0 +1,80 @@
+---
+import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
+import { getPillar, getCategories } from "../lib/content";
+import Hero from "./Hero.astro";
+import Card from "./Card.astro";
+import RecommendationCard from "./RecommendationCard.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const pillar = await getPillar(locale);
+const categories = await getCategories(locale);
+
+const sections = [
+  { title: t("nav.attractions"), items: categories.attraction },
+  { title: t("nav.practical"), items: categories.practical },
+  { title: t("nav.nearby"), items: categories.nearby },
+].filter((s) => s.items.length > 0);
+
+// Slug de la página "planifica tu visita" para el CTA del hero
+const planEntry = [
+  ...categories.nearby,
+  ...categories.practical,
+  ...categories.attraction,
+  ...categories.guide,
+].find((a) => a.data.translationKey === "plan");
+const planHref = planEntry
+  ? localizedPath(locale, planEntry.data.slug)
+  : pillar
+    ? localizedPath(locale, pillar.data.slug)
+    : localizedPath(locale);
+---
+
+<Hero
+  kicker="Madrid · Km 0"
+  title="Puerta del Sol"
+  subtitle={t("site.tagline")}
+  ctaPrimary={pillar
+    ? { label: t("hero.cta.guide"), href: localizedPath(locale, pillar.data.slug) }
+    : undefined}
+  ctaSecondary={{ label: t("hero.cta.plan"), href: planHref }}
+/>
+
+<div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  {pillar && (
+    <p class="mx-auto mb-14 max-w-3xl text-center text-lg leading-relaxed text-muted">
+      {pillar.data.description}
+    </p>
+  )}
+
+  <h2 class="mb-8 text-center font-display text-3xl font-semibold">
+    {t("home.sections.title")}
+  </h2>
+
+  {
+    sections.map((section) => (
+      <section class="mb-12">
+        <h3 class="mb-4 text-xl font-semibold text-brand">{section.title}</h3>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {section.items.map((item) => (
+            <Card
+              href={localizedPath(locale, item.data.slug)}
+              title={item.data.title}
+              description={item.data.description}
+            />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="mt-16 grid gap-6 md:grid-cols-2">
+    <RecommendationCard kind="lodging" locale={locale} />
+    <RecommendationCard kind="restaurant" locale={locale} />
+  </section>
+</div>

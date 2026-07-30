@@ -1,0 +1,67 @@
+---
+import {
+  type Locale,
+  useTranslations,
+  localizedPath,
+  locales,
+  labelFor,
+} from "../i18n/utils";
+import { getNav } from "../lib/nav";
+import { SITE_NAME, PARTNERS } from "../config/site.mjs";
+
+interface Props {
+  locale: Locale;
+  alternates: Partial<Record<Locale, string>>;
+}
+
+const { locale, alternates } = Astro.props;
+const t = useTranslations(locale);
+const nav = await getNav(locale);
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-20 border-t border-base bg-surface">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <p class="font-display text-lg font-semibold">{SITE_NAME}</p>
+      <p class="mt-2 max-w-sm text-sm text-muted">{t("footer.about")}</p>
+      <div class="mt-4 flex flex-wrap gap-3 text-sm">
+        <a class="text-link underline underline-offset-2" href={PARTNERS.lodging.url} rel="dofollow">
+          {PARTNERS.lodging.name}
+        </a>
+        <a class="text-link underline underline-offset-2" href={PARTNERS.restaurant.url} rel="dofollow">
+          {PARTNERS.restaurant.name}
+        </a>
+      </div>
+    </div>
+
+    <nav aria-label={t("footer.explore")}>
+      <p class="text-sm font-semibold">{t("footer.explore")}</p>
+      <ul class="mt-3 space-y-2 text-sm text-muted">
+        <li><a class="hover:text-body" href={localizedPath(locale)}>{t("nav.home")}</a></li>
+        {nav.map((item) => (
+          <li><a class="hover:text-body" href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav aria-label={t("footer.langs")}>
+      <p class="text-sm font-semibold">{t("footer.langs")}</p>
+      <ul class="mt-3 space-y-2 text-sm text-muted">
+        {locales.map((loc) => (
+          <li>
+            <a class="hover:text-body" hreflang={loc} lang={loc} href={alternates[loc] ?? localizedPath(loc)}>
+              {labelFor(loc)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="border-t border-base">
+    <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-muted sm:px-6">
+      &copy; {year} {SITE_NAME}. {t("footer.rights")}
+    </div>
+  </div>
+</footer>

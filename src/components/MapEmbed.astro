@@ -1,0 +1,32 @@
+---
+import { GEO } from "../config/site.mjs";
+
+interface Props {
+  title?: string;
+  lat?: number;
+  lng?: number;
+}
+
+const { title = "Puerta del Sol, Madrid", lat = GEO.latitude, lng = GEO.longitude } = Astro.props;
+
+// OpenStreetMap: sin cookies ni scripts de terceros, respetuoso con el rendimiento.
+const d = 0.006;
+const bbox = `${lng - d}%2C${lat - d}%2C${lng + d}%2C${lat + d}`;
+const src = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat}%2C${lng}`;
+const link = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=17/${lat}/${lng}`;
+---
+
+<figure class="not-prose my-8 overflow-hidden rounded-xl border border-base">
+  <iframe
+    title={title}
+    src={src}
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="h-72 w-full border-0"
+  ></iframe>
+  <figcaption class="bg-surface px-4 py-2 text-xs text-muted">
+    <a href={link} target="_blank" rel="noopener" class="text-link underline">
+      {title} — OpenStreetMap
+    </a>
+  </figcaption>
+</figure>

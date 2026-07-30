@@ -1,0 +1,84 @@
+---
+import { type Locale, useTranslations } from "../i18n/utils";
+import { PARTNERS } from "../config/site.mjs";
+
+interface Props {
+  kind: "lodging" | "restaurant";
+  locale: Locale;
+}
+
+const { kind, locale } = Astro.props;
+const t = useTranslations(locale);
+const partner = PARTNERS[kind];
+
+const copy =
+  kind === "lodging"
+    ? {
+        kicker: t("reco.lodging.kicker"),
+        desc: t("reco.lodging.desc"),
+        cta: t("reco.lodging.cta"),
+      }
+    : {
+        kicker: t("reco.restaurant.kicker"),
+        desc: t("reco.restaurant.desc"),
+        cta: t("reco.restaurant.cta"),
+      };
+
+const icon =
+  kind === "lodging"
+    ? "M3 21V10l9-6 9 6v11h-6v-6h-6v6H3z"
+    : "M6 3v8a3 3 0 0 0 6 0V3M9 3v18M18 3c-1.7 0-3 2-3 5s1.3 4 3 4v9";
+---
+
+<aside
+  class:list={[
+    "not-prose my-8 overflow-hidden rounded-2xl border shadow-[var(--shadow-soft)]",
+    kind === "lodging" ? "border-madrid-200" : "border-terracota-200",
+  ]}
+>
+  <div
+    class:list={[
+      "flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between",
+      kind === "lodging" ? "bg-madrid-50" : "bg-terracota-50",
+    ]}
+  >
+    <div class="flex items-start gap-4">
+      <span
+        class:list={[
+          "grid h-12 w-12 shrink-0 place-items-center rounded-xl text-white",
+          kind === "lodging" ? "bg-madrid-600" : "bg-terracota-600",
+        ]}
+        aria-hidden="true"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d={icon} stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <div>
+        <p
+          class:list={[
+            "text-xs font-semibold uppercase tracking-wide",
+            kind === "lodging" ? "text-madrid-700" : "text-terracota-700",
+          ]}
+        >
+          {copy.kicker}
+        </p>
+        <p class="mt-0.5 font-display text-xl font-semibold text-stone-900">
+          {partner.name}
+        </p>
+        <p class="mt-1 max-w-md text-sm text-stone-700">{copy.desc}</p>
+      </div>
+    </div>
+    <a
+      href={partner.url}
+      rel="dofollow noopener"
+      target="_blank"
+      class:list={[
+        "shrink-0 rounded-lg px-5 py-3 text-center font-semibold text-white transition-transform hover:-translate-y-0.5",
+        kind === "lodging" ? "bg-madrid-600" : "bg-terracota-600",
+      ]}
+    >
+      {copy.cta}
+    </a>
+  </div>
+</aside>

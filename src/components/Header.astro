@@ -1,0 +1,73 @@
+---
+import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
+import { getNav } from "../lib/nav";
+import { SITE_NAME } from "../config/site.mjs";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+
+interface Props {
+  locale: Locale;
+  alternates: Partial<Record<Locale, string>>;
+}
+
+const { locale, alternates } = Astro.props;
+const t = useTranslations(locale);
+const nav = await getNav(locale);
+const home = localizedPath(locale);
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-40 border-b border-base bg-elevated/85 backdrop-blur">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-brand focus:px-3 focus:py-2 focus:text-on-brand">
+    {t("nav.skip")}
+  </a>
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a href={home} class="flex items-center gap-2.5" aria-label={SITE_NAME}>
+      <span class="grid h-9 w-9 place-items-center rounded-full bg-brand text-on-brand" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9" />
+          </g>
+        </svg>
+      </span>
+      <span class="font-display text-lg font-semibold leading-none">
+        {SITE_NAME}
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-1 md:flex" aria-label="Principal">
+      {
+        nav.map((item) => {
+          const active = currentPath === item.href;
+          return (
+            <a
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              class:list={[
+                "rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-surface",
+                active ? "text-brand" : "text-body",
+              ]}
+            >
+              {item.label}
+            </a>
+          );
+        })
+      }
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <LanguageSwitcher locale={locale} alternates={alternates} />
+      <details class="relative md:hidden">
+        <summary class="flex cursor-pointer list-none items-center rounded-md border border-base p-2 text-body" aria-label="Menú">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </summary>
+        <ul class="absolute right-0 z-50 mt-1 min-w-48 rounded-lg border border-base bg-elevated py-1 shadow-[var(--shadow-lift)]">
+          <li><a href={home} class="block px-3 py-2 text-sm hover:bg-surface">{t("nav.home")}</a></li>
+          {nav.map((item) => (
+            <li><a href={item.href} class="block px-3 py-2 text-sm hover:bg-surface">{item.label}</a></li>
+          ))}
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>

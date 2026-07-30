@@ -1,0 +1,90 @@
+---
+import {
+  SITE_NAME,
+  SITE_TWITTER,
+  HREFLANG,
+} from "../config/site.mjs";
+import type { Locale } from "../i18n/utils";
+import { defaultLocale } from "../i18n/utils";
+
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  /** Mapa locale -> path (con barra inicial y final) para hreflang. */
+  alternates: Partial<Record<Locale, string>>;
+  type?: "website" | "article";
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: unknown;
+}
+
+const {
+  title,
+  description,
+  locale,
+  alternates,
+  type = "website",
+  image = "/og-default.svg",
+  noindex = false,
+  jsonLd,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(image, Astro.site).href;
+const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
+
+const alternateEntries = Object.entries(alternates) as [Locale, string][];
+const xDefault = alternates[defaultLocale];
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+{
+  alternateEntries.map(([loc, path]) => (
+    <link
+      rel="alternate"
+      hreflang={HREFLANG[loc]}
+      href={new URL(path, Astro.site).href}
+    />
+  ))
+}
+{
+  xDefault && (
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(xDefault, Astro.site).href}
+    />
+  )
+}
+
+<!-- Open Graph -->
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:type" content={type} />
+<meta property="og:locale" content={HREFLANG[locale]} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={SITE_TWITTER} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+{
+  jsonLd && (
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(jsonLd)}
+    />
+  )
+}

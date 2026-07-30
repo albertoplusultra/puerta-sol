@@ -1,0 +1,28 @@
+---
+// Analítica ligera y respetuosa con la privacidad (sin cookies).
+// Se activa solo si se define la variable de entorno correspondiente,
+// así el sitio no carga scripts de terceros hasta que lo configures.
+//
+//   PUBLIC_PLAUSIBLE_DOMAIN  -> dominio en Plausible (ej. puertadelsol.com)
+//   PUBLIC_UMAMI_SRC + PUBLIC_UMAMI_ID -> alternativa con Umami
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
+const umamiId = import.meta.env.PUBLIC_UMAMI_ID;
+---
+
+{
+  plausibleDomain && (
+    <script
+      is:inline
+      defer
+      data-domain={plausibleDomain}
+      src="https://plausible.io/js/script.js"
+    />
+  )
+}
+
+{
+  umamiSrc && umamiId && (
+    <script is:inline defer src={umamiSrc} data-website-id={umamiId} />
+  )
+}

@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { localizedPath } from "../i18n/utils";
+
+const alternates = { es: localizedPath("es") };
+---
+
+<BaseLayout
+  title="Página no encontrada"
+  description="La página que buscas no existe. Vuelve a la guía de la Puerta del Sol."
+  locale="es"
+  alternates={alternates}
+  noindex={true}
+>
+  <section class="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
+    <p class="font-display text-7xl font-semibold text-brand">404</p>
+    <h1 class="mt-4 text-3xl font-semibold">Página no encontrada</h1>
+    <p class="mt-3 text-muted">
+      Lo sentimos, no hemos encontrado lo que buscabas. Puede que el enlace haya
+      cambiado o que la página ya no exista.
+    </p>
+    <a
+      href={localizedPath("es")}
+      class="mt-8 inline-block rounded-lg bg-brand px-5 py-3 font-semibold text-on-brand"
+    >
+      Volver a la Puerta del Sol
+    </a>
+  </section>
+</BaseLayout>

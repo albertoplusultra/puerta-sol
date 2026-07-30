@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  items: { q: string; a: string }[];
+}
+
+const { title, items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="mt-14" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="text-2xl font-semibold">{title}</h2>
+      <div class="mt-5 divide-y divide-[var(--border)] overflow-hidden rounded-xl border border-base bg-elevated">
+        {items.map((item) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-medium hover:bg-surface">
+              <span>{item.q}</span>
+              <svg
+                class="shrink-0 transition-transform group-open:rotate-45"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </summary>
+            <div class="px-5 pb-5 text-muted" set:html={item.a} />
+          </details>
+        ))}
+      </div>
+    </section>
+  )
+}

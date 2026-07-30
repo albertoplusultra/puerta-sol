@@ -1,0 +1,137 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HomePage from "../components/HomePage.astro";
+import ArticlePage from "../components/ArticlePage.astro";
+import {
+  type Locale,
+  locales,
+  useTranslations,
+  localizedPath,
+} from "../i18n/utils";
+import {
+  getArticlesByLocale,
+  getTranslationSlugs,
+  type Article,
+} from "../lib/content";
+import { SITE_NAME } from "../config/site.mjs";
+import {
+  graph,
+  websiteSchema,
+  organizationSchema,
+  landmarkSchema,
+  articleSchema,
+  breadcrumbSchema,
+  faqSchema,
+  partnerSchema,
+} from "../lib/schema";
+
+export const getStaticPaths = (async () => {
+  const paths: Array<{
+    params: { path: string | undefined };
+    props:
+      | { kind: "home"; locale: Locale; alternates: Record<string, string> }
+      | {
+          kind: "article";
+          locale: Locale;
+          entry: Article;
+          alternates: Record<string, string>;
+        };
+  }> = [];
+
+  // Home de cada idioma
+  const homeAlternates: Record<string, string> = {};
+  for (const loc of locales) homeAlternates[loc] = localizedPath(loc);
+
+  for (const loc of locales) {
+    paths.push({
+      params: { path: loc === "es" ? undefined : loc },
+      props: { kind: "home", locale: loc, alternates: { ...homeAlternates } },
+    });
+  }
+
+  // Artículos de cada idioma
+  for (const loc of locales) {
+    const entries = await getArticlesByLocale(loc);
+    for (const entry of entries) {
+      const slugMap = await getTranslationSlugs(entry.data.translationKey);
+      const alternates: Record<string, string> = {};
+      for (const [l, s] of Object.entries(slugMap)) {
+        if (s) alternates[l] = localizedPath(l as Locale, s);
+      }
+      const path =
+        loc === "es"
+          ? entry.data.slug
+          : `${loc}/${entry.data.slug}`;
+      paths.push({
+        params: { path },
+        props: { kind: "article", locale: loc, entry, alternates },
+      });
+    }
+  }
+
+  return paths;
+}) satisfies GetStaticPaths;
+
+const props = Astro.props;
+const { locale, alternates } = props;
+const t = useTranslations(locale);
+
+let title: string;
+let description: string;
+let type: "website" | "article" = "website";
+let jsonLd: unknown;
+
+if (props.kind === "home") {
+  title = `${SITE_NAME} · ${t("site.tagline")}`;
+  description = t("site.tagline");
+  jsonLd = graph([websiteSchema(), organizationSchema(), landmarkSchema()]);
+} else {
+  const { entry } = props;
+  title = entry.data.title;
+  description = entry.data.description;
+  type = "article";
+
+  const url = localizedPath(locale, entry.data.slug);
+  const nodes: unknown[] = [
+    organizationSchema(),
+    articleSchema({
+      title: entry.data.title,
+      description: entry.data.description,
+      url,
+      updated: entry.data.updated,
+      locale,
+      image: entry.data.hero,
+    }),
+    breadcrumbSchema([
+      { name: t("breadcrumb.home"), url: localizedPath(locale) },
+      { name: entry.data.title, url },
+    ]),
+    faqSchema(entry.data.faq),
+    landmarkSchema(),
+  ];
+  if (entry.data.promote === "lodging" || entry.data.promote === "both") {
+    nodes.push(partnerSchema("lodging"));
+  }
+  if (entry.data.promote === "restaurant" || entry.data.promote === "both") {
+    nodes.push(partnerSchema("restaurant"));
+  }
+  jsonLd = graph(nodes);
+}
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  locale={locale}
+  alternates={alternates}
+  type={type}
+  image={props.kind === "article" ? props.entry.data.hero : undefined}
+  jsonLd={jsonLd}
+>
+  {props.kind === "home" ? (
+    <HomePage locale={locale} />
+  ) : (
+    <ArticlePage entry={props.entry} locale={locale} />
+  )}
+</BaseLayout>

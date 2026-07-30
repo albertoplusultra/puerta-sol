@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Analytics from "../components/Analytics.astro";
+import type { Locale } from "../i18n/utils";
+
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  alternates: Partial<Record<Locale, string>>;
+  type?: "website" | "article";
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: unknown;
+}
+
+const {
+  title,
+  description,
+  locale,
+  alternates,
+  type = "website",
+  image,
+  noindex = false,
+  jsonLd,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#f3910f" />
+
+    <Seo
+      title={title}
+      description={description}
+      locale={locale}
+      alternates={alternates}
+      type={type}
+      image={image}
+      noindex={noindex}
+      jsonLd={jsonLd}
+    />
+
+    <Analytics />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen bg-page text-body antialiased">
+    <Header locale={locale} alternates={alternates} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} alternates={alternates} />
+  </body>
+</html>
