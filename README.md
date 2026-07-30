@@ -62,7 +62,7 @@ Los idiomas FR, DE, IT y PT ya están soportados por la arquitectura: basta con 
 
 Copia `.env.example` a `.env` y define **una** de estas opciones:
 
-- `PUBLIC_PLAUSIBLE_DOMAIN=puertadelsol.com` (Plausible, sin cookies).
+- `PUBLIC_PLAUSIBLE_DOMAIN=www.puertadelsol.com` (Plausible, sin cookies).
 - `PUBLIC_UMAMI_SRC` + `PUBLIC_UMAMI_ID` (Umami auto-alojado).
 
 Si se dejan vacías, no se carga ningún script de terceros.
@@ -76,7 +76,7 @@ Pasos:
 1. Importa el repositorio en [vercel.com/new](https://vercel.com/new). Vercel detecta Astro automáticamente:
    - Build command: `npm run build`
    - Output directory: `dist`
-2. Añade el dominio `puertadelsol.com` en **Settings → Domains** y apunta los DNS según indique Vercel.
+2. Añade **ambos** dominios en **Settings → Domains**: `www.puertadelsol.com` (marca este como principal) y `puertadelsol.com`. La redirección apex → www está forzada además en `vercel.json`. Apunta los DNS según indique Vercel.
 3. (Opcional) Configura las variables de analítica en **Settings → Environment Variables** (`PUBLIC_PLAUSIBLE_DOMAIN`, etc.).
 
 No se necesita adaptador: la salida es estática (`output: "static"`).
@@ -84,7 +84,7 @@ No se necesita adaptador: la salida es estática (`output: "static"`).
 ## Puesta en marcha SEO tras el despliegue
 
 1. **Verifica el dominio** en [Google Search Console](https://search.google.com/search-console) y en [Bing Webmaster Tools](https://www.bing.com/webmasters).
-2. **Envía el sitemap**: `https://puertadelsol.com/sitemap-index.xml`.
-3. Comprueba `https://puertadelsol.com/robots.txt` y `https://puertadelsol.com/llms.txt`.
+2. **Envía el sitemap**: `https://www.puertadelsol.com/sitemap-index.xml`.
+3. Comprueba `https://www.puertadelsol.com/robots.txt` y `https://www.puertadelsol.com/llms.txt`.
 4. Sustituye la imagen social por defecto (`public/og-default.svg`) por una imagen real cuando la tengas.
 5. Añade fotografías reales usando el componente `ResponsiveImage` (optimización AVIF/WebP con `astro:assets`).

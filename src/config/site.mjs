@@ -1,7 +1,9 @@
 // Configuración global del sitio. Sin dependencias para poder importarse
 // tanto desde astro.config.mjs como desde componentes/utilidades.
 
-export const SITE_URL = "https://puertadelsol.com";
+// Versión canónica única del sitio: www. El dominio raíz (apex) redirige a www
+// mediante la configuración de vercel.json.
+export const SITE_URL = "https://www.puertadelsol.com";
 
 export const DEFAULT_LOCALE = "es";
 export const LOCALES = ["es", "en", "fr", "de", "it", "pt"];
