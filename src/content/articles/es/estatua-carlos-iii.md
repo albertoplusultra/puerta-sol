@@ -7,7 +7,9 @@ translationKey: "estatua-carlos-iii"
 category: "attraction"
 section: "monumentos"
 order: 40
-updated: 2026-07-31
+updated: 2026-08-01
+hero: "sol-carlos-iii.jpg"
+heroAlt: "La estatua ecuestre de Carlos III en la Puerta del Sol"
 keywords:
   - "estatua Carlos III Puerta del Sol"
   - "Carlos III mejor alcalde de Madrid"

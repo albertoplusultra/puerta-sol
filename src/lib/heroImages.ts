@@ -13,6 +13,11 @@ import solKmCero from "../assets/sol-km-cero.jpg";
 import solNochevieja from "../assets/sol-nochevieja.jpg";
 import solCallao from "../assets/sol-callao.jpg";
 import solDiligenciasMetro from "../assets/sol-diligencias-metro.jpg";
+import solRelojLosada from "../assets/sol-reloj-losada.jpg";
+import solCafesHistoricos from "../assets/sol-cafes-historicos.jpg";
+import solNombreHistorico from "../assets/sol-nombre-historico.jpg";
+import solCarlosIII from "../assets/sol-carlos-iii.jpg";
+import solFondaPrincipes from "../assets/sol-fonda-principes.png";
 
 // Registro filename -> imagen importada (para optimización con astro:assets).
 // El frontmatter `hero` de cada artículo referencia una de estas claves.
@@ -31,6 +36,11 @@ export const heroImages: Record<string, ImageMetadata> = {
   "sol-nochevieja.jpg": solNochevieja,
   "sol-callao.jpg": solCallao,
   "sol-diligencias-metro.jpg": solDiligenciasMetro,
+  "sol-reloj-losada.jpg": solRelojLosada,
+  "sol-cafes-historicos.jpg": solCafesHistoricos,
+  "sol-nombre-historico.jpg": solNombreHistorico,
+  "sol-carlos-iii.jpg": solCarlosIII,
+  "sol-fonda-principes.png": solFondaPrincipes,
 };
 
 export function getHeroImage(key?: string): ImageMetadata | undefined {

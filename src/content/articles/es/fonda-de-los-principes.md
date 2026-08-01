@@ -9,6 +9,8 @@ section: "edificios"
 order: 45
 promote: "lodging"
 updated: 2026-08-01
+hero: "sol-fonda-principes.png"
+heroAlt: "Vista del reloj de la Real Casa de Correos desde un balcón de La Fonda de los Príncipes"
 keywords:
   - "Fonda de los Príncipes"
   - "hotel Puerta del Sol"

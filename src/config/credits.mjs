@@ -93,4 +93,37 @@ export const IMAGE_CREDITS = {
     licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
     source: "https://commons.wikimedia.org/wiki/File:Madrid,_postales_252.jpg",
   },
+  "sol-reloj-losada.jpg": {
+    author: "Emilio J. Rodríguez Posada",
+    license: "CC BY-SA 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+    source: "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol_2_-_2008.jpg",
+  },
+  "sol-cafes-historicos.jpg": {
+    author: "Autor desconocido, 1885",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol_1860_2-550x406.jpg",
+  },
+  "sol-nombre-historico.jpg": {
+    author: "Autor desconocido, 1790",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol-antes_de_1850.jpg",
+  },
+  "sol-carlos-iii.jpg": {
+    author: "Tomás Fano",
+    license: "CC BY-SA 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Madrid._Puerta_del_Sol_square._Equestrian_statue_of_Carlos_III._Spain_(4078220164).jpg",
+  },
+  "sol-fonda-principes.png": {
+    author: "La Fonda de los Príncipes",
+    license: "© Todos los derechos reservados",
+    licenseUrl: "https://www.lafondadelosprincipes.com",
+    source: "Imagen proporcionada por La Fonda de los Príncipes",
+  },
 };

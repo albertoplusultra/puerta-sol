@@ -8,6 +8,8 @@ category: "attraction"
 section: "historias"
 order: 30
 updated: 2026-08-01
+hero: "sol-cafes-historicos.jpg"
+heroAlt: "La Puerta del Sol en 1885, con cafés históricos en los bajos de sus edificios"
 keywords:
   - "cafés Puerta del Sol"
   - "Café de la Montaña"

@@ -8,7 +8,6 @@ import { IMAGE_CREDITS } from "../config/credits.mjs";
 import { SITE_NAME } from "../config/site.mjs";
 import Hero from "./Hero.astro";
 import Breadcrumbs from "./Breadcrumbs.astro";
-import Toc from "./Toc.astro";
 import Faq from "./Faq.astro";
 import Card from "./Card.astro";
 import MapEmbed from "./MapEmbed.astro";
@@ -21,7 +20,7 @@ interface Props {
 const { entry, locale } = Astro.props;
 const t = useTranslations(locale);
 
-const { Content, headings } = await render(entry);
+const { Content } = await render(entry);
 const related = await getRelated(entry);
 
 const section = entry.data.section ? getSection(entry.data.section) : undefined;
@@ -73,7 +72,7 @@ const heroCredit = entry.data.hero
     )
   }
 
-  <div class="mt-8 gap-12 lg:grid lg:grid-cols-[1fr_15rem]">
+  <div class="mt-8">
     <div class="prose-sol dropcap max-w-none">
       <Content />
 
@@ -81,12 +80,6 @@ const heroCredit = entry.data.hero
 
       <Faq title={t("faq.title")} items={entry.data.faq} />
     </div>
-
-    <aside class="mt-10 lg:mt-0">
-      <div class="lg:sticky lg:top-24">
-        <Toc title={t("toc.title")} headings={headings} />
-      </div>
-    </aside>
   </div>
 
   {

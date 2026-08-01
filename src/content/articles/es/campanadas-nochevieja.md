@@ -8,8 +8,8 @@ category: "attraction"
 section: "historias"
 order: 50
 updated: 2026-08-01
-hero: "sol-nochevieja.jpg"
-heroAlt: "La Puerta del Sol llena de gente celebrando la Nochevieja ante el reloj de la Casa de Correos"
+hero: "sol-reloj-losada.jpg"
+heroAlt: "Primer plano del reloj de Losada en la torre de la Real Casa de Correos"
 keywords:
   - "reloj de Losada"
   - "campanadas Puerta del Sol"

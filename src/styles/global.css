@@ -11,9 +11,9 @@
 @font-face {
   font-family: "Chulapa";
   src:
-    url("/fonts/Chulapa-Bold.woff2") format("woff2"),
-    url("/fonts/Chulapa-Bold.otf") format("opentype");
-  font-weight: 400 700;
+    url("/fonts/Chulapa-v1.1-Bold.woff2") format("woff2"),
+    url("/fonts/Chulapa-v1.1-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -98,7 +98,11 @@
   .font-serif { font-family: var(--font-serif); }
   .font-display { font-family: var(--font-display); }
   .font-sans { font-family: var(--font-sans); }
-  .font-logo { font-family: var(--font-logo); }
+  .font-logo {
+    font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
+    font-weight: 700;
+    font-synthesis: none;
+  }
 }
 
 /* Base */
@@ -128,8 +132,9 @@ h1, h2, h3, h4 {
 
 /* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa) */
 h1 {
-  font-family: var(--font-logo);
+  font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
   font-weight: 700;
+  font-synthesis: none;
   letter-spacing: 0.005em;
 }
 
