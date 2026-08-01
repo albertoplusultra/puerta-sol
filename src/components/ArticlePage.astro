@@ -2,6 +2,7 @@
 import { render } from "astro:content";
 import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
 import { type Article, getRelated } from "../lib/content";
+import { getSection, sectionText } from "../lib/sections";
 import { getHeroImage } from "../lib/heroImages";
 import { IMAGE_CREDITS } from "../config/credits.mjs";
 import { SITE_NAME } from "../config/site.mjs";
@@ -9,7 +10,6 @@ import Hero from "./Hero.astro";
 import Breadcrumbs from "./Breadcrumbs.astro";
 import Toc from "./Toc.astro";
 import Faq from "./Faq.astro";
-import RecommendationCard from "./RecommendationCard.astro";
 import Card from "./Card.astro";
 import MapEmbed from "./MapEmbed.astro";
 
@@ -24,13 +24,21 @@ const t = useTranslations(locale);
 const { Content, headings } = await render(entry);
 const related = await getRelated(entry);
 
+const section = entry.data.section ? getSection(entry.data.section) : undefined;
+
 const crumbs = [
   { name: t("breadcrumb.home"), href: localizedPath(locale) },
+  ...(section
+    ? [
+        {
+          name: sectionText(section, locale).label,
+          href: localizedPath(locale, section.slug),
+        },
+      ]
+    : []),
   { name: entry.data.title, href: localizedPath(locale, entry.data.slug) },
 ];
 
-const showLodging = entry.data.promote === "lodging" || entry.data.promote === "both";
-const showRestaurant = entry.data.promote === "restaurant" || entry.data.promote === "both";
 const showMap = entry.data.category === "practical" || entry.data.translationKey === "plan";
 
 const heroImage = getHeroImage(entry.data.hero);
@@ -59,7 +67,7 @@ const heroCredit = entry.data.hero
   {
     !heroImage && (
       <header class="mt-6 max-w-3xl">
-        <h1 class="text-balance font-display text-4xl sm:text-5xl">{entry.data.title}</h1>
+        <h1 class="text-balance font-logo text-4xl sm:text-5xl">{entry.data.title}</h1>
         <p class="mt-4 font-serif text-lg text-muted">{entry.data.description}</p>
       </header>
     )
@@ -70,8 +78,6 @@ const heroCredit = entry.data.hero
       <Content />
 
       {showMap && <MapEmbed />}
-      {showLodging && <RecommendationCard kind="lodging" locale={locale} />}
-      {showRestaurant && <RecommendationCard kind="restaurant" locale={locale} />}
 
       <Faq title={t("faq.title")} items={entry.data.faq} />
     </div>

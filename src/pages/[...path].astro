@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomePage from "../components/HomePage.astro";
 import ArticlePage from "../components/ArticlePage.astro";
+import SectionPage from "../components/SectionPage.astro";
 import {
   type Locale,
   activeLocales,
@@ -14,6 +15,11 @@ import {
   getTranslationSlugs,
   type Article,
 } from "../lib/content";
+import {
+  SECTIONS,
+  sectionText,
+  type SectionId,
+} from "../lib/sections";
 import { SITE_NAME } from "../config/site.mjs";
 import {
   graph,
@@ -23,7 +29,6 @@ import {
   articleSchema,
   breadcrumbSchema,
   faqSchema,
-  partnerSchema,
 } from "../lib/schema";
 
 export const getStaticPaths = (async () => {
@@ -31,6 +36,12 @@ export const getStaticPaths = (async () => {
     params: { path: string };
     props:
       | { kind: "home"; locale: Locale; alternates: Record<string, string> }
+      | {
+          kind: "section";
+          locale: Locale;
+          sectionId: SectionId;
+          alternates: Record<string, string>;
+        }
       | {
           kind: "article";
           locale: Locale;
@@ -48,6 +59,25 @@ export const getStaticPaths = (async () => {
       params: { path: loc },
       props: { kind: "home", locale: loc, alternates: { ...homeAlternates } },
     });
+  }
+
+  // Páginas de sección (mismo slug en todos los idiomas activos)
+  for (const section of SECTIONS) {
+    const sectionAlternates: Record<string, string> = {};
+    for (const loc of activeLocales) {
+      sectionAlternates[loc] = localizedPath(loc, section.slug);
+    }
+    for (const loc of activeLocales) {
+      paths.push({
+        params: { path: `${loc}/${section.slug}` },
+        props: {
+          kind: "section",
+          locale: loc,
+          sectionId: section.id,
+          alternates: { ...sectionAlternates },
+        },
+      });
+    }
   }
 
   // Artículos de cada idioma activo
@@ -84,6 +114,20 @@ if (props.kind === "home") {
   title = `${SITE_NAME} · ${t("site.tagline")}`;
   description = t("site.tagline");
   jsonLd = graph([websiteSchema(), organizationSchema(), landmarkSchema()]);
+} else if (props.kind === "section") {
+  const section = SECTIONS.find((s) => s.id === props.sectionId)!;
+  const st = sectionText(section, locale);
+  title = `${st.title} · ${SITE_NAME}`;
+  description = st.description;
+  const url = localizedPath(locale, section.slug);
+  jsonLd = graph([
+    organizationSchema(),
+    breadcrumbSchema([
+      { name: t("breadcrumb.home"), url: localizedPath(locale) },
+      { name: st.title, url },
+    ]),
+    landmarkSchema(),
+  ]);
 } else {
   const { entry } = props;
   title = entry.data.title;
@@ -91,6 +135,9 @@ if (props.kind === "home") {
   type = "article";
 
   const url = localizedPath(locale, entry.data.slug);
+  const articleSection = entry.data.section
+    ? SECTIONS.find((s) => s.id === entry.data.section)
+    : undefined;
   const nodes: unknown[] = [
     organizationSchema(),
     articleSchema({
@@ -103,17 +150,19 @@ if (props.kind === "home") {
     }),
     breadcrumbSchema([
       { name: t("breadcrumb.home"), url: localizedPath(locale) },
+      ...(articleSection
+        ? [
+            {
+              name: sectionText(articleSection, locale).label,
+              url: localizedPath(locale, articleSection.slug),
+            },
+          ]
+        : []),
       { name: entry.data.title, url },
     ]),
     faqSchema(entry.data.faq),
     landmarkSchema(),
   ];
-  if (entry.data.promote === "lodging" || entry.data.promote === "both") {
-    nodes.push(partnerSchema("lodging"));
-  }
-  if (entry.data.promote === "restaurant" || entry.data.promote === "both") {
-    nodes.push(partnerSchema("restaurant"));
-  }
   jsonLd = graph(nodes);
 }
 ---
@@ -129,6 +178,8 @@ if (props.kind === "home") {
 >
   {props.kind === "home" ? (
     <HomePage locale={locale} />
+  ) : props.kind === "section" ? (
+    <SectionPage locale={locale} sectionId={props.sectionId} />
   ) : (
     <ArticlePage entry={props.entry} locale={locale} />
   )}

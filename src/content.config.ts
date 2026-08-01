@@ -24,9 +24,26 @@ const articles = defineCollection({
     slug: z.string(),
     translationKey: z.string(),
     // guide = pilar; attraction = elementos de la propia plaza;
-    // around = alrededores/entorno; practical = información práctica;
+    // around = alrededores/entorno; food = bares y restaurantes;
+    // experiences = tours y actividades (Civitatis); practical = información práctica;
     // nearby = comer/dormir/planificar (conversión)
-    category: z.enum(["guide", "attraction", "around", "practical", "nearby"]),
+    category: z.enum([
+      "guide",
+      "attraction",
+      "around",
+      "food",
+      "experiences",
+      "practical",
+      "nearby",
+    ]),
+    // Sección de navegación principal a la que pertenece el artículo.
+    // Agrupa el contenido en las cuatro secciones del menú.
+    section: z
+      .enum(["la-plaza", "edificios", "monumentos", "historias"])
+      .optional(),
+    // Marca los elementos que ya no existen (p. ej. edificios demolidos).
+    // Se agrupan en un bloque aparte ("Desaparecidos") dentro de su sección.
+    disappeared: z.boolean().default(false),
     order: z.number().default(100),
     updated: z.coerce.date(),
     keywords: z.array(z.string()).default([]),

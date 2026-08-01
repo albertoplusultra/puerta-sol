@@ -1,0 +1,86 @@
+---
+import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
+import {
+  getSection,
+  sectionText,
+  getSectionArticles,
+  type SectionId,
+} from "../lib/sections";
+import { getHeroImage } from "../lib/heroImages";
+import { IMAGE_CREDITS } from "../config/credits.mjs";
+import { SITE_NAME } from "../config/site.mjs";
+import Hero from "./Hero.astro";
+import Breadcrumbs from "./Breadcrumbs.astro";
+import MediaCard from "./MediaCard.astro";
+
+interface Props {
+  locale: Locale;
+  sectionId: SectionId;
+}
+
+const { locale, sectionId } = Astro.props;
+const t = useTranslations(locale);
+
+const section = getSection(sectionId)!;
+const st = sectionText(section, locale);
+const all = await getSectionArticles(locale, sectionId);
+const items = all.filter((a) => !a.data.disappeared);
+const gone = all.filter((a) => a.data.disappeared);
+
+const heroImage = getHeroImage(section.hero);
+const heroCredit = IMAGE_CREDITS[section.hero as keyof typeof IMAGE_CREDITS];
+
+const crumbs = [
+  { name: t("breadcrumb.home"), href: localizedPath(locale) },
+  { name: st.title, href: localizedPath(locale, section.slug) },
+];
+---
+
+<Hero
+  size="compact"
+  kicker={`${SITE_NAME} · Madrid`}
+  title={st.title}
+  subtitle={st.description}
+  image={heroImage}
+  imageAlt={st.title}
+  credit={heroCredit}
+/>
+
+<div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+  <Breadcrumbs items={crumbs} />
+
+  <div class="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      items.map((item) => (
+        <MediaCard
+          href={localizedPath(locale, item.data.slug)}
+          title={item.data.title}
+          description={item.data.description}
+          image={getHeroImage(item.data.hero)}
+          imageAlt={item.data.heroAlt ?? item.data.title}
+        />
+      ))
+    }
+  </div>
+
+  {
+    gone.length > 0 && (
+      <section class="mt-16 border-t border-base pt-12">
+        <h2 class="mb-10 font-display text-3xl sm:text-4xl">
+          {t("section.disappeared")}
+        </h2>
+        <div class="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          {gone.map((item) => (
+            <MediaCard
+              href={localizedPath(locale, item.data.slug)}
+              title={item.data.title}
+              description={item.data.description}
+              image={getHeroImage(item.data.hero)}
+              imageAlt={item.data.heroAlt ?? item.data.title}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</div>

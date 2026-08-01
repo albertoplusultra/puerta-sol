@@ -2,8 +2,8 @@
 title: "How to get to Puerta del Sol"
 description: "Metro, commuter rail, bus or on foot: all the ways to reach Puerta del Sol in Madrid, with transport lines and practical tips for your visit."
 lang: "en"
-slug: "getting-there"
-translationKey: "como-llegar"
+slug: "transport"
+translationKey: "transporte"
 category: "practical"
 order: 80
 updated: 2026-07-15

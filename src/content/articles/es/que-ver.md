@@ -1,13 +1,14 @@
 ---
 title: "Qué ver en la Puerta del Sol"
-description: "Todos los elementos imprescindibles de la Puerta del Sol: el Kilómetro Cero, la Real Casa de Correos y su reloj, el Oso y el Madroño, la estatua de Carlos III, la Mariblanca, el cartel de Tío Pepe y edificios históricos como el antiguo Hotel París."
+description: "Todos los elementos imprescindibles de la Puerta del Sol: el Kilómetro Cero, la Real Casa de Correos y su reloj, el Oso y el Madroño, la estatua de Carlos III, la Mariblanca y el cartel de Tío Pepe. Además, qué visitar a menos de 15 minutos a pie: Plaza Mayor, Ópera, Callao y el Museo del Prado."
 lang: "es"
 slug: "que-ver"
 translationKey: "que-ver"
 category: "attraction"
+section: "la-plaza"
 order: 20
-hero: "sol-hero.jpg"
-heroAlt: "Panorámica de la Puerta del Sol con la Real Casa de Correos"
+hero: "sol-que-ver.jpg"
+heroAlt: "La Puerta del Sol llena de gente, con el cartel de Tío Pepe al fondo"
 promote: "lodging"
 updated: 2026-07-15
 keywords:
@@ -15,11 +16,15 @@ keywords:
   - "kilómetro cero"
   - "Oso y Madroño"
   - "reloj Puerta del Sol"
+  - "qué ver cerca Puerta del Sol"
+  - "centro histórico de Madrid"
 faq:
   - q: "¿Qué hay que ver en la Puerta del Sol?"
     a: "Sus imprescindibles son el Kilómetro Cero, la Real Casa de Correos y su reloj, el Oso y el Madroño, la estatua ecuestre de Carlos III, la Mariblanca y el histórico cartel de Tío Pepe."
   - q: "¿Dónde está la estatua del Oso y el Madroño?"
     a: "En el arranque de la calle del Carmen, en el lado noreste de la plaza. Es el símbolo de la ciudad de Madrid y uno de los puntos de encuentro más populares."
+  - q: "¿Qué se puede visitar cerca de la Puerta del Sol?"
+    a: "A menos de quince minutos a pie están la Plaza Mayor y el Mercado de San Miguel, la zona de Ópera con el Palacio Real y el Teatro Real, la plaza de Callao y la Gran Vía, el Barrio de las Letras y el Museo del Prado."
 ---
 
 La Puerta del Sol concentra en un solo espacio algunos de los símbolos más reconocibles de Madrid. Esta es la guía de todo lo que hay que ver **dentro de la propia plaza**, elemento por elemento. Si quieres conocer su evolución en el tiempo, no te pierdas la [historia de la Puerta del Sol](/es/historia/).
@@ -42,7 +47,7 @@ En el centro de la plaza, la **estatua ecuestre de Carlos III** rinde homenaje a
 
 ## La Mariblanca
 
-En un extremo de la plaza se encuentra una réplica de la **Mariblanca**, la escultura que coronaba la antigua fuente de Sol en los siglos XVII y XVIII. Es uno de los recuerdos más queridos del pasado de la plaza.
+En un extremo de la plaza se encuentra una réplica de la **[Mariblanca](/es/mariblanca/)**, la escultura que coronaba la antigua fuente de Sol en los siglos XVII y XVIII. Es la figura más antigua de la plaza y uno de los recuerdos más queridos de su pasado.
 
 ## El cartel de Tío Pepe
 
@@ -50,10 +55,34 @@ Sobre los tejados brilla el luminoso del **[Tío Pepe](/es/tio-pepe/)**, uno de 
 
 ## Edificios históricos: del Hotel París a la Casa Cordero
 
-La plaza está rodeada de arquitectura con historia. En la esquina con la calle de Alcalá se levanta el edificio del antiguo **Hotel París**, uno de los grandes hoteles del Madrid de finales del siglo XIX. Y en el lado de la calle Mayor destaca la **Casa Cordero**, uno de los primeros grandes edificios de viviendas de la reforma del XIX.
+La plaza está rodeada de arquitectura con historia. En la esquina con la calle de Alcalá se levanta el edificio del **[antiguo Hotel de París](/es/hotel-de-paris/)**, uno de los grandes hoteles del Madrid del siglo XIX que hoy alberga la tienda de Apple y que durante décadas lució el cartel de Tío Pepe sobre su azotea. Y en el lado de la calle Mayor destaca la **Casa Cordero**, uno de los primeros grandes edificios de viviendas de la reforma del XIX.
 
 ## La Fonda de los Príncipes
 
-Entre los establecimientos históricos vinculados a este entorno destaca la **Fonda de los Príncipes**, heredera de la tradición hostelera del corazón de Madrid. Si buscas alojamiento con encanto a un paso de la plaza, puedes conocer su propuesta en [lafondadelosprincipes.com](https://www.lafondadelosprincipes.com).
+Entre los establecimientos históricos vinculados a este entorno destaca la **[Fonda de los Príncipes](/es/fonda-de-los-principes/)**, el hotel del número 11 que abrió en 1861 con la plaza moderna y hoy luce el cartel de Tío Pepe sobre su fachada. Si buscas alojamiento con encanto a un paso de la plaza, puedes conocer su propuesta en [lafondadelosprincipes.com](https://www.lafondadelosprincipes.com).
 
-Cuando termines de recorrer la plaza, continúa por los [alrededores](/es/alrededores/): la Plaza Mayor, el Palacio Real, el Mercado de San Miguel y el Barrio de las Letras están a pocos minutos a pie.
+## A menos de 15 minutos a pie
+
+La Puerta del Sol es el mejor punto de partida para recorrer el centro histórico: casi todos los grandes atractivos de Madrid están a un corto paseo desde la plaza, sin necesidad de coger transporte.
+
+### Plaza Mayor y Mercado de San Miguel (5 min)
+
+A apenas cinco minutos por la calle Mayor se abre la **Plaza Mayor**, uno de los espacios porticados más bellos de Europa. Terminada en el siglo XVII, ha sido mercado, plaza de toros y escenario de proclamaciones reales; bajo sus soportales conviven cafés históricos, la estatua ecuestre de Felipe III y la fachada pintada de la Casa de la Panadería. Junto a ella, el **Mercado de San Miguel**, de hierro y cristal, es una parada obligada para picar algo entre visita y visita.
+
+### Ópera: Palacio Real y Teatro Real (10 min)
+
+Hacia el oeste se llega a la zona de **Ópera**, presidida por el **Teatro Real** y la **Plaza de Oriente**. A pocos pasos están el **Palacio Real**, la mayor residencia real de Europa Occidental por superficie, y la **Catedral de la Almudena**, que juntos forman una de las estampas monumentales más impresionantes de Madrid.
+
+### Callao y la Gran Vía (5 min)
+
+Desde Sol arrancan las calles peatonales de **Preciados** y del **Carmen**, que desembocan en la **plaza de Callao** y la **Gran Vía**. Inaugurada a comienzos del siglo XX, esta gran avenida concentra cines, teatros musicales y edificios monumentales como el Metrópolis y el Carrión, con una vida que no se detiene ni de día ni de noche.
+
+### Barrio de las Letras (5 min)
+
+Hacia el este, el **Barrio de las Letras** conserva el pulso del Madrid del Siglo de Oro. Aquí vivieron Cervantes, Lope de Vega y Quevedo, y sus calles peatonales —con versos grabados en el pavimento— reúnen tabernas centenarias, librerías y terrazas.
+
+### Museo del Prado (15 min)
+
+Un paseo de unos quince minutos por la Carrera de San Jerónimo conduce al **Museo del Prado**, una de las mejores pinacotecas del mundo. En su entorno se completa el **Paseo del Arte** con los museos Thyssen-Bornemisza y Reina Sofía.
+
+Con la Puerta del Sol como base, es fácil planear una jornada completa recorriendo lo mejor del centro a pie. Para llegar hasta la plaza y moverte por la zona, consulta la sección de [transporte](/es/transporte/), con todas las líneas de metro y Cercanías.

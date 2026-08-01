@@ -2,8 +2,8 @@
 
 Guía informativa multilenguaje sobre la **Puerta del Sol** de Madrid, construida con [Astro](https://astro.build). El sitio está optimizado al máximo para posicionar en Google y en buscadores basados en LLMs, y está pensado para derivar tráfico cualificado a:
 
-- **La Fonda de los Príncipes** (alojamiento) — [lafondadelosprincipes.com](https://lafondadelosprincipes.com)
-- **El Mirador de Sol** (restaurante) — [elmiradordesol.com](https://elmiradordesol.com)
+- **La Fonda de los Príncipes** (alojamiento) — [lafondadelosprincipes.com](https://www.lafondadelosprincipes.com)
+- **El Mirador de Sol** (restaurante) — [elmiradordesol.com](https://www.elmiradordesol.com)
 
 ## Tecnología
 

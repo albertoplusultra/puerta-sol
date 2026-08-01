@@ -58,6 +58,8 @@ export async function getCategories(
     guide: [] as Article[],
     attraction: [] as Article[],
     around: [] as Article[],
+    food: [] as Article[],
+    experiences: [] as Article[],
     practical: [] as Article[],
     nearby: [] as Article[],
   };

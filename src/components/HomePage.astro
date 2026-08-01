@@ -1,12 +1,16 @@
 ---
 import { Image } from "astro:assets";
 import { type Locale, useTranslations, localizedPath } from "../i18n/utils";
-import { getPillar, getCategories, getArticlesByLocale } from "../lib/content";
+import { getPillar, getArticlesByLocale } from "../lib/content";
+import {
+  SECTIONS,
+  sectionText,
+  getSectionArticles,
+} from "../lib/sections";
 import { getHeroImage } from "../lib/heroImages";
 import { IMAGE_CREDITS } from "../config/credits.mjs";
 import Hero from "./Hero.astro";
-import Card from "./Card.astro";
-import RecommendationCard from "./RecommendationCard.astro";
+import MediaCard from "./MediaCard.astro";
 
 interface Props {
   locale: Locale;
@@ -16,26 +20,29 @@ const { locale } = Astro.props;
 const t = useTranslations(locale);
 
 const pillar = await getPillar(locale);
-const categories = await getCategories(locale);
 const all = await getArticlesByLocale(locale);
 const byKey = (k: string) => all.find((a) => a.data.translationKey === k);
 
 const historia = byKey("historia");
-const planEntry = byKey("plan");
 
-const heroImg = getHeroImage("sol-hero.jpg");
-const heroCredit = IMAGE_CREDITS["sol-hero.jpg"];
-const historiaImg = getHeroImage("sol-historia.jpg");
+const heroImg = getHeroImage("sol-hero-portada.jpg");
+const heroCredit = IMAGE_CREDITS["sol-hero-portada.jpg"];
+const historiaImg = getHeroImage("sol-hero-old.png");
 
-const sections = [
-  {
-    title: t("nav.attractions"),
-    // Historia se destaca aparte; no la repetimos en la rejilla.
-    items: categories.attraction.filter((a) => a.data.translationKey !== "historia"),
-  },
-  { title: t("nav.around"), items: categories.around },
-  { title: t("nav.practical"), items: categories.practical },
-].filter((s) => s.items.length > 0);
+// Una sección de la home por cada sección de navegación.
+// Historia se destaca aparte, así que no la repetimos en su rejilla.
+const orderedSections = [...SECTIONS].sort((a, b) => a.order - b.order);
+const sections = (
+  await Promise.all(
+    orderedSections.map(async (s) => ({
+      title: sectionText(s, locale).title,
+      href: localizedPath(locale, s.slug),
+      items: (await getSectionArticles(locale, s.id)).filter(
+        (a) => a.data.translationKey !== "historia" && !a.data.disappeared
+      ),
+    }))
+  )
+).filter((s) => s.items.length > 0);
 ---
 
 <Hero
@@ -43,7 +50,7 @@ const sections = [
   title="Puerta del Sol"
   subtitle={t("site.tagline")}
   image={heroImg}
-  imageAlt="Vista de la Puerta del Sol de Madrid"
+  imageAlt="Vista panorámica de la Puerta del Sol de Madrid con la Real Casa de Correos"
   credit={heroCredit}
   ctaPrimary={historia
     ? { label: t("nav.history"), href: localizedPath(locale, historia.data.slug) }
@@ -98,14 +105,29 @@ const sections = [
 
   {
     sections.map((section) => (
-      <section class="border-t border-base py-14">
-        <h2 class="mb-8 font-display text-3xl">{section.title}</h2>
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <section class="border-t border-base py-16">
+        <div class="mb-10 flex items-end justify-between gap-4">
+          <h2 class="font-display text-3xl sm:text-4xl">
+            <a href={section.href} class="transition-colors hover:text-brand">
+              {section.title}
+            </a>
+          </h2>
+          <a
+            href={section.href}
+            class="shrink-0 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brand"
+          >
+            {t("home.section.all")}
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <div class="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {section.items.map((item) => (
-            <Card
+            <MediaCard
               href={localizedPath(locale, item.data.slug)}
               title={item.data.title}
               description={item.data.description}
+              image={getHeroImage(item.data.hero)}
+              imageAlt={item.data.heroAlt ?? item.data.title}
             />
           ))}
         </div>
@@ -113,24 +135,4 @@ const sections = [
     ))
   }
 
-  <section class="border-t border-base py-16">
-    <div class="mb-8 text-center">
-      <p class="kicker">{t("plan.title")}</p>
-      <h2 class="mt-2 font-display text-3xl">{t("plan.subtitle")}</h2>
-    </div>
-    <div class="grid gap-6 md:grid-cols-2">
-      <RecommendationCard kind="lodging" locale={locale} />
-      <RecommendationCard kind="restaurant" locale={locale} />
-    </div>
-    {planEntry && (
-      <p class="mt-8 text-center">
-        <a
-          href={localizedPath(locale, planEntry.data.slug)}
-          class="font-sans text-sm font-semibold uppercase tracking-wide text-brand"
-        >
-          {t("nav.plan")} &rarr;
-        </a>
-      </p>
-    )}
-  </section>
 </div>

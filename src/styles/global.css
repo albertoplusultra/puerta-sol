@@ -5,6 +5,19 @@
 @import "@fontsource-variable/newsreader";
 @import "@fontsource-variable/inter";
 
+/* Chulapa: tipografía oficial de uso libre del Ayuntamiento de Madrid
+   (proyecto Madrid-Ferpal, CC BY 4.0). Se usa en el logotipo y en los
+   títulos h1 (logo, cabeceras y heros). Es una tipografía de caja alta. */
+@font-face {
+  font-family: "Chulapa";
+  src:
+    url("/fonts/Chulapa-Bold.woff2") format("woff2"),
+    url("/fonts/Chulapa-Bold.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
   SISTEMA DE DISEÑO EDITORIAL — Puerta del Sol
   Estética de revista de viajes premium: fondo marfil, tinta cálida,
@@ -39,11 +52,13 @@
   --font-display: "Fraunces Variable", "Georgia", serif;
   --font-serif: "Newsreader Variable", "Georgia", serif;
   --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Tipografía "Madrid" (Chulapa): logotipo y títulos h1 (logo, cabeceras y heros) */
+  --font-logo: "Chulapa", "Fraunces Variable", "Georgia", serif;
 
-  /* Radios (sobrios) */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.875rem;
+  /* Radios: esquinas rectas para un aire editorial serio (estilo Rockefeller) */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 
   /* Sombras suaves */
   --shadow-soft: 0 1px 2px rgb(26 22 17 / 0.05), 0 10px 30px -18px rgb(26 22 17 / 0.25);
@@ -83,6 +98,7 @@
   .font-serif { font-family: var(--font-serif); }
   .font-display { font-family: var(--font-display); }
   .font-sans { font-family: var(--font-sans); }
+  .font-logo { font-family: var(--font-logo); }
 }
 
 /* Base */
@@ -108,6 +124,13 @@ h1, h2, h3, h4 {
   line-height: 1.1;
   letter-spacing: -0.015em;
   color: var(--text);
+}
+
+/* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa) */
+h1 {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  letter-spacing: 0.005em;
 }
 
 /* La UI (nav, botones, etiquetas) usa la sans */

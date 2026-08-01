@@ -32,7 +32,6 @@ const {
   subtitle,
   image,
   imageAlt = "",
-  credit,
   ctaPrimary,
   ctaSecondary,
   size = "full",
@@ -69,7 +68,7 @@ const minH = size === "full" ? "min-h-[78vh]" : "min-h-[52vh]";
           {kicker}
         </p>
       )}
-      <h1 class="font-display text-5xl leading-[1.02] tracking-tight sm:text-7xl">
+      <h1 class="font-logo text-5xl leading-[1.02] tracking-tight sm:text-7xl">
         {title}
       </h1>
       {subtitle && (
@@ -100,19 +99,4 @@ const minH = size === "full" ? "min-h-[78vh]" : "min-h-[52vh]";
     </div>
   </div>
 
-  {
-    credit && (
-      <p class="absolute bottom-2 right-3 z-10 font-sans text-[0.65rem] text-ivory-100/70">
-        Foto:{" "}
-        <a href={credit.source} target="_blank" rel="noopener" class="underline">
-          {credit.author}
-        </a>{" "}
-        (
-        <a href={credit.licenseUrl} target="_blank" rel="noopener" class="underline">
-          {credit.license}
-        </a>
-        )
-      </p>
-    )
-  }
 </section>

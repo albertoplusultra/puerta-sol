@@ -7,7 +7,7 @@ import {
   labelFor,
 } from "../i18n/utils";
 import { getNav } from "../lib/nav";
-import { SITE_NAME, PARTNERS } from "../config/site.mjs";
+import { SITE_NAME } from "../config/site.mjs";
 
 interface Props {
   locale: Locale;
@@ -25,14 +25,6 @@ const year = new Date().getFullYear();
     <div class="md:col-span-2">
       <p class="font-display text-lg font-semibold">{SITE_NAME}</p>
       <p class="mt-2 max-w-sm text-sm text-muted">{t("footer.about")}</p>
-      <div class="mt-4 flex flex-wrap gap-3 text-sm">
-        <a class="text-link underline underline-offset-2" href={PARTNERS.lodging.url} rel="dofollow">
-          {PARTNERS.lodging.name}
-        </a>
-        <a class="text-link underline underline-offset-2" href={PARTNERS.restaurant.url} rel="dofollow">
-          {PARTNERS.restaurant.name}
-        </a>
-      </div>
     </div>
 
     <nav aria-label={t("footer.explore")}>

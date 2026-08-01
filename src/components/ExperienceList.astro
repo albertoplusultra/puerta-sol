@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import { EXPERIENCES } from "../data/experiences";
+import { civitatisUrl } from "../config/site.mjs";
+---
+
+<div class="not-prose mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2">
+  {
+    EXPERIENCES.map((exp) => (
+      <a
+        href={civitatisUrl(exp.path)}
+        target="_blank"
+        rel="nofollow noopener"
+        class="group flex flex-col"
+      >
+        <div class="relative overflow-hidden bg-ink-900 aspect-[16/9]">
+          <Image
+            src={exp.image}
+            alt={exp.title}
+            widths={[400, 640]}
+            sizes="(min-width: 640px) 45vw, 100vw"
+            loading="lazy"
+            decoding="async"
+            format="avif"
+            class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          />
+          {exp.startsAtSol && (
+            <span class="absolute left-3 top-3 inline-flex items-center gap-1.5 bg-ink-900/85 px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-ivory-50">
+              <span aria-hidden="true">&#9679;</span>
+              Sale de Sol
+            </span>
+          )}
+        </div>
+        <h3 class="mt-4 font-display text-2xl leading-tight transition-colors group-hover:text-brand">
+          {exp.title}
+        </h3>
+        <p class="mt-2 font-serif text-[0.95rem] leading-relaxed text-muted">
+          {exp.description}
+        </p>
+        {exp.meta && (
+          <p class="mt-3 font-sans text-xs uppercase tracking-[0.12em] text-muted/80">
+            {exp.meta}
+          </p>
+        )}
+        <span class="mt-4 inline-flex items-center gap-1.5 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brand">
+          Reservar en Civitatis
+          <span
+            class="transition-transform duration-300 group-hover:translate-x-1"
+            aria-hidden="true"
+          >
+            &#8599;
+          </span>
+        </span>
+      </a>
+    ))
+  }
+</div>
+<p class="mt-8 font-serif text-sm leading-relaxed text-muted">
+  Las reservas se gestionan en Civitatis, plataforma independiente de actividades.
+  Los horarios y precios pueden variar; consulta cada actividad para ver la
+  información actualizada y el punto exacto de encuentro.
+</p>

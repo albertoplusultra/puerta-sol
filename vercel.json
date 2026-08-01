@@ -11,7 +11,13 @@
       "destination": "https://www.puertadelsol.com/:path*",
       "permanent": true
     },
-    { "source": "/", "destination": "/es/", "permanent": false }
+    { "source": "/", "destination": "/es/", "permanent": false },
+    { "source": "/es/alrededores", "destination": "/es/que-ver/", "permanent": true },
+    { "source": "/es/alrededores/", "destination": "/es/que-ver/", "permanent": true },
+    { "source": "/es/como-llegar", "destination": "/es/transporte/", "permanent": true },
+    { "source": "/es/como-llegar/", "destination": "/es/transporte/", "permanent": true },
+    { "source": "/es/planifica", "destination": "/es/que-ver/", "permanent": true },
+    { "source": "/es/planifica/", "destination": "/es/que-ver/", "permanent": true }
   ],
   "headers": [
     {

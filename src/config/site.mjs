@@ -48,13 +48,29 @@ export const PARTNERS = {
   lodging: {
     key: "lodging",
     name: "La Fonda de los Príncipes",
-    url: "https://lafondadelosprincipes.com",
+    url: "https://www.lafondadelosprincipes.com",
     type: "LodgingBusiness",
   },
   restaurant: {
     key: "restaurant",
     name: "El Mirador de Sol",
-    url: "https://elmiradordesol.com",
+    url: "https://www.elmiradordesol.com",
     type: "Restaurant",
   },
 };
+
+// Civitatis (tours y actividades). Los enlaces salen como `nofollow` por tratarse
+// de un tercero comercial. Rellena `affiliateId` cuando tengas la cuenta de afiliado
+// para monetizar los clics; mientras esté vacío, los enlaces apuntan directos a Civitatis.
+export const CIVITATIS = {
+  // p. ej. "12345" -> se añade a las URLs como ?aid=12345
+  affiliateId: "",
+  baseUrl: "https://www.civitatis.com",
+};
+
+/** Construye la URL final de Civitatis, añadiendo el ID de afiliado si existe. */
+export function civitatisUrl(path) {
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  const base = `${CIVITATIS.baseUrl}${clean}`;
+  return CIVITATIS.affiliateId ? `${base}?aid=${CIVITATIS.affiliateId}` : base;
+}

@@ -1,21 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { IMAGE_CREDITS } from "../config/credits.mjs";
 
 interface Props {
   src: ImageMetadata;
   alt: string;
   caption?: string;
-  /** Nombre de archivo (clave en IMAGE_CREDITS) para mostrar la autoría. */
+  /** Aceptado por compatibilidad; ya no se muestra atribución. */
   creditKey?: string;
   wide?: boolean;
 }
 
-const { src, alt, caption, creditKey, wide = false } = Astro.props;
-const credit = creditKey
-  ? IMAGE_CREDITS[creditKey as keyof typeof IMAGE_CREDITS]
-  : undefined;
+const { src, alt, caption, wide = false } = Astro.props;
 ---
 
 <figure class:list={["not-prose my-10", wide && "lg:-mx-24"]}>
@@ -32,23 +28,8 @@ const credit = creditKey
     />
   </div>
   {
-    (caption || credit) && (
-      <figcaption class="mt-2 font-sans text-xs text-muted">
-        {caption}
-        {credit && (
-          <span class="text-ink-400">
-            {caption ? " · " : ""}Foto:{" "}
-            <a href={credit.source} target="_blank" rel="noopener" class="underline">
-              {credit.author}
-            </a>{" "}
-            (
-            <a href={credit.licenseUrl} target="_blank" rel="noopener" class="underline">
-              {credit.license}
-            </a>
-            )
-          </span>
-        )}
-      </figcaption>
+    caption && (
+      <figcaption class="mt-2 font-sans text-xs text-muted">{caption}</figcaption>
     )
   }
 </figure>

@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { SITE_URL, SITE_NAME, PARTNERS } from "../config/site.mjs";
+import { SITE_URL, SITE_NAME } from "../config/site.mjs";
 import { getArticlesByLocale } from "../lib/content";
 import { localizedPath, activeLocales, labelFor } from "../i18n/utils";
 
@@ -38,10 +38,6 @@ export const GET: APIRoute = async () => {
     "",
     "## Cerca de la Puerta del Sol",
     byCat("nearby"),
-    "",
-    "## Recursos relacionados",
-    `- [${PARTNERS.lodging.name}](${PARTNERS.lodging.url}): alojamiento en el centro histórico, a pocos metros de la Puerta del Sol.`,
-    `- [${PARTNERS.restaurant.name}](${PARTNERS.restaurant.url}): restaurante de cocina madrileña junto a la Puerta del Sol.`,
     "",
     `## Idiomas disponibles`,
     ...activeLocales.map((l) => `- ${labelFor(l)}: ${abs(localizedPath(l))}`),

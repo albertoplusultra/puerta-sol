@@ -5,8 +5,11 @@ lang: "es"
 slug: "tio-pepe"
 translationKey: "tio-pepe"
 category: "attraction"
+section: "monumentos"
 order: 60
 updated: 2026-07-15
+hero: "sol-tio-pepe.jpg"
+heroAlt: "El luminoso de Tío Pepe iluminado al anochecer sobre la Puerta del Sol"
 keywords:
   - "cartel Tío Pepe"
   - "luminoso Puerta del Sol"
