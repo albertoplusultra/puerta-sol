@@ -9,6 +9,8 @@ section: "edificios"
 disappeared: true
 order: 70
 updated: 2026-08-01
+hero: "sol-buen-suceso.jpg"
+heroAlt: "La iglesia del Buen Suceso vista desde la calle Mayor en 1854"
 keywords:
   - "iglesia del Buen Suceso"
   - "hospital del Buen Suceso"

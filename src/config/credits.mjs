@@ -126,4 +126,52 @@ export const IMAGE_CREDITS = {
     licenseUrl: "https://www.lafondadelosprincipes.com",
     source: "Imagen proporcionada por La Fonda de los Príncipes",
   },
+  "sol-casas-cordero.jpg": {
+    author: "Autor desconocido, La Ilustración (1849)",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Casa_de_Cordero,_en_La_Ilustraci%C3%B3n.jpg",
+  },
+  "sol-san-felipe.jpg": {
+    author: "Autor anónimo, siglo XVII",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Las_gradas_de_San_Felipe.jpg",
+  },
+  "sol-convento-victoria.jpg": {
+    author: "Luis Paret y Alcázar (1773)",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Luis_Paret_y_Alc%C3%A1zar_-_La_Puerta_del_Sol_en_Madrid.jpg",
+  },
+  "sol-estacion-templete.jpg": {
+    author: "Autor desconocido, La Esfera (1919)",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:1919-11-08_LA_ESFERA_1.jpg",
+  },
+  "sol-hotel-universo.jpg": {
+    author: "J. Laurent, ca. 1860–1880",
+    license: "Dominio público",
+    licenseUrl: "https://www.loc.gov/item/94511745/",
+    source: "https://www.loc.gov/item/94511745/",
+  },
+  "sol-mallorquina.jpg": {
+    author: "Autor desconocido, Nuevo Mundo (1911)",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:1911-10-12_NUEVO_MUNDO.jpg",
+  },
+  "sol-buen-suceso.jpg": {
+    author: "Autor desconocido (1854)",
+    license: "Dominio público",
+    licenseUrl: "https://commons.wikimedia.org/wiki/Category:Public_domain",
+    source:
+      "https://commons.wikimedia.org/wiki/File:1854-buen-suceso.jpg",
+  },
 };

@@ -7,6 +7,8 @@ translationKey: "donde-comer"
 category: "nearby"
 order: 90
 updated: 2026-07-15
+hero: "sol-hero.jpg"
+heroAlt: "La Puerta del Sol y su entorno gastronómico en el centro de Madrid"
 promote: "restaurant"
 keywords:
   - "dónde comer Puerta del Sol"

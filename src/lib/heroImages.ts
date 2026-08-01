@@ -18,6 +18,13 @@ import solCafesHistoricos from "../assets/sol-cafes-historicos.jpg";
 import solNombreHistorico from "../assets/sol-nombre-historico.jpg";
 import solCarlosIII from "../assets/sol-carlos-iii.jpg";
 import solFondaPrincipes from "../assets/sol-fonda-principes.png";
+import solCasasCordero from "../assets/sol-casas-cordero.jpg";
+import solSanFelipe from "../assets/sol-san-felipe.jpg";
+import solConventoVictoria from "../assets/sol-convento-victoria.jpg";
+import solEstacionTemplete from "../assets/sol-estacion-templete.jpg";
+import solHotelUniverso from "../assets/sol-hotel-universo.jpg";
+import solMallorquina from "../assets/sol-mallorquina.jpg";
+import solBuenSuceso from "../assets/sol-buen-suceso.jpg";
 
 // Registro filename -> imagen importada (para optimización con astro:assets).
 // El frontmatter `hero` de cada artículo referencia una de estas claves.
@@ -41,6 +48,13 @@ export const heroImages: Record<string, ImageMetadata> = {
   "sol-nombre-historico.jpg": solNombreHistorico,
   "sol-carlos-iii.jpg": solCarlosIII,
   "sol-fonda-principes.png": solFondaPrincipes,
+  "sol-casas-cordero.jpg": solCasasCordero,
+  "sol-san-felipe.jpg": solSanFelipe,
+  "sol-convento-victoria.jpg": solConventoVictoria,
+  "sol-estacion-templete.jpg": solEstacionTemplete,
+  "sol-hotel-universo.jpg": solHotelUniverso,
+  "sol-mallorquina.jpg": solMallorquina,
+  "sol-buen-suceso.jpg": solBuenSuceso,
 };
 
 export function getHeroImage(key?: string): ImageMetadata | undefined {

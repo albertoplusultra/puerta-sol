@@ -7,6 +7,8 @@ translationKey: "donde-dormir"
 category: "nearby"
 order: 92
 updated: 2026-07-15
+hero: "sol-fonda-principes.png"
+heroAlt: "Balcones y alojamientos históricos de la Puerta del Sol"
 promote: "lodging"
 keywords:
   - "dónde dormir Puerta del Sol"

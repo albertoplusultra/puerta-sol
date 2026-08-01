@@ -7,6 +7,8 @@ translationKey: "guia"
 category: "guide"
 order: 1
 updated: 2026-07-15
+hero: "sol-hero.jpg"
+heroAlt: "Vista actual de la Puerta del Sol de Madrid"
 featured: true
 promote: "both"
 keywords:
