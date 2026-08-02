@@ -103,11 +103,15 @@
 /*
   Se mantiene fuera de las capas de Tailwind para que sus utilidades de peso
   no puedan sustituir la única variante disponible de Chulapa (Bold 700).
+  El juego estilístico ss03 activa el rasgo característico de la Chulapa:
+  las minúsculas se dibujan como letras pequeñas elevadas, igual que en las
+  placas cerámicas del callejero histórico de Madrid.
 */
 .font-logo {
   font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
   font-weight: 700;
   font-synthesis: none;
+  font-feature-settings: "ss03" 1;
 }
 
 /* Base */
@@ -135,11 +139,14 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
-/* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa) */
+/* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa).
+   ss03 dibuja las minúsculas como letras pequeñas elevadas (estilo placas
+   cerámicas del callejero de Madrid), el rasgo distintivo de la fuente. */
 h1 {
   font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
   font-weight: 700;
   font-synthesis: none;
+  font-feature-settings: "ss03" 1;
   letter-spacing: 0.005em;
 }
 
