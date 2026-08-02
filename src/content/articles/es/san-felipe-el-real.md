@@ -74,7 +74,7 @@ No queda ningún resto visible de las gradas. El cordero esculpido en la esquina
 
 ## La herencia del Mentidero
 
-San Felipe desapareció antes de la [gran reforma de la Puerta del Sol](/es/historia/). Por eso no aparece en la plaza moderna y resulta difícil imaginar el espacio que ocupaba.
+San Felipe desapareció antes de la [gran reforma de la Puerta del Sol](/es/gran-reforma/). Por eso no aparece en la plaza moderna y resulta difícil imaginar el espacio que ocupaba.
 
 Sin embargo, su función sobrevivió.
 

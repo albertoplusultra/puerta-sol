@@ -71,7 +71,7 @@ En uno de sus extremos se encontraba la iglesia del Buen Suceso y, delante de el
 
 La antigua puerta ya no existía, pero el lugar mantenía la función que había nacido a su alrededor. Seguía siendo un punto de paso para viajeros, carruajes, mercancías e información.
 
-La Real [Casa de Correos](/es/casa-de-correos/) se terminó en 1768 y, entre 1857 y 1862, una [gran reforma](/es/historia/) creó la plaza moderna. Se demolieron edificios y manzanas completas y se construyó el gran arco de fachadas situado frente a la Casa de Correos.
+La Real [Casa de Correos](/es/casa-de-correos/) se terminó en 1768 y, entre 1857 y 1862, una [gran reforma](/es/gran-reforma/) creó la plaza moderna. Se demolieron edificios y manzanas completas y se construyó el gran arco de fachadas situado frente a la Casa de Correos.
 
 La transformación podía haber servido para cambiar el nombre. No ocurrió. La nueva plaza conservó el de un pequeño postigo medieval que llevaba más de dos siglos desaparecido.
 

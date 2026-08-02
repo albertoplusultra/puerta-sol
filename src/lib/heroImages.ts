@@ -25,6 +25,8 @@ import solEstacionTemplete from "../assets/sol-estacion-templete.jpg";
 import solHotelUniverso from "../assets/sol-hotel-universo.jpg";
 import solMallorquina from "../assets/sol-mallorquina.jpg";
 import solBuenSuceso from "../assets/sol-buen-suceso.jpg";
+import solCasaLabra from "../assets/sol-casa-labra.jpg";
+import solGranReforma from "../assets/sol-gran-reforma.jpg";
 
 // Registro filename -> imagen importada (para optimización con astro:assets).
 // El frontmatter `hero` de cada artículo referencia una de estas claves.
@@ -55,6 +57,8 @@ export const heroImages: Record<string, ImageMetadata> = {
   "sol-hotel-universo.jpg": solHotelUniverso,
   "sol-mallorquina.jpg": solMallorquina,
   "sol-buen-suceso.jpg": solBuenSuceso,
+  "sol-casa-labra.jpg": solCasaLabra,
+  "sol-gran-reforma.jpg": solGranReforma,
 };
 
 export function getHeroImage(key?: string): ImageMetadata | undefined {

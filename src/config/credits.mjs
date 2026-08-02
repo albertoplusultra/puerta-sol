@@ -174,4 +174,18 @@ export const IMAGE_CREDITS = {
     source:
       "https://commons.wikimedia.org/wiki/File:1854-buen-suceso.jpg",
   },
+  "sol-casa-labra.jpg": {
+    author: "Tamorlan",
+    license: "CC BY 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/3.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Casa_Labra-2009.jpg",
+  },
+  "sol-gran-reforma.jpg": {
+    author: "Charles Clifford / Gothenburg Museum of Art",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol,_Madrid_(Charles_Clifford)_-_Gothenburg_Museum_of_Art_-_Fo_3-2009.tif",
+  },
 };

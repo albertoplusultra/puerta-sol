@@ -20,7 +20,7 @@ import {
   sectionText,
   type SectionId,
 } from "../lib/sections";
-import { SITE_NAME } from "../config/site.mjs";
+import { SITE_BRAND } from "../config/site.mjs";
 import {
   graph,
   websiteSchema,
@@ -111,13 +111,13 @@ let type: "website" | "article" = "website";
 let jsonLd: unknown;
 
 if (props.kind === "home") {
-  title = `${SITE_NAME} · ${t("site.tagline")}`;
+  title = `${SITE_BRAND} · ${t("site.tagline")}`;
   description = t("site.tagline");
   jsonLd = graph([websiteSchema(), organizationSchema(), landmarkSchema()]);
 } else if (props.kind === "section") {
   const section = SECTIONS.find((s) => s.id === props.sectionId)!;
   const st = sectionText(section, locale);
-  title = `${st.title} · ${SITE_NAME}`;
+  title = `${st.title} · ${SITE_BRAND}`;
   description = st.description;
   const url = localizedPath(locale, section.slug);
   jsonLd = graph([

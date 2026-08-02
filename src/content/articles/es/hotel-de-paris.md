@@ -37,7 +37,7 @@ El hotel cerró en 2006 y Apple abrió en 2014. El cartel no regresó al edifici
 
 El solar había estado ocupado por la [iglesia y hospital del Buen Suceso](/es/buen-suceso/), demolidos en 1854. La desaparición del conjunto permitió ensanchar la entrada de Alcalá y la Carrera de San Jerónimo y liberar una de las parcelas más valiosas de la nueva plaza.
 
-El edificio fue levantado durante la [gran reforma de Sol](/es/historia/) y el hotel abrió en 1864, inicialmente con el nombre de Fonda de París. La denominación evocaba la ciudad que en aquel momento representaba la modernidad, el lujo y la vida cosmopolita europea.
+El edificio fue levantado durante la [gran reforma de Sol](/es/gran-reforma/) y el hotel abrió en 1864, inicialmente con el nombre de Fonda de París. La denominación evocaba la ciudad que en aquel momento representaba la modernidad, el lujo y la vida cosmopolita europea.
 
 La Fonda de los Príncipes había abierto tres años antes en el arco norte. Junto al Hotel del Universo y otros establecimientos, ambos convirtieron Sol en el principal distrito hotelero de Madrid.
 

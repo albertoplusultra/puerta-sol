@@ -41,7 +41,7 @@ La Puerta del Sol reunía las condiciones adecuadas. Era el principal cruce de l
 
 En diciembre de 1856 se colocó frente al edificio una primera losa. Una instrucción posterior definió su posición en la prolongación del eje central de Gobernación, a diez metros de la fachada.
 
-El Kilómetro Cero es, por tanto, anterior a la [gran reforma de Sol](/es/historia/). La plaza moderna comenzó a construirse pocos meses después.
+El Kilómetro Cero es, por tanto, anterior a la [gran reforma de Sol](/es/gran-reforma/). La plaza moderna comenzó a construirse pocos meses después.
 
 ## Las carreteras radiales
 

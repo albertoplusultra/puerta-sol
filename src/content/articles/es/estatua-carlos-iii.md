@@ -51,7 +51,7 @@ La relación más directa entre Carlos III y la Puerta del Sol se encuentra en l
 
 El proyecto había sido encargado durante el reinado de Fernando VI, pero Carlos III confió finalmente la obra al arquitecto francés Jaime Marquet. El edificio se construyó entre 1766 y 1768 para organizar la correspondencia que llegaba y salía de la capital.
 
-Su gran fachada recta destacaba entre las casas irregulares de la antigua Puerta del Sol. Cuando la plaza fue completamente [reformada entre 1857 y 1862](/es/historia/), la Casa de Correos se conservó y se convirtió en la principal referencia del nuevo espacio.
+Su gran fachada recta destacaba entre las casas irregulares de la antigua Puerta del Sol. Cuando la plaza fue completamente [reformada entre 1857 y 1862](/es/gran-reforma/), la Casa de Correos se conservó y se convirtió en la principal referencia del nuevo espacio.
 
 Carlos III no vio el gran arco de edificios, el reloj de Losada ni el [Kilómetro Cero](/es/kilometro-cero/). Pero el edificio levantado durante su reinado terminó determinando la forma de la plaza moderna.
 

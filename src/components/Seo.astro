@@ -1,6 +1,7 @@
 ---
 import {
   SITE_NAME,
+  SITE_BRAND,
   SITE_TWITTER,
   HREFLANG,
 } from "../config/site.mjs";
@@ -32,7 +33,10 @@ const {
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(image, Astro.site).href;
-const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
+const fullTitle =
+  title.includes(SITE_NAME) || title.includes(SITE_BRAND)
+    ? title
+    : `${title} · ${SITE_BRAND}`;
 
 const alternateEntries = Object.entries(alternates) as [Locale, string][];
 const xDefault = alternates[defaultLocale];

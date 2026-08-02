@@ -34,7 +34,7 @@ El establecimiento era conocido como el café de los espejos por la abundancia d
 
 ## Un hotel en la nueva plaza
 
-El Hotel del Universo fue uno de los alojamientos surgidos alrededor de la Puerta del Sol después de la [reforma de 1857 a 1862](/es/historia/). Distintas fuentes sitúan su apertura hacia 1870, lo que lo convertiría en uno de los últimos grandes hoteles incorporados a la nueva plaza.
+El Hotel del Universo fue uno de los alojamientos surgidos alrededor de la Puerta del Sol después de la [reforma de 1857 a 1862](/es/gran-reforma/). Distintas fuentes sitúan su apertura hacia 1870, lo que lo convertiría en uno de los últimos grandes hoteles incorporados a la nueva plaza.
 
 Se encontraba en el antiguo número 15, después número 14, cerca del comienzo de la calle de Alcalá. Desde sus habitaciones podía contemplarse la [Casa de Correos](/es/casa-de-correos/), el movimiento de los tranvías y buena parte de la plaza.
 

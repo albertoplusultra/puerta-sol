@@ -37,7 +37,7 @@ La Puerta del Sol ofrecía una clientela inagotable. Por allí pasaban viajeros,
 
 Los cafés conectaban todos esos mundos.
 
-La [reforma de la plaza entre 1857 y 1862](/es/historia/) creó grandes locales comerciales con amplios escaparates. La iluminación de gas permitió alargar los horarios y algunos establecimientos apenas cerraban.
+La [reforma de la plaza entre 1857 y 1862](/es/gran-reforma/) creó grandes locales comerciales con amplios escaparates. La iluminación de gas permitió alargar los horarios y algunos establecimientos apenas cerraban.
 
 ## El Café Universal
 

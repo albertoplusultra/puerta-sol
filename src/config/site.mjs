@@ -34,6 +34,8 @@ export const LOCALE_LABELS = {
 
 // Marca
 export const SITE_NAME = "Puerta del Sol";
+// Marca usada como sufijo en los <title> de las páginas
+export const SITE_BRAND = "PuertaDelSol.com";
 export const SITE_TWITTER = "@puertadelsol";
 
 // Coordenadas del monumento (para JSON-LD y mapas)

@@ -38,7 +38,7 @@ Durante más de un siglo y medio cambió de nombre, propietarios y categoría. F
 
 El edificio ocupa una posición privilegiada entre las calles Preciados y Carmen, con otras fachadas hacia Tetuán y la parte posterior del inmueble. Esta disposición permitía iluminar y ventilar las habitaciones y proporcionaba numerosos balcones abiertos hacia la plaza y las calles.
 
-La Fonda no se instaló en una antigua casa adaptada. Nació dentro de un edificio nuevo, construido durante la [gran reforma de 1857 a 1862](/es/historia/).
+La Fonda no se instaló en una antigua casa adaptada. Nació dentro de un edificio nuevo, construido durante la [gran reforma de 1857 a 1862](/es/gran-reforma/).
 
 En aquella época, la palabra fonda no designaba necesariamente un alojamiento modesto. Los establecimientos de primer nivel ofrecían habitaciones privadas, salones, comedor, baños, servicio de carruajes y atención para viajeros extranjeros.
 

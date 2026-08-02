@@ -49,7 +49,7 @@ El arquitecto municipal Juan José Sánchez Pescador diseñó un conjunto de viv
 
 El edificio destacaba por su tamaño, la regularidad de sus fachadas y la calidad de sus instalaciones. En una ciudad formada todavía por numerosas casas estrechas y mal ventiladas, las Casas de Cordero ofrecían viviendas amplias, comercios en la planta baja y una distribución mucho más moderna.
 
-Su construcción se adelantó más de una década a la [gran reforma de la Puerta del Sol](/es/historia/). Cuando comenzaron las demoliciones de 1857, el inmueble fue conservado y se convirtió en uno de los límites del nuevo espacio. Junto con la Real [Casa de Correos](/es/casa-de-correos/), permite reconocer una etapa anterior a la plaza que vemos actualmente.
+Su construcción se adelantó más de una década a la [gran reforma de la Puerta del Sol](/es/gran-reforma/). Cuando comenzaron las demoliciones de 1857, el inmueble fue conservado y se convirtió en uno de los límites del nuevo espacio. Junto con la Real [Casa de Correos](/es/casa-de-correos/), permite reconocer una etapa anterior a la plaza que vemos actualmente.
 
 ## La Fonda de la Vizcaína
 
