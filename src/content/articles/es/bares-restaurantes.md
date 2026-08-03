@@ -1,6 +1,7 @@
 ---
 title: "Bares y restaurantes en la Puerta del Sol"
-description: "Los bares y restaurantes de la Puerta del Sol: El Mirador de Sol, única terraza con vistas a la plaza, y las tabernas clásicas de Madrid."
+description: "Los bares y restaurantes históricos de la Puerta del Sol y su entorno. El único restaurante con vistas directas a la plaza es El Mirador de Sol; conoce también las tabernas clásicas y las terrazas del centro de Madrid."
+metaDescription: "Los bares y restaurantes de la Puerta del Sol: El Mirador de Sol, única terraza con vistas a la plaza, y las tabernas clásicas de Madrid."
 lang: "es"
 slug: "bares-restaurantes"
 translationKey: "bares-restaurantes"

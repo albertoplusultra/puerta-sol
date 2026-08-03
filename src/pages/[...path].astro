@@ -157,8 +157,11 @@ if (props.kind === "home") {
   ogImageAlt = st.title;
 } else {
   const { entry } = props;
-  title = entry.data.title;
-  description = entry.data.description;
+  // metaTitle/metaDescription son overrides solo para SEO (<title>, meta
+  // description, og/twitter): el H1 y el párrafo visibles siempre usan
+  // entry.data.title/description sin recortar.
+  title = entry.data.metaTitle ?? entry.data.title;
+  description = entry.data.metaDescription ?? entry.data.description;
   type = "article";
 
   const url = localizedPath(locale, entry.data.slug);

@@ -1,6 +1,7 @@
 ---
 title: "Dónde dormir cerca de la Puerta del Sol"
-description: "Alojarse junto a la Puerta del Sol te sitúa en el corazón de Madrid: ventajas del centro histórico y consejos para elegir alojamiento cerca del Km 0."
+description: "Alojarse junto a la Puerta del Sol te sitúa en el corazón de Madrid. Ventajas de dormir en el centro histórico y recomendaciones para elegir alojamiento a pocos metros del Km 0."
+metaDescription: "Alojarse junto a la Puerta del Sol te sitúa en el corazón de Madrid: ventajas del centro histórico y consejos para elegir alojamiento cerca del Km 0."
 lang: "es"
 slug: "donde-dormir"
 translationKey: "donde-dormir"

@@ -1,6 +1,7 @@
 ---
-title: "El templete de Antonio Palacios en Sol"
+title: "La estación de Sol y el templete de Antonio Palacios"
 description: "Historia de la estación de Sol desde la inauguración del Metro en 1919: el templete de Antonio Palacios, las tres líneas, Cercanías y la desaparecida ballena."
+metaTitle: "El templete de Antonio Palacios en Sol"
 lang: "es"
 slug: "estacion-sol-templete"
 translationKey: "estacion-sol-templete"

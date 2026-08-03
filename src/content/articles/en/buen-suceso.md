@@ -1,6 +1,8 @@
 ---
-title: "Church and Hospital of the Buen Suceso"
-description: "The church and hospital of the Buen Suceso occupied the eastern end of Puerta del Sol for three centuries, until its demolition in 1854."
+title: "The Church and Hospital of the Buen Suceso"
+description: "For more than three centuries, the eastern end of Puerta del Sol was occupied by the church and hospital of the Buen Suceso. Its history, the 2nd of May 1808, its demolition in 1854 and the remains preserved in the Cercanías station."
+metaTitle: "Church and Hospital of the Buen Suceso"
+metaDescription: "The church and hospital of the Buen Suceso occupied the eastern end of Puerta del Sol for three centuries, until its demolition in 1854."
 lang: "en"
 slug: "buen-suceso"
 translationKey: "buen-suceso"

@@ -1,6 +1,8 @@
 ---
-title: "San Felipe el Real, Madrid's gossip mill"
-description: "The history of the vanished convent of San Felipe el Real and its famous steps, the Mentidero de la Villa, Madrid's great hub of news and rumor."
+title: "San Felipe el Real, the gossip mill of Madrid"
+description: "The history of the vanished convent of San Felipe el Real and its famous steps, known as the Mentidero de la Villa for being Madrid's great hub of news and rumor."
+metaTitle: "San Felipe el Real, Madrid's gossip mill"
+metaDescription: "The history of the vanished convent of San Felipe el Real and its famous steps, the Mentidero de la Villa, Madrid's great hub of news and rumor."
 lang: "en"
 slug: "san-felipe-el-real"
 translationKey: "san-felipe-el-real"

@@ -1,6 +1,7 @@
 ---
 title: "What to See in the Puerta del Sol"
-description: "A walk through the nine essential sights of Puerta del Sol: Kilometre Zero, the Casa de Correos, the clock, Charles III and the Mariblanca."
+description: "A walk through the nine essential sights of the Puerta del Sol: Kilometre Zero, the Casa de Correos, the clock, Charles III, the Mariblanca, the Bear and the Strawberry Tree, the Hotel de París, Tío Pepe and La Fonda."
+metaDescription: "A walk through the nine essential sights of Puerta del Sol: Kilometre Zero, the Casa de Correos, the clock, Charles III and the Mariblanca."
 lang: "en"
 slug: "what-to-see"
 translationKey: "que-ver"

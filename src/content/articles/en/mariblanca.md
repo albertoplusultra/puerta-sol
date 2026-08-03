@@ -1,6 +1,7 @@
 ---
 title: "La Mariblanca"
-description: "La Mariblanca arrived in Puerta del Sol in 1630, long before the Bear and the Strawberry Tree: the Venus statue, the Fountain of the Harpies and its journeys."
+description: "La Mariblanca arrived in Puerta del Sol in 1630, more than three centuries before the Bear and the Strawberry Tree. The story of the Venus statue, the Fountain of the Harpies and its journeys around Madrid."
+metaDescription: "La Mariblanca arrived in Puerta del Sol in 1630, long before the Bear and the Strawberry Tree: the Venus statue, the Fountain of the Harpies and its journeys."
 lang: "en"
 slug: "mariblanca"
 translationKey: "mariblanca"

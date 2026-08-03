@@ -1,6 +1,7 @@
 ---
 title: "Getting to the Puerta del Sol"
-description: "How to get to Madrid's Puerta del Sol: Metro Sol (lines 1, 2 and 3), Cercanías trains, EMT buses, on foot and from the airport."
+description: "How to get to Madrid's Puerta del Sol: Metro Sol (lines 1, 2 and 3), Cercanías trains, EMT buses, on foot and from the airport. All the transport lines and practical tips."
+metaDescription: "How to get to Madrid's Puerta del Sol: Metro Sol (lines 1, 2 and 3), Cercanías trains, EMT buses, on foot and from the airport."
 lang: "en"
 slug: "transport"
 translationKey: "transporte"

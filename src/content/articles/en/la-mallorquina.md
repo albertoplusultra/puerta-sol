@@ -1,6 +1,8 @@
 ---
-title: "La Mallorquina pastry shop since 1894"
-description: "The history of La Mallorquina, the Puerta del Sol pastry shop founded in 1894: its Mallorcan partners, the ensaimadas and its historic upstairs salon."
+title: "La Mallorquina, a pastry shop in Sol since 1894"
+description: "The history of La Mallorquina, the Puerta del Sol pastry shop founded in 1894: its Mallorcan partners, the ensaimadas, the hot chocolate, the napolitanas and its historic upstairs salon."
+metaTitle: "La Mallorquina pastry shop since 1894"
+metaDescription: "The history of La Mallorquina, the Puerta del Sol pastry shop founded in 1894: its Mallorcan partners, the ensaimadas and its historic upstairs salon."
 lang: "en"
 slug: "la-mallorquina"
 translationKey: "la-mallorquina"

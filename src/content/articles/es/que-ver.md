@@ -1,6 +1,7 @@
 ---
 title: "Qué ver en la Puerta del Sol"
-description: "Recorrido por los nueve lugares imprescindibles de la Puerta del Sol: Kilómetro Cero, Casa de Correos, el reloj, Carlos III y la Mariblanca."
+description: "Recorrido por los nueve lugares imprescindibles de la Puerta del Sol: Kilómetro Cero, Casa de Correos, reloj, Carlos III, Mariblanca, Oso y Madroño, Hotel de París, Tío Pepe y La Fonda."
+metaDescription: "Recorrido por los nueve lugares imprescindibles de la Puerta del Sol: Kilómetro Cero, Casa de Correos, el reloj, Carlos III y la Mariblanca."
 lang: "es"
 slug: "que-ver"
 translationKey: "que-ver"

@@ -1,6 +1,7 @@
 ---
 title: "El Kilómetro Cero"
-description: "La placa del Kilómetro Cero, frente a la Real Casa de Correos, marca el origen de las seis carreteras radiales de España. Su historia desde 1856."
+description: "La placa del Kilómetro Cero, frente a la Real Casa de Correos en la Puerta del Sol, marca el origen histórico de las seis carreteras radiales de España. Su historia desde 1856 y la rosa de los vientos actual."
+metaDescription: "La placa del Kilómetro Cero, frente a la Real Casa de Correos, marca el origen de las seis carreteras radiales de España. Su historia desde 1856."
 lang: "es"
 slug: "kilometro-cero"
 translationKey: "kilometro-cero"

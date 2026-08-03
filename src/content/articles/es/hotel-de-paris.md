@@ -1,6 +1,7 @@
 ---
 title: "El antiguo Hotel de París"
-description: "El edificio de la tienda de Apple fue durante 142 años el Hotel de París. Su historia: de Manet al Café de la Montaña, Valle-Inclán y el cartel de Tío Pepe."
+description: "El edificio que hoy alberga la tienda de Apple fue durante 142 años el Hotel de París. Su historia: del Buen Suceso a Manet, el Café de la Montaña, Valle-Inclán y el cartel de Tío Pepe."
+metaDescription: "El edificio de la tienda de Apple fue durante 142 años el Hotel de París. Su historia: de Manet al Café de la Montaña, Valle-Inclán y el cartel de Tío Pepe."
 lang: "es"
 slug: "hotel-de-paris"
 translationKey: "hotel-de-paris"

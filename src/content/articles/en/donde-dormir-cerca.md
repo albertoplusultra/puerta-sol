@@ -1,6 +1,7 @@
 ---
 title: "Where to stay near the Puerta del Sol"
-description: "Staying beside the Puerta del Sol puts you in the heart of Madrid: the advantages of the historic center and tips for choosing accommodation near Km 0."
+description: "Staying beside the Puerta del Sol puts you in the heart of Madrid. The advantages of sleeping in the historic center and tips for choosing accommodation just meters from Km 0."
+metaDescription: "Staying beside the Puerta del Sol puts you in the heart of Madrid: the advantages of the historic center and tips for choosing accommodation near Km 0."
 lang: "en"
 slug: "where-to-stay"
 translationKey: "donde-dormir"

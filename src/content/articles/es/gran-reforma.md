@@ -1,6 +1,7 @@
 ---
-title: "La reforma que creó la Puerta del Sol"
+title: "La gran reforma que creó la Puerta del Sol"
 description: "La reforma de 1857-1862 que creó la Puerta del Sol actual: los proyectos, los derribos, el arco de edificios de Lucio del Valle y el coste de la nueva plaza."
+metaTitle: "La reforma que creó la Puerta del Sol"
 lang: "es"
 slug: "gran-reforma"
 translationKey: "gran-reforma"

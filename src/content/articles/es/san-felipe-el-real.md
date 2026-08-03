@@ -1,6 +1,8 @@
 ---
-title: "San Felipe el Real, mentidero de Madrid"
-description: "Historia del desaparecido convento de San Felipe el Real y sus famosas gradas, el Mentidero de la Villa, gran centro de noticias y rumores de Madrid."
+title: "San Felipe el Real, el mentidero de Madrid"
+description: "Historia del desaparecido convento de San Felipe el Real y de sus famosas gradas, conocidas como el Mentidero de la Villa por ser el gran centro de noticias y rumores de Madrid."
+metaTitle: "San Felipe el Real, mentidero de Madrid"
+metaDescription: "Historia del desaparecido convento de San Felipe el Real y sus famosas gradas, el Mentidero de la Villa, gran centro de noticias y rumores de Madrid."
 lang: "es"
 slug: "san-felipe-el-real"
 translationKey: "san-felipe-el-real"

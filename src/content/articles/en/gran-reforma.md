@@ -1,6 +1,8 @@
 ---
-title: "The reform that created Puerta del Sol"
-description: "The 1857-1862 renovation that created today's Puerta del Sol: competing designs, demolitions and Lucio del Valle's arc of buildings."
+title: "The great renovation that created the Puerta del Sol"
+description: "The 1857-1862 renovation that created today's Puerta del Sol: the competing designs, the demolitions, Lucio del Valle's arc of buildings and the cost of the new square."
+metaTitle: "The reform that created Puerta del Sol"
+metaDescription: "The 1857-1862 renovation that created today's Puerta del Sol: competing designs, demolitions and Lucio del Valle's arc of buildings."
 lang: "en"
 slug: "great-renovation"
 translationKey: "gran-reforma"

@@ -1,6 +1,7 @@
 ---
 title: "The fountains of the Puerta del Sol"
-description: "History of the fountains of Puerta del Sol: the Mariblanca, the Canal de Isabel II fountain, 1951 and 1986, and today's Charles III fountain."
+description: "History of the fountains of the Puerta del Sol: the Mariblanca, the Canal de Isabel II fountain, the fountains of 1951 and 1986, and the current Charles III fountain."
+metaDescription: "History of the fountains of Puerta del Sol: the Mariblanca, the Canal de Isabel II fountain, 1951 and 1986, and today's Charles III fountain."
 lang: "en"
 slug: "puerta-del-sol-fountains"
 translationKey: "fuentes-puerta-del-sol"

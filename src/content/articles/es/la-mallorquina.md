@@ -1,6 +1,8 @@
 ---
-title: "Pastelería La Mallorquina desde 1894"
-description: "Historia de La Mallorquina, la pastelería de la Puerta del Sol fundada en 1894: sus socios mallorquines, las ensaimadas y su histórico salón."
+title: "La Mallorquina, una pastelería en Sol desde 1894"
+description: "Historia de La Mallorquina, la pastelería de la Puerta del Sol fundada en 1894: sus socios mallorquines, las ensaimadas, el chocolate, las napolitanas y su histórico salón."
+metaTitle: "Pastelería La Mallorquina desde 1894"
+metaDescription: "Historia de La Mallorquina, la pastelería de la Puerta del Sol fundada en 1894: sus socios mallorquines, las ensaimadas y su histórico salón."
 lang: "es"
 slug: "la-mallorquina"
 translationKey: "la-mallorquina"

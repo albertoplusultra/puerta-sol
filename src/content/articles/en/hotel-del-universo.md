@@ -1,6 +1,7 @@
 ---
-title: "Hotel del Universo and café of mirrors"
+title: "The Hotel del Universo and the café of mirrors"
 description: "The history of the vanished Hotel del Universo and the Café Universal in the Puerta del Sol, known as the café of mirrors and frequented by Benito Pérez Galdós."
+metaTitle: "Hotel del Universo and café of mirrors"
 lang: "en"
 slug: "hotel-del-universo"
 translationKey: "hotel-del-universo"

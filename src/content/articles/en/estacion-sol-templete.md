@@ -1,6 +1,8 @@
 ---
-title: "The Antonio Palacios pavilion at Sol"
-description: "The history of Sol station since 1919: Antonio Palacios's entrance pavilion, the three Metro lines, Cercanías and the vanished whale."
+title: "Sol station and the pavilion of Antonio Palacios"
+description: "The history of Sol station since the Metro's inauguration in 1919: Antonio Palacios's entrance pavilion, the three lines, the Cercanías commuter rail and the vanished whale."
+metaTitle: "The Antonio Palacios pavilion at Sol"
+metaDescription: "The history of Sol station since 1919: Antonio Palacios's entrance pavilion, the three Metro lines, Cercanías and the vanished whale."
 lang: "en"
 slug: "sol-station-templete"
 translationKey: "estacion-sol-templete"

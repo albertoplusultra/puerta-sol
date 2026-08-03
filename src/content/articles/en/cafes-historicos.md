@@ -1,6 +1,7 @@
 ---
 title: "The Cafés of Puerta del Sol"
-description: "In the 19th century, Puerta del Sol was a grand salon of cafés: the Café Universal, the Café de la Montaña and the cafés of La Fonda, hubs of talk."
+description: "During the 19th century, Puerta del Sol was a grand salon filled with cafés. The story of the Café Universal, the Café de la Montaña and the cafés of La Fonda — places of tertulia, press and politics."
+metaDescription: "In the 19th century, Puerta del Sol was a grand salon of cafés: the Café Universal, the Café de la Montaña and the cafés of La Fonda, hubs of talk."
 lang: "en"
 slug: "historic-cafes"
 translationKey: "cafes-historicos"

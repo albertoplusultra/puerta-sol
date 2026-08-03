@@ -1,6 +1,7 @@
 ---
 title: "The Real Casa de Correos"
-description: "History of the Real Casa de Correos, the oldest building in Puerta del Sol: from 18th-century post office to seat of the Presidency of the Community of Madrid."
+description: "History of the Real Casa de Correos, the oldest building in the Puerta del Sol: from 18th-century post office to Ministry of the Interior, Directorate-General of Security and seat of the Presidency of the Community of Madrid."
+metaDescription: "History of the Real Casa de Correos, the oldest building in Puerta del Sol: from 18th-century post office to seat of the Presidency of the Community of Madrid."
 lang: "en"
 slug: "casa-de-correos"
 translationKey: "reloj"

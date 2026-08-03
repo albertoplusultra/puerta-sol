@@ -1,6 +1,8 @@
 ---
-title: "Losada Clock and New Year's Eve Chimes"
-description: "History of the Losada clock, crowning the Real Casa de Correos since 1866, and the New Year's Eve chimes: the origin of the twelve grapes."
+title: "The Losada Clock and the New Year's Eve Chimes"
+description: "History of the Losada clock, the mechanism that has crowned the Real Casa de Correos since 1866, and of the Puerta del Sol's New Year's Eve chimes: the origin of the twelve grapes and their broadcast on radio and television."
+metaTitle: "Losada Clock and New Year's Eve Chimes"
+metaDescription: "History of the Losada clock, crowning the Real Casa de Correos since 1866, and the New Year's Eve chimes: the origin of the twelve grapes."
 lang: "en"
 slug: "new-years-eve-chimes"
 translationKey: "campanadas"

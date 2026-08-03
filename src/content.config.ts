@@ -26,6 +26,12 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    // Overrides opcionales solo para SEO (<title>, <meta description>, og/twitter):
+    // el título y la descripción "visibles" (H1, párrafo, tarjetas) son a veces
+    // más largos de lo recomendable para buscadores. Si no se definen, se usan
+    // title/description tal cual.
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
     lang: localeEnum,
     slug: z.string(),
     translationKey: z.string(),

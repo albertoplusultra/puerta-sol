@@ -1,6 +1,7 @@
 ---
 title: "La Real Casa de Correos"
-description: "Historia de la Real Casa de Correos, el edificio más antiguo de la Puerta del Sol: de oficina postal del siglo XVIII a sede de la Presidencia de Madrid."
+description: "Historia de la Real Casa de Correos, el edificio más antiguo de la Puerta del Sol: de oficina postal del siglo XVIII a Ministerio de la Gobernación, Dirección General de Seguridad y sede de la Presidencia de la Comunidad de Madrid."
+metaDescription: "Historia de la Real Casa de Correos, el edificio más antiguo de la Puerta del Sol: de oficina postal del siglo XVIII a sede de la Presidencia de Madrid."
 lang: "es"
 slug: "casa-de-correos"
 translationKey: "reloj"
