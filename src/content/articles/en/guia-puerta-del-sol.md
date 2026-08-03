@@ -1,6 +1,6 @@
 ---
 title: "Guide to Madrid's Puerta del Sol"
-description: "Everything about the Puerta del Sol: its history, its monuments (Km 0, the Bear and the Strawberry Tree, the New Year's Eve clock), how to get there and what to see around Madrid's most emblematic square."
+description: "Everything about Puerta del Sol: its history, its monuments (Km 0, the Bear and the Strawberry Tree), how to get there and what to see around it."
 lang: "en"
 slug: "guide"
 translationKey: "guia"

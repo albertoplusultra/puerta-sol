@@ -1,5 +1,5 @@
 ---
-title: "Casa Labra, una taberna junto a Sol desde 1860"
+title: "Casa Labra, taberna de Sol desde 1860"
 description: "Historia de Casa Labra, la taberna centenaria junto a la Puerta del Sol conocida por el bacalao, las croquetas y la reunión fundacional del PSOE en 1879."
 lang: "es"
 slug: "casa-labra"

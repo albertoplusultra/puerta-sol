@@ -110,14 +110,9 @@ export const SECTIONS: SectionDef[] = [
 ];
 
 const byId = new Map(SECTIONS.map((s) => [s.id, s]));
-const bySlug = new Map(SECTIONS.map((s) => [s.slug, s]));
 
 export function getSection(id: SectionId): SectionDef | undefined {
   return byId.get(id);
-}
-
-export function getSectionBySlug(slug: string): SectionDef | undefined {
-  return bySlug.get(slug);
 }
 
 /** Texto de la sección en el idioma dado, con fallback a español. */

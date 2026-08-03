@@ -1,6 +1,6 @@
 ---
 title: "El convento de la Victoria"
-description: "Historia del desaparecido convento de Nuestra Señora de la Victoria, que ocupó durante casi tres siglos una parte de la antigua Puerta del Sol hasta su demolición."
+description: "Historia del desaparecido convento de Nuestra Señora de la Victoria: casi tres siglos en la antigua Puerta del Sol hasta su demolición."
 lang: "es"
 slug: "convento-de-la-victoria"
 translationKey: "convento-de-la-victoria"

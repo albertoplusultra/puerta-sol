@@ -1,6 +1,6 @@
 ---
-title: "Charles III and His Statue in Puerta del Sol"
-description: "The equestrian statue of Charles III presides over the center of Puerta del Sol, yet it is one of the square's most recent features: it arrived in 1994 and was moved to the new fountain in 2023. The story of the king Madrid called 'its best mayor' and of his monument."
+title: "The statue of Charles III in Sol"
+description: "The equestrian statue of Charles III has presided over Puerta del Sol since 1994: the king Madrid called 'its best mayor' and his 2023 move to the new fountain."
 lang: "en"
 slug: "charles-iii-statue"
 translationKey: "estatua-carlos-iii"

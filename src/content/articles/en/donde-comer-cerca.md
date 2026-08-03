@@ -1,6 +1,6 @@
 ---
 title: "Where to eat near the Puerta del Sol"
-description: "A guide to eating well beside the Puerta del Sol: tapas, Madrid cuisine and recommendations for enjoying the gastronomy of central Madrid, a step away from Km 0."
+description: "A guide to eating well beside the Puerta del Sol: tapas, Madrid cuisine and recommendations for the best gastronomy in central Madrid."
 lang: "en"
 slug: "where-to-eat"
 translationKey: "donde-comer"

@@ -1,6 +1,6 @@
 ---
 title: "Transporte a la Puerta del Sol"
-description: "Cómo moverse hasta la Puerta del Sol de Madrid: Metro Sol (líneas 1, 2 y 3), Cercanías, autobuses de la EMT, a pie y desde el aeropuerto. Todas las líneas de transporte y consejos prácticos."
+description: "Cómo moverse hasta la Puerta del Sol de Madrid: Metro Sol (líneas 1, 2 y 3), Cercanías, autobuses EMT, a pie y desde el aeropuerto."
 lang: "es"
 slug: "transporte"
 translationKey: "transporte"

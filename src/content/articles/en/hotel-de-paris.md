@@ -1,6 +1,6 @@
 ---
 title: "The Old Hotel de París"
-description: "The building that today houses the Apple Store was the Hotel de París for 142 years. Its story: from the Buen Suceso to Manet, the Café de la Montaña, Valle-Inclán and the Tío Pepe sign."
+description: "The building that now houses the Apple Store was the Hotel de París for 142 years: from Manet to the Café de la Montaña, Valle-Inclán and the Tío Pepe sign."
 lang: "en"
 slug: "hotel-de-paris"
 translationKey: "hotel-de-paris"

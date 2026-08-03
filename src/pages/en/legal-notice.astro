@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalPage from "../../components/LegalPage.astro";
+import { localizedPath } from "../../i18n/utils";
+
+const alternates = {
+  es: localizedPath("es", "aviso-legal"),
+  en: localizedPath("en", "legal-notice"),
+};
+---
+
+<BaseLayout
+  title="Legal notice"
+  description="Identification details of the owner of PuertaDelSol.com and the terms of access and use of the website, under Spanish law."
+  locale="en"
+  alternates={alternates}
+>
+  <LegalPage locale="en" title="Legal notice" updated="Last updated: August 2026">
+    <h2>1. Identification details</h2>
+    <p>
+      In compliance with Article 10 of Spanish Law 34/2002, of 11 July, on
+      Information Society Services and Electronic Commerce (LSSI-CE), the
+      identification details of the owner of this website are as follows:
+    </p>
+    <ul>
+      <li><strong>Company name:</strong> Plus Ultra Properties SL</li>
+      <li><strong>Tax ID (CIF):</strong> B86125986</li>
+      <li><strong>Registered address:</strong> Puerta del Sol, 11, 28013 Madrid, Spain</li>
+      <li><strong>Phone:</strong> +34 919 891 469</li>
+      <li>
+        <strong>Email:</strong>{" "}
+        <a href="mailto:recepcion@lafondadelosprincipes.com">
+          recepcion@lafondadelosprincipes.com
+        </a>
+      </li>
+      <li><strong>Website:</strong> www.puertadelsol.com</li>
+    </ul>
+
+    <h2>2. Purpose</h2>
+    <p>
+      This Legal Notice governs the use of the website{" "}
+      <strong>www.puertadelsol.com</strong> (the Website), owned by Plus
+      Ultra Properties SL (the Owner).
+    </p>
+    <p>
+      The Website is an independent, informational guide to Madrid's Puerta
+      del Sol: its history, its monuments and buildings, and what to see
+      nearby. It is not a booking or sales platform; where it links to
+      businesses such as accommodation, restaurants or activities, it does so
+      towards third-party websites where the transaction itself takes place.
+    </p>
+    <p>
+      Using the Website grants the condition of user (the User) and implies
+      acceptance of all the terms included in this Legal Notice.
+    </p>
+
+    <h2>3. Terms of access and use</h2>
+    <p>
+      Access to the Website is free and does not require registration or
+      subscription. The User agrees to make appropriate use of the Website's
+      content and services and, in particular, not to use them to:
+    </p>
+    <ul>
+      <li>
+        Spread content that is unlawful, violent, racist, xenophobic,
+        offensive, or contrary to public order.
+      </li>
+      <li>
+        Introduce computer viruses or carry out actions likely to alter,
+        damage or interrupt the operation of the Website.
+      </li>
+      <li>
+        Attempt to access restricted areas of the Owner's or third parties'
+        computer systems.
+      </li>
+      <li>
+        Infringe the intellectual or industrial property rights of the Owner
+        or third parties.
+      </li>
+    </ul>
+
+    <h2>4. Intellectual and industrial property</h2>
+    <p>
+      The texts, structure, design and code of the Website are the property
+      of the Owner. No rights of exploitation over them are transferred to
+      the User beyond what is strictly necessary for proper use of the
+      Website.
+    </p>
+    <p>
+      Some photographs come from Wikimedia Commons and other sources under
+      Creative Commons or public-domain licences; in those cases the author
+      is credited and the applicable licence is indicated next to the image
+      or in the corresponding caption. All other photographs are the
+      property of the Owner or are used with the express authorisation of
+      third parties.
+    </p>
+
+    <h2>5. Links to third-party websites</h2>
+    <p>
+      The Website includes links to third-party pages, such as accommodation,
+      restaurants or activity and tour platforms. These links are provided
+      for informational purposes only; the Owner does not control and is not
+      responsible for the content, availability or privacy practices of
+      those sites. Some of these links may generate a commission for the
+      Owner if the User books a service through them, at no extra cost to
+      the User.
+    </p>
+
+    <h2>6. Disclaimer of warranties and liability</h2>
+    <p>
+      The Owner does not guarantee continuous availability of the Website or
+      the absence of errors in its content, although reasonable efforts are
+      made to keep it up to date and accurate. To the extent permitted by
+      law, the Owner excludes any liability for damages arising from lack of
+      availability or continuity of the Website, or from the presence of
+      viruses or other harmful elements.
+    </p>
+
+    <h2>7. Governing law and jurisdiction</h2>
+    <p>
+      This Legal Notice is governed by Spanish law. For any dispute related
+      to the Website, the Owner and the User, expressly waiving any other
+      applicable jurisdiction, submit to the Courts of Madrid, Spain.
+    </p>
+  </LegalPage>
+</BaseLayout>

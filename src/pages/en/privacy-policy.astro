@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalPage from "../../components/LegalPage.astro";
+import { localizedPath } from "../../i18n/utils";
+
+const alternates = {
+  es: localizedPath("es", "privacidad"),
+  en: localizedPath("en", "privacy-policy"),
+};
+---
+
+<BaseLayout
+  title="Privacy policy"
+  description="How PuertaDelSol.com handles visitor data: no cookies, anonymous analytics only, in line with the GDPR."
+  locale="en"
+  alternates={alternates}
+>
+  <LegalPage locale="en" title="Privacy policy" updated="Last updated: August 2026">
+    <h2>1. Data controller</h2>
+    <p>
+      In accordance with Regulation (EU) 2016/679 of the European Parliament
+      and of the Council of 27 April 2016 (GDPR) and Spanish Organic Law
+      3/2018 on Personal Data Protection (LOPDGDD), please note the
+      following:
+    </p>
+    <ul>
+      <li><strong>Controller:</strong> Plus Ultra Properties SL</li>
+      <li><strong>Tax ID (CIF):</strong> B86125986</li>
+      <li><strong>Address:</strong> Puerta del Sol, 11, 28013 Madrid, Spain</li>
+      <li><strong>Phone:</strong> +34 919 891 469</li>
+      <li>
+        <strong>Email:</strong>{" "}
+        <a href="mailto:recepcion@lafondadelosprincipes.com">
+          recepcion@lafondadelosprincipes.com
+        </a>
+      </li>
+    </ul>
+
+    <h2>2. This website does not use cookies</h2>
+    <p>
+      PuertaDelSol.com does not set first-party or third-party cookies, nor
+      does it use equivalent local storage techniques (such as localStorage)
+      to identify or track visitors. Because of this, under the EU ePrivacy
+      Directive (implemented in Spain via Article 22.2 LSSI-CE), no cookie
+      consent banner is required. The map embedded on some pages uses
+      OpenStreetMap, a service that likewise does not use cookies.
+    </p>
+    <p>
+      Should any technology requiring cookies be introduced in the future
+      (for example, third-party advertising), the User's prior consent would
+      be requested through the corresponding notice, and this policy would
+      be updated accordingly.
+    </p>
+
+    <h2>3. Data processed and purpose</h2>
+    <p>
+      This site has no contact forms, user accounts or booking system, so no
+      personal data is voluntarily collected from the User. The only data
+      processed is the following:
+    </p>
+    <ul>
+      <li>
+        <strong>Server technical logs:</strong> our hosting provider (Vercel
+        Inc.) transiently processes the IP address and HTTP request data
+        necessary to serve pages, for security and technical operation
+        purposes.
+      </li>
+      <li>
+        <strong>Aggregated, anonymous usage analytics:</strong> we use
+        Vercel Web Analytics and Vercel Speed Insights to understand, in
+        aggregate, which pages are most visited and how the site performs.
+        Both tools identify visits using a hash generated from the request,
+        which is discarded after 24 hours; they do not identify any
+        individual visitor or combine data across different websites.
+      </li>
+    </ul>
+
+    <h2>4. Legal basis</h2>
+    <p>
+      This processing is based on the controller's legitimate interest
+      (Article 6(1)(f) GDPR) in keeping the website operational, secure, and
+      continuously improving its performance and content, without a
+      significant impact on the User's privacy since no identifying data is
+      collected.
+    </p>
+
+    <h2>5. Data sharing and processors</h2>
+    <p>
+      The technical data described above is hosted and processed by Vercel
+      Inc., which acts as a data processor and relies on appropriate
+      safeguards for international data transfers (EU Standard Contractual
+      Clauses). We do not share data with third parties for commercial or
+      advertising purposes.
+    </p>
+    <p>
+      The Website contains links to third-party websites (accommodation,
+      restaurants, activity platforms). Access to those sites is subject to
+      their own privacy policies, which are outside the control of this
+      controller.
+    </p>
+
+    <h2>6. Retention period</h2>
+    <p>
+      Analytics data is processed in aggregate and anonymous form; the
+      temporary identifier used by Vercel Web Analytics and Speed Insights is
+      automatically discarded after 24 hours. Server technical logs are kept
+      for the period strictly necessary for security purposes, in accordance
+      with our hosting provider's retention policy.
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>
+      Even though this site does not individually identify its visitors,
+      anyone has the right to access their personal data, rectify it,
+      request its erasure, object to its processing, or request its
+      restriction or portability. You can exercise these rights by writing
+      to{" "}
+      <a href="mailto:recepcion@lafondadelosprincipes.com">
+        recepcion@lafondadelosprincipes.com
+      </a>
+      , with the subject line "Data protection".
+    </p>
+    <p>
+      You also have the right to file a complaint with the Spanish Data
+      Protection Agency (AEPD, www.aepd.es) if you believe the processing of
+      your data breaches applicable law.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      This privacy policy may be updated to reflect legislative changes or
+      changes in how the Website operates. We recommend reviewing it
+      periodically.
+    </p>
+  </LegalPage>
+</BaseLayout>

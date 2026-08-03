@@ -1,6 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import type { Locale } from "../i18n/utils";
-import { locales } from "../i18n/utils";
 
 export type Article = CollectionEntry<"articles">;
 
@@ -18,14 +17,6 @@ export async function getArticlesByLocale(locale: Locale): Promise<Article[]> {
   return entries
     .filter((e) => e.data.lang === locale)
     .sort((a, b) => a.data.order - b.data.order);
-}
-
-export async function getArticle(
-  locale: Locale,
-  slug: string
-): Promise<Article | undefined> {
-  const entries = await all();
-  return entries.find((e) => e.data.lang === locale && e.data.slug === slug);
 }
 
 export async function getPillar(locale: Locale): Promise<Article | undefined> {
@@ -50,23 +41,6 @@ export async function getTranslationSlugs(
   return map;
 }
 
-export async function getCategories(
-  locale: Locale
-): Promise<Record<Article["data"]["category"], Article[]>> {
-  const entries = await getArticlesByLocale(locale);
-  const grouped = {
-    guide: [] as Article[],
-    attraction: [] as Article[],
-    around: [] as Article[],
-    food: [] as Article[],
-    experiences: [] as Article[],
-    practical: [] as Article[],
-    nearby: [] as Article[],
-  };
-  for (const e of entries) grouped[e.data.category].push(e);
-  return grouped;
-}
-
 /** Artículos relacionados (mismo idioma, excluyendo el actual y la pilar). */
 export async function getRelated(
   current: Article,
@@ -77,5 +51,3 @@ export async function getRelated(
     .filter((e) => e.id !== current.id && e.data.category !== "guide")
     .slice(0, limit);
 }
-
-export const supportedLocales = locales;

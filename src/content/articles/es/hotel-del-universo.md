@@ -1,6 +1,6 @@
 ---
-title: "El Hotel del Universo y el café de los espejos"
-description: "Historia del desaparecido Hotel del Universo y del Café Universal de la Puerta del Sol, conocido como el café de los espejos y frecuentado por Benito Pérez Galdós."
+title: "Hotel del Universo y el café de espejos"
+description: "Historia del desaparecido Hotel del Universo y del Café Universal de la Puerta del Sol, conocido como el café de los espejos y frecuentado por Galdós."
 lang: "es"
 slug: "hotel-del-universo"
 translationKey: "hotel-del-universo"

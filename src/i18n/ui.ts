@@ -41,6 +41,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Kilómetro Cero",
     "home.hero.alt": "Vista panorámica de la Puerta del Sol de Madrid con la Real Casa de Correos",
     "home.historia.alt": "La Puerta del Sol de Madrid en una fotografía antigua",
+    "footer.legal": "Aviso legal",
+    "footer.privacy": "Privacidad",
   },
   en: {
     "site.tagline": "Where Madrid begins.",
@@ -81,6 +83,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Kilometre Zero",
     "home.hero.alt": "Panoramic view of Madrid's Puerta del Sol with the Real Casa de Correos",
     "home.historia.alt": "Puerta del Sol in an old photograph",
+    "footer.legal": "Legal notice",
+    "footer.privacy": "Privacy policy",
   },
   fr: {
     "site.tagline": "Là où commence Madrid.",
@@ -121,6 +125,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Kilomètre zéro",
     "home.hero.alt": "Vue panoramique de la Puerta del Sol de Madrid avec la Real Casa de Correos",
     "home.historia.alt": "La Puerta del Sol sur une photographie ancienne",
+    "footer.legal": "Mentions légales",
+    "footer.privacy": "Confidentialité",
   },
   de: {
     "site.tagline": "Wo Madrid beginnt.",
@@ -161,6 +167,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Kilometer null",
     "home.hero.alt": "Panoramablick auf die Puerta del Sol in Madrid mit der Real Casa de Correos",
     "home.historia.alt": "Die Puerta del Sol auf einer alten Fotografie",
+    "footer.legal": "Impressum",
+    "footer.privacy": "Datenschutz",
   },
   it: {
     "site.tagline": "Dove comincia Madrid.",
@@ -201,6 +209,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Chilometro zero",
     "home.hero.alt": "Vista panoramica della Puerta del Sol di Madrid con la Real Casa de Correos",
     "home.historia.alt": "La Puerta del Sol in una fotografia d'epoca",
+    "footer.legal": "Note legali",
+    "footer.privacy": "Privacy",
   },
   pt: {
     "site.tagline": "Onde Madrid começa.",
@@ -241,6 +251,8 @@ export const ui = {
     "home.hero.kicker": "Madrid · Quilómetro zero",
     "home.hero.alt": "Vista panorâmica da Puerta del Sol de Madrid com a Real Casa de Correos",
     "home.historia.alt": "A Puerta del Sol numa fotografia antiga",
+    "footer.legal": "Aviso legal",
+    "footer.privacy": "Privacidade",
   },
 } as const;
 

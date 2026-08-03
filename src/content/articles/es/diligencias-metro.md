@@ -1,6 +1,6 @@
 ---
 title: "De las diligencias al Metro"
-description: "Historia del transporte en la Puerta del Sol: diligencias, coches de alquiler, ferrocarril, tranvías, Metro, autobuses y Cercanías, desde el antiguo cruce de caminos hasta la plaza peatonal."
+description: "Historia del transporte en la Puerta del Sol: diligencias, tranvías, Metro, autobuses y Cercanías, del antiguo cruce de caminos a la plaza peatonal."
 lang: "es"
 slug: "diligencias-metro"
 translationKey: "diligencias-metro"

@@ -1,6 +1,6 @@
 ---
 title: "La iglesia y el hospital del Buen Suceso"
-description: "Durante más de tres siglos, el extremo oriental de la Puerta del Sol estuvo ocupado por la iglesia y el hospital del Buen Suceso. Su historia, el 2 de mayo de 1808, su derribo en 1854 y los restos conservados en Cercanías."
+description: "La iglesia y el hospital del Buen Suceso ocuparon el extremo oriental de la Puerta del Sol durante tres siglos, hasta su derribo en 1854."
 lang: "es"
 slug: "buen-suceso"
 translationKey: "buen-suceso"

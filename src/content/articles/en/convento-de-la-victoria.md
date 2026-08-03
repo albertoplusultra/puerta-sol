@@ -1,6 +1,6 @@
 ---
 title: "The Convento de la Victoria"
-description: "The history of the vanished convent of Nuestra Señora de la Victoria, which occupied part of the old Puerta del Sol for nearly three centuries until its demolition."
+description: "The vanished convent of Nuestra Señora de la Victoria occupied part of the old Puerta del Sol for nearly three centuries, until its demolition."
 lang: "en"
 slug: "convento-de-la-victoria"
 translationKey: "convento-de-la-victoria"

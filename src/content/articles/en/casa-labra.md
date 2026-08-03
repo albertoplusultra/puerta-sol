@@ -1,5 +1,5 @@
 ---
-title: "Casa Labra, a tavern beside Sol since 1860"
+title: "Casa Labra, a tavern by Sol since 1860"
 description: "History of Casa Labra, the century-old tavern beside the Puerta del Sol known for its cod, its croquettes and the 1879 founding meeting of the PSOE."
 lang: "en"
 slug: "casa-labra"

@@ -1,6 +1,6 @@
 ---
 title: "Dónde comer cerca de la Puerta del Sol"
-description: "Guía para comer bien junto a la Puerta del Sol: tapas, cocina madrileña y recomendaciones para disfrutar de la gastronomía en el centro de Madrid, a un paso del Km 0."
+description: "Guía para comer bien junto a la Puerta del Sol: tapas, cocina madrileña y recomendaciones para disfrutar de la gastronomía en el centro de Madrid."
 lang: "es"
 slug: "donde-comer"
 translationKey: "donde-comer"

@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import { SITE_URL, SITE_NAME } from "../config/site.mjs";
 import { getArticlesByLocale } from "../lib/content";
-import { localizedPath } from "../i18n/utils";
+import { localizedPath, activeLocales, labelFor, type Locale } from "../i18n/utils";
 
 const abs = (p: string) => new URL(p, SITE_URL).href;
 
@@ -19,29 +19,38 @@ function toPlain(md: string): string {
 }
 
 export const GET: APIRoute = async () => {
-  const es = await getArticlesByLocale("es");
+  const langLabel = activeLocales.map((l) => labelFor(l)).join(" e ");
 
   const parts = [
     `# ${SITE_NAME} — Contenido completo`,
     "",
-    "Guía informativa sobre la Puerta del Sol de Madrid. Contenido en español (versiones en EN, FR, DE, IT, PT disponibles en el sitio).",
+    `Guía informativa sobre la Puerta del Sol de Madrid. Este documento incluye el contenido completo en ${langLabel}.`,
     "",
   ];
 
-  for (const a of es) {
+  for (const locale of activeLocales as Locale[]) {
+    const articles = await getArticlesByLocale(locale);
     parts.push(
-      `\n\n=====================================================`,
-      `URL: ${abs(localizedPath("es", a.data.slug))}`,
-      `Título: ${a.data.title}`,
-      `Descripción: ${a.data.description}`,
-      `Actualizado: ${a.data.updated.toISOString().slice(0, 10)}`,
-      `=====================================================\n`,
-      toPlain(a.body ?? "")
+      `\n\n#####################################################`,
+      `# ${labelFor(locale).toUpperCase()} (${locale})`,
+      `#####################################################`
     );
-    if (a.data.faq.length) {
-      parts.push("\nPreguntas frecuentes:");
-      for (const f of a.data.faq) {
-        parts.push(`P: ${f.q}\nR: ${toPlain(f.a)}`);
+
+    for (const a of articles) {
+      parts.push(
+        `\n\n=====================================================`,
+        `URL: ${abs(localizedPath(locale, a.data.slug))}`,
+        `Título: ${a.data.title}`,
+        `Descripción: ${a.data.description}`,
+        `Actualizado: ${a.data.updated.toISOString().slice(0, 10)}`,
+        `=====================================================\n`,
+        toPlain(a.body ?? "")
+      );
+      if (a.data.faq.length) {
+        parts.push("\nPreguntas frecuentes:");
+        for (const f of a.data.faq) {
+          parts.push(`P: ${f.q}\nR: ${toPlain(f.a)}`);
+        }
       }
     }
   }

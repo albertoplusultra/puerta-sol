@@ -1,6 +1,6 @@
 ---
 title: "The Casas de Cordero and the Hotel Europa"
-description: "The history of the Casas de Cordero, one of Madrid's first great modern apartment blocks: Santiago Alonso Cordero, the Fonda de la Vizcaína and the Hotel Europa."
+description: "The history of the Casas de Cordero, one of Madrid's first modern apartment blocks: Santiago Alonso Cordero, the Fonda de la Vizcaína and the Hotel Europa."
 lang: "en"
 slug: "casas-de-cordero-hotel-europa"
 translationKey: "casas-de-cordero-hotel-europa"

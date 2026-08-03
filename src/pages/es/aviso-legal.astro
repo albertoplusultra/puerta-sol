@@ -1,0 +1,131 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalPage from "../../components/LegalPage.astro";
+import { localizedPath } from "../../i18n/utils";
+
+const alternates = {
+  es: localizedPath("es", "aviso-legal"),
+  en: localizedPath("en", "legal-notice"),
+};
+---
+
+<BaseLayout
+  title="Aviso legal"
+  description="Datos identificativos del titular de PuertaDelSol.com y condiciones de acceso y uso del sitio web, conforme a la LSSI-CE."
+  locale="es"
+  alternates={alternates}
+>
+  <LegalPage locale="es" title="Aviso legal" updated="Última actualización: agosto de 2026">
+    <h2>1. Datos identificativos</h2>
+    <p>
+      En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de
+      Servicios de la Sociedad de la Información y de Comercio Electrónico
+      (LSSI-CE), se informa de los datos identificativos del titular de este
+      sitio web:
+    </p>
+    <ul>
+      <li><strong>Denominación social:</strong> Plus Ultra Properties SL</li>
+      <li><strong>CIF:</strong> B86125986</li>
+      <li><strong>Domicilio:</strong> Puerta del Sol, 11, 28013 Madrid, España</li>
+      <li><strong>Teléfono:</strong> +34 919 891 469</li>
+      <li>
+        <strong>Correo electrónico:</strong>{" "}
+        <a href="mailto:recepcion@lafondadelosprincipes.com">
+          recepcion@lafondadelosprincipes.com
+        </a>
+      </li>
+      <li><strong>Sitio web:</strong> www.puertadelsol.com</li>
+    </ul>
+
+    <h2>2. Objeto</h2>
+    <p>
+      El presente Aviso Legal regula el uso del sitio web{" "}
+      <strong>www.puertadelsol.com</strong> (en adelante, el Sitio Web),
+      propiedad de Plus Ultra Properties SL (en adelante, el Titular).
+    </p>
+    <p>
+      El Sitio Web es una guía informativa e independiente sobre la Puerta
+      del Sol de Madrid: su historia, sus monumentos y edificios, y qué ver
+      alrededor. No es un canal de venta ni de reserva; cuando enlaza a
+      negocios como alojamientos, restaurantes o actividades, lo hace hacia
+      sitios web de terceros donde se gestiona la contratación.
+    </p>
+    <p>
+      La utilización del Sitio Web atribuye la condición de usuario (en
+      adelante, el Usuario) e implica la aceptación de todas las condiciones
+      incluidas en este Aviso Legal.
+    </p>
+
+    <h2>3. Condiciones de acceso y utilización</h2>
+    <p>
+      El acceso al Sitio Web es libre y gratuito, no requiere registro ni
+      suscripción. El Usuario se compromete a hacer un uso adecuado de los
+      contenidos y servicios del Sitio Web y, en particular, a no emplearlos
+      para:
+    </p>
+    <ul>
+      <li>
+        Difundir contenidos delictivos, violentos, racistas, xenófobos u
+        ofensivos, o contrarios a la ley o al orden público.
+      </li>
+      <li>
+        Introducir virus informáticos o realizar actuaciones susceptibles de
+        alterar, estropear o interrumpir el funcionamiento del Sitio Web.
+      </li>
+      <li>
+        Intentar acceder a áreas restringidas de los sistemas informáticos
+        del Titular o de terceros.
+      </li>
+      <li>
+        Vulnerar los derechos de propiedad intelectual o industrial del
+        Titular o de terceros.
+      </li>
+    </ul>
+
+    <h2>4. Propiedad intelectual e industrial</h2>
+    <p>
+      Los textos, la estructura, el diseño y el código del Sitio Web son
+      propiedad del Titular, sin que puedan entenderse cedidos al Usuario
+      ninguno de los derechos de explotación sobre los mismos más allá de lo
+      estrictamente necesario para el correcto uso del Sitio Web.
+    </p>
+    <p>
+      Algunas fotografías proceden de Wikimedia Commons y otras fuentes bajo
+      licencias Creative Commons o de dominio público; en ese caso se
+      atribuyen a su autor y se indica la licencia aplicable junto a la
+      imagen o en el pie de foto correspondiente. El resto de fotografías son
+      propiedad del Titular o se usan con autorización expresa de terceros.
+    </p>
+
+    <h2>5. Enlaces a terceros</h2>
+    <p>
+      El Sitio Web incluye enlaces a páginas de terceros, como alojamientos,
+      restaurantes o plataformas de actividades y tours. Estos enlaces se
+      ofrecen únicamente a título informativo; el Titular no controla ni se
+      hace responsable del contenido, la disponibilidad ni las políticas de
+      privacidad de dichos sitios. Algunos de estos enlaces pueden generar
+      una comisión al Titular si el Usuario contrata un servicio a través de
+      ellos, sin que esto suponga coste adicional alguno para el Usuario.
+    </p>
+
+    <h2>6. Exclusión de garantías y responsabilidad</h2>
+    <p>
+      El Titular no garantiza la disponibilidad continua del Sitio Web ni la
+      ausencia de errores en sus contenidos, si bien pone los medios
+      razonables para mantenerlos actualizados y libres de inexactitudes.
+      El Titular excluye, en la medida permitida por el ordenamiento
+      jurídico, cualquier responsabilidad por los daños y perjuicios que
+      puedan derivarse de la falta de disponibilidad o de continuidad del
+      funcionamiento del Sitio Web, o de la existencia de virus u otros
+      elementos dañinos.
+    </p>
+
+    <h2>7. Ley aplicable y jurisdicción</h2>
+    <p>
+      Este Aviso Legal se rige por la ley española. Para cualquier
+      controversia relacionada con el Sitio Web, el Titular y el Usuario, con
+      renuncia expresa a cualquier otro fuero que pudiera corresponderles, se
+      someten a los Juzgados y Tribunales de Madrid.
+    </p>
+  </LegalPage>
+</BaseLayout>

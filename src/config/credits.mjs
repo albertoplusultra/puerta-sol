@@ -15,13 +15,6 @@ export const IMAGE_CREDITS = {
     source:
       "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol_-_December_2024_-_Madrid_01.jpg",
   },
-  "sol-campanadas.jpg": {
-    author: "Javier Pérez Montes",
-    license: "CC BY-SA 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Navidad_-_Puerta_del_Sol_-_Madrid_-_01.jpg",
-  },
   "sol-hero-old.png": {
     author: "J. Laurent",
     license: "Dominio público",
@@ -72,20 +65,6 @@ export const IMAGE_CREDITS = {
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
     source: "https://commons.wikimedia.org/wiki/File:Kil%C3%B3metro_cero,_Madrid.JPG",
-  },
-  "sol-nochevieja.jpg": {
-    author: "Tinou Bao",
-    license: "CC BY 2.0",
-    licenseUrl: "https://creativecommons.org/licenses/by/2.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:V%C3%ADspera_Nochevieja_Sol.jpg",
-  },
-  "sol-callao.jpg": {
-    author: "Felipe Gabaldón",
-    license: "CC BY-SA 3.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Plaza_del_Callao_(Madrid)_05.jpg",
   },
   "sol-diligencias-metro.jpg": {
     author: "Postal LL (Lévy et Neurdein), ca. 1910",

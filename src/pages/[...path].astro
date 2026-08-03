@@ -1,5 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
+import { getImage } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomePage from "../components/HomePage.astro";
 import ArticlePage from "../components/ArticlePage.astro";
@@ -20,6 +21,7 @@ import {
   sectionText,
   type SectionId,
 } from "../lib/sections";
+import { getHeroImage } from "../lib/heroImages";
 import { SITE_BRAND } from "../config/site.mjs";
 import {
   graph,
@@ -30,6 +32,25 @@ import {
   breadcrumbSchema,
   faqSchema,
 } from "../lib/schema";
+
+/**
+ * `entry.data.hero` es solo la clave del registro de heroImages.ts (p. ej.
+ * "sol-hero.jpg"), no una URL pública: astro:assets sirve las imágenes con
+ * un nombre final distinto (hash + extensión optimizada) bajo /_astro/. Hay
+ * que generar explícitamente una versión 1200x630 para Open Graph/Twitter,
+ * si no el og:image de cada página apunta a una URL inexistente.
+ */
+async function ogImageUrl(heroKey?: string): Promise<string | undefined> {
+  const source = getHeroImage(heroKey);
+  if (!source) return undefined;
+  const optimized = await getImage({
+    src: source,
+    width: 1200,
+    height: 630,
+    format: "jpg",
+  });
+  return optimized.src;
+}
 
 export const getStaticPaths = (async () => {
   const paths: Array<{
@@ -109,11 +130,15 @@ let title: string;
 let description: string;
 let type: "website" | "article" = "website";
 let jsonLd: unknown;
+let ogImage: string | undefined;
+let ogImageAlt: string | undefined;
 
 if (props.kind === "home") {
   title = `${SITE_BRAND} · ${t("site.tagline")}`;
   description = t("site.tagline");
   jsonLd = graph([websiteSchema(), organizationSchema(), landmarkSchema()]);
+  ogImage = await ogImageUrl("sol-hero-portada.jpg");
+  ogImageAlt = t("home.hero.alt");
 } else if (props.kind === "section") {
   const section = SECTIONS.find((s) => s.id === props.sectionId)!;
   const st = sectionText(section, locale);
@@ -128,6 +153,8 @@ if (props.kind === "home") {
     ]),
     landmarkSchema(),
   ]);
+  ogImage = await ogImageUrl(section.hero);
+  ogImageAlt = st.title;
 } else {
   const { entry } = props;
   title = entry.data.title;
@@ -138,6 +165,8 @@ if (props.kind === "home") {
   const articleSection = entry.data.section
     ? SECTIONS.find((s) => s.id === entry.data.section)
     : undefined;
+  ogImage = await ogImageUrl(entry.data.hero);
+  ogImageAlt = entry.data.heroAlt ?? entry.data.title;
   const nodes: unknown[] = [
     organizationSchema(),
     articleSchema({
@@ -146,7 +175,7 @@ if (props.kind === "home") {
       url,
       updated: entry.data.updated,
       locale,
-      image: entry.data.hero,
+      image: ogImage,
     }),
     breadcrumbSchema([
       { name: t("breadcrumb.home"), url: localizedPath(locale) },
@@ -173,7 +202,8 @@ if (props.kind === "home") {
   locale={locale}
   alternates={alternates}
   type={type}
-  image={props.kind === "article" ? props.entry.data.hero : undefined}
+  image={ogImage}
+  imageAlt={ogImageAlt}
   jsonLd={jsonLd}
 >
   {props.kind === "home" ? (

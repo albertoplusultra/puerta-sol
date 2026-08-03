@@ -1,6 +1,6 @@
 ---
 title: "Kilometre Zero"
-description: "The Kilometre Zero plaque, in front of the Real Casa de Correos in the Puerta del Sol, marks the historic origin of Spain's six radial highways. Its history since 1856 and today's compass rose."
+description: "The Kilometre Zero plaque, in front of the Real Casa de Correos, marks the origin of Spain's six radial highways. Its history since 1856."
 lang: "en"
 slug: "kilometre-zero"
 translationKey: "kilometro-cero"

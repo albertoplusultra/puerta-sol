@@ -18,6 +18,19 @@ const { locale, alternates } = Astro.props;
 const t = useTranslations(locale);
 const nav = await getNav(locale);
 const year = new Date().getFullYear();
+
+// Las páginas legales solo existen en es/en; el resto de idiomas activos
+// (cuando los haya) caerán al español como fallback razonable.
+const legalSlug: Partial<Record<Locale, string>> = {
+  es: "aviso-legal",
+  en: "legal-notice",
+};
+const privacySlug: Partial<Record<Locale, string>> = {
+  es: "privacidad",
+  en: "privacy-policy",
+};
+const legalHref = localizedPath(locale, legalSlug[locale] ?? legalSlug.es!);
+const privacyHref = localizedPath(locale, privacySlug[locale] ?? privacySlug.es!);
 ---
 
 <footer class="mt-20 border-t border-base bg-surface">
@@ -54,8 +67,12 @@ const year = new Date().getFullYear();
   </div>
 
   <div class="border-t border-base">
-    <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-muted sm:px-6">
-      &copy; {year} {SITE_NAME}. {t("footer.rights")}
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-5 text-xs text-muted sm:px-6">
+      <p>&copy; {year} {SITE_NAME}. {t("footer.rights")}</p>
+      <nav aria-label="Legal" class="flex items-center gap-4">
+        <a class="hover:text-body" href={legalHref}>{t("footer.legal")}</a>
+        <a class="hover:text-body" href={privacyHref}>{t("footer.privacy")}</a>
+      </nav>
     </div>
   </div>
 </footer>

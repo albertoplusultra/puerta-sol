@@ -1,6 +1,6 @@
 ---
 title: "El reloj de Losada y las campanadas"
-description: "Historia del reloj de Losada, el mecanismo que preside la Real Casa de Correos desde 1866, y de las campanadas de Nochevieja de la Puerta del Sol: el origen de las doce uvas y su retransmisión por radio y televisión."
+description: "Historia del reloj de Losada, que preside la Real Casa de Correos desde 1866, y de las campanadas de Nochevieja: el origen de las doce uvas y su retransmisión."
 lang: "es"
 slug: "campanadas"
 translationKey: "campanadas"

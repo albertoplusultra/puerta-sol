@@ -1,6 +1,6 @@
 ---
-title: "Carlos III y su estatua en la Puerta del Sol"
-description: "La estatua ecuestre de Carlos III preside el centro de la Puerta del Sol, pero es uno de sus elementos más recientes: llegó en 1994 y se trasladó a la nueva fuente en 2023. Historia del rey al que Madrid llamó 'el mejor alcalde' y de su monumento."
+title: "La estatua de Carlos III en Sol"
+description: "La estatua ecuestre de Carlos III preside la Puerta del Sol desde 1994. Historia del rey al que Madrid llamó 'el mejor alcalde' y su traslado en 2023."
 lang: "es"
 slug: "estatua-carlos-iii"
 translationKey: "estatua-carlos-iii"

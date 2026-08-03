@@ -1,6 +1,6 @@
 ---
 title: "La Mariblanca"
-description: "La Mariblanca llegó a la Puerta del Sol en 1630, más de tres siglos antes que el Oso y el Madroño. Historia de la estatua de Venus, la fuente de las Arpías y sus traslados por Madrid."
+description: "La Mariblanca llegó a la Puerta del Sol en 1630, mucho antes que el Oso y el Madroño. Historia de la estatua de Venus, la fuente de las Arpías y sus traslados."
 lang: "es"
 slug: "mariblanca"
 translationKey: "mariblanca"

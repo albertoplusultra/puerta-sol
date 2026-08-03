@@ -1,6 +1,6 @@
 ---
 title: "La Fonda de los Príncipes"
-description: "La Fonda de los Príncipes opened in 1861 within the arc of the new Puerta del Sol. The hotel's story: from the Gran Hotel de la Paix and the Hostal Americano to its reopening in 2026."
+description: "La Fonda de los Príncipes opened in 1861 in the arc of the new Puerta del Sol. The hotel's story, from the Gran Hotel de la Paix to its 2026 reopening."
 lang: "en"
 slug: "fonda-de-los-principes"
 translationKey: "fonda-de-los-principes"

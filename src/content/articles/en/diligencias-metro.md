@@ -1,6 +1,6 @@
 ---
 title: "From Stagecoaches to the Metro"
-description: "A history of transport in Puerta del Sol: stagecoaches, hired carriages, the railway, trams, the Metro, buses and Cercanías, from the old crossroads to the pedestrian square."
+description: "A history of transport in Puerta del Sol: stagecoaches, trams, the Metro, buses and Cercanías, from the old crossroads to today's pedestrian square."
 lang: "en"
 slug: "stagecoaches-to-metro"
 translationKey: "diligencias-metro"
