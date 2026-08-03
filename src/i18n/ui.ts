@@ -38,6 +38,9 @@ export const ui = {
     "home.sections.title": "Descubre la Puerta del Sol",
     "home.section.all": "Ver todo",
     "section.disappeared": "Desaparecidos",
+    "home.hero.kicker": "Madrid · Kilómetro Cero",
+    "home.hero.alt": "Vista panorámica de la Puerta del Sol de Madrid con la Real Casa de Correos",
+    "home.historia.alt": "La Puerta del Sol de Madrid en una fotografía antigua",
   },
   en: {
     "site.tagline": "Where Madrid begins.",
@@ -75,6 +78,9 @@ export const ui = {
     "home.sections.title": "Discover Puerta del Sol",
     "home.section.all": "See all",
     "section.disappeared": "No longer standing",
+    "home.hero.kicker": "Madrid · Kilometre Zero",
+    "home.hero.alt": "Panoramic view of Madrid's Puerta del Sol with the Real Casa de Correos",
+    "home.historia.alt": "Puerta del Sol in an old photograph",
   },
   fr: {
     "site.tagline": "Là où commence Madrid.",
@@ -112,6 +118,9 @@ export const ui = {
     "home.sections.title": "Découvrez la Puerta del Sol",
     "home.section.all": "Tout voir",
     "section.disappeared": "Disparus",
+    "home.hero.kicker": "Madrid · Kilomètre zéro",
+    "home.hero.alt": "Vue panoramique de la Puerta del Sol de Madrid avec la Real Casa de Correos",
+    "home.historia.alt": "La Puerta del Sol sur une photographie ancienne",
   },
   de: {
     "site.tagline": "Wo Madrid beginnt.",
@@ -149,6 +158,9 @@ export const ui = {
     "home.sections.title": "Entdecken Sie die Puerta del Sol",
     "home.section.all": "Alle ansehen",
     "section.disappeared": "Verschwunden",
+    "home.hero.kicker": "Madrid · Kilometer null",
+    "home.hero.alt": "Panoramablick auf die Puerta del Sol in Madrid mit der Real Casa de Correos",
+    "home.historia.alt": "Die Puerta del Sol auf einer alten Fotografie",
   },
   it: {
     "site.tagline": "Dove comincia Madrid.",
@@ -186,6 +198,9 @@ export const ui = {
     "home.sections.title": "Scopri la Puerta del Sol",
     "home.section.all": "Vedi tutto",
     "section.disappeared": "Scomparsi",
+    "home.hero.kicker": "Madrid · Chilometro zero",
+    "home.hero.alt": "Vista panoramica della Puerta del Sol di Madrid con la Real Casa de Correos",
+    "home.historia.alt": "La Puerta del Sol in una fotografia d'epoca",
   },
   pt: {
     "site.tagline": "Onde Madrid começa.",
@@ -223,6 +238,9 @@ export const ui = {
     "home.sections.title": "Descubra a Puerta del Sol",
     "home.section.all": "Ver tudo",
     "section.disappeared": "Desaparecidos",
+    "home.hero.kicker": "Madrid · Quilómetro zero",
+    "home.hero.alt": "Vista panorâmica da Puerta del Sol de Madrid com a Real Casa de Correos",
+    "home.historia.alt": "A Puerta del Sol numa fotografia antiga",
   },
 } as const;
 

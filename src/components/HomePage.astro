@@ -46,11 +46,11 @@ const sections = (
 ---
 
 <Hero
-  kicker="Madrid · Kilómetro Cero"
+  kicker={t("home.hero.kicker")}
   title="Puerta del Sol"
   subtitle={t("site.tagline")}
   image={heroImg}
-  imageAlt="Vista panorámica de la Puerta del Sol de Madrid con la Real Casa de Correos"
+  imageAlt={t("home.hero.alt")}
   credit={heroCredit}
   ctaPrimary={historia
     ? { label: t("nav.history"), href: localizedPath(locale, historia.data.slug) }
@@ -74,7 +74,7 @@ const sections = (
           <a href={localizedPath(locale, historia.data.slug)} class="block overflow-hidden rounded-lg border border-base">
             <Image
               src={historiaImg}
-              alt="La Puerta del Sol iluminada"
+              alt={t("home.historia.alt")}
               widths={[500, 800, 1200]}
               sizes="(min-width: 768px) 560px, 100vw"
               loading="lazy"

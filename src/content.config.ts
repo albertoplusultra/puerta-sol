@@ -16,7 +16,13 @@ const faqItem = z.object({
  * (imprescindible para generar hreflang correctamente).
  */
 const articles = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/articles" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/articles",
+    // Los slugs pueden coincidir entre idiomas. El ID interno debe incluir
+    // el locale para que Astro no sobrescriba una traducción con otra.
+    generateId: ({ data }) => `${data.lang}/${data.slug}`,
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string(),

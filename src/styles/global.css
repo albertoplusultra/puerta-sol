@@ -154,6 +154,15 @@ h1 {
   letter-spacing: normal;
 }
 
+/* Título sobre fotografía (heros): siempre claro y con sombra para asegurar
+   la lectura sea cual sea el fondo. Sin capa para ganar a `h1 { color }`. */
+.hero-title {
+  color: var(--color-ivory-50);
+  text-shadow:
+    0 1px 3px rgb(0 0 0 / 0.45),
+    0 4px 28px rgb(0 0 0 / 0.4);
+}
+
 /* La UI (nav, botones, etiquetas) usa la sans */
 nav, button, .ui-sans, .kicker, summary {
   font-family: var(--font-sans);
