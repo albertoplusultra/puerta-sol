@@ -7,12 +7,15 @@
 
 /* Chulapa: tipografía oficial de uso libre del Ayuntamiento de Madrid
    (proyecto Madrid-Ferpal, CC BY 4.0). Se usa en el logotipo y en los
-   títulos h1 (logo, cabeceras y heros). Es una tipografía de caja alta. */
+   títulos h1 (logo, cabeceras y heros). Es una tipografía de caja alta.
+   La v1.2 es una derivada propia (permitida por la licencia) que añade el
+   juego estilístico ss04: expone la S caligráfica (ʃ) de los carteles de
+   Madrid, que en la fuente original solo era accesible vía `aalt`. */
 @font-face {
   font-family: "Chulapa";
   src:
-    url("/fonts/Chulapa-v1.1-Bold.woff2") format("woff2"),
-    url("/fonts/Chulapa-v1.1-Bold.otf") format("opentype");
+    url("/fonts/Chulapa-v1.2-Bold.woff2") format("woff2"),
+    url("/fonts/Chulapa-v1.2-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -103,15 +106,15 @@
 /*
   Se mantiene fuera de las capas de Tailwind para que sus utilidades de peso
   no puedan sustituir la única variante disponible de Chulapa (Bold 700).
-  El juego estilístico ss03 activa el rasgo característico de la Chulapa:
-  las minúsculas se dibujan como letras pequeñas elevadas, igual que en las
-  placas cerámicas del callejero histórico de Madrid.
+  ss03 dibuja las MAYÚSCULAS como letras pequeñas elevadas (estilo placas
+  del callejero) y ss04 convierte la "s" minúscula en la S caligráfica.
+  El logo se escribe "puertaDELsol.com" para que DEL quede pequeño y elevado.
 */
 .font-logo {
   font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
   font-weight: 700;
   font-synthesis: none;
-  font-feature-settings: "ss03" 1;
+  font-feature-settings: "ss03" 1, "ss04" 1;
 }
 
 /* Base */
@@ -139,15 +142,16 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
-/* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa).
-   ss03 dibuja las minúsculas como letras pequeñas elevadas (estilo placas
-   cerámicas del callejero de Madrid), el rasgo distintivo de la fuente. */
+/* Los títulos principales (h1) usan la tipografía "Madrid" (Chulapa) con
+   el estilo de los carteles: dlig activa las ligaduras castizas (Đ, SᴬN,
+   letras encajadas) y ss04 la S caligráfica en las eses minúsculas. */
 h1 {
   font-family: "Chulapa", "Fraunces Variable", "Georgia", serif;
   font-weight: 700;
   font-synthesis: none;
-  font-feature-settings: "ss03" 1;
-  letter-spacing: 0.005em;
+  font-feature-settings: "dlig" 1, "ss04" 1;
+  /* Sin letter-spacing: un espaciado distinto de cero desactiva las ligaduras */
+  letter-spacing: normal;
 }
 
 /* La UI (nav, botones, etiquetas) usa la sans */
