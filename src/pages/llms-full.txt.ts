@@ -19,7 +19,7 @@ function toPlain(md: string): string {
 }
 
 export const GET: APIRoute = async () => {
-  const langLabel = activeLocales.map((l) => labelFor(l)).join(" e ");
+  const langLabel = activeLocales.map((l) => labelFor(l)).join(", ");
 
   const parts = [
     `# ${SITE_NAME} — Contenido completo`,

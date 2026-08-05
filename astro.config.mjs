@@ -81,7 +81,8 @@ export default defineConfig({
           pt: "pt-PT",
         },
       },
-      // Corrige los pares es/en cuyo slug difiere (ver buildArticleHreflangMap).
+      // Corrige los grupos de traducciones cuyos slugs difieren entre idiomas
+      // (ver buildArticleHreflangMap).
       // El resto de páginas conserva el emparejamiento automático de arriba.
       serialize(item) {
         const alternates = articleHreflangMap[new URL(item.url).pathname];

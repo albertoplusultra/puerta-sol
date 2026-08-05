@@ -19,15 +19,17 @@ const t = useTranslations(locale);
 const nav = await getNav(locale);
 const year = new Date().getFullYear();
 
-// Las páginas legales solo existen en es/en; el resto de idiomas activos
+// Las páginas legales existen en es/en/fr; el resto de idiomas activos
 // (cuando los haya) caerán al español como fallback razonable.
 const legalSlug: Partial<Record<Locale, string>> = {
   es: "aviso-legal",
   en: "legal-notice",
+  fr: "mentions-legales",
 };
 const privacySlug: Partial<Record<Locale, string>> = {
   es: "privacidad",
   en: "privacy-policy",
+  fr: "politique-de-confidentialite",
 };
 const legalHref = localizedPath(locale, legalSlug[locale] ?? legalSlug.es!);
 const privacyHref = localizedPath(locale, privacySlug[locale] ?? privacySlug.es!);

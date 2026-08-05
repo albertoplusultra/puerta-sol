@@ -1,0 +1,135 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalPage from "../../components/LegalPage.astro";
+import { localizedPath } from "../../i18n/utils";
+
+const alternates = {
+  es: localizedPath("es", "aviso-legal"),
+  en: localizedPath("en", "legal-notice"),
+  fr: localizedPath("fr", "mentions-legales"),
+};
+---
+
+<BaseLayout
+  title="Mentions légales"
+  description="Informations d’identification du titulaire de PuertaDelSol.com et conditions d’accès et d’utilisation du site web, conformément à la LSSI-CE."
+  locale="fr"
+  alternates={alternates}
+>
+  <LegalPage locale="fr" title="Mentions légales" updated="Dernière mise à jour : août 2026">
+    <h2>1. Informations d’identification</h2>
+    <p>
+      Conformément à l’article 10 de la loi espagnole 34/2002 du 11 juillet
+      relative aux services de la société de l’information et au commerce
+      électronique (LSSI-CE), les informations d’identification du titulaire
+      de ce site web sont communiquées ci-dessous :
+    </p>
+    <ul>
+      <li><strong>Dénomination sociale :</strong> Plus Ultra Properties SL</li>
+      <li><strong>CIF :</strong> B86125986</li>
+      <li><strong>Siège social :</strong> Puerta del Sol, 11, 28013 Madrid, Espagne</li>
+      <li><strong>Téléphone :</strong> +34 919 891 469</li>
+      <li>
+        <strong>Adresse électronique :</strong>{" "}
+        <a href="mailto:recepcion@lafondadelosprincipes.com">
+          recepcion@lafondadelosprincipes.com
+        </a>
+      </li>
+      <li><strong>Site web :</strong> www.puertadelsol.com</li>
+    </ul>
+
+    <h2>2. Objet</h2>
+    <p>
+      Les présentes Mentions légales régissent l’utilisation du site web{" "}
+      <strong>www.puertadelsol.com</strong> (ci-après, le Site web),
+      propriété de Plus Ultra Properties SL (ci-après, le Titulaire).
+    </p>
+    <p>
+      Le Site web est un guide informatif et indépendant consacré à la Puerta
+      del Sol de Madrid : son histoire, ses monuments et bâtiments, ainsi que
+      les lieux à voir aux alentours. Il ne constitue ni un canal de vente ni
+      une plateforme de réservation ; lorsqu’il renvoie vers des entreprises
+      telles que des hébergements, des restaurants ou des activités, il le
+      fait vers des sites web tiers sur lesquels la souscription est gérée.
+    </p>
+    <p>
+      L’utilisation du Site web confère la qualité d’utilisateur (ci-après,
+      l’Utilisateur) et implique l’acceptation de toutes les conditions
+      figurant dans les présentes Mentions légales.
+    </p>
+
+    <h2>3. Conditions d’accès et d’utilisation</h2>
+    <p>
+      L’accès au Site web est libre et gratuit et ne nécessite ni inscription
+      ni abonnement. L’Utilisateur s’engage à faire un usage approprié des
+      contenus et services du Site web et, en particulier, à ne pas les
+      utiliser pour :
+    </p>
+    <ul>
+      <li>
+        Diffuser des contenus délictueux, violents, racistes, xénophobes ou
+        offensants, ou contraires à la loi ou à l’ordre public.
+      </li>
+      <li>
+        Introduire des virus informatiques ou effectuer des actions
+        susceptibles d’altérer, d’endommager ou d’interrompre le
+        fonctionnement du Site web.
+      </li>
+      <li>
+        Tenter d’accéder à des zones restreintes des systèmes informatiques
+        du Titulaire ou de tiers.
+      </li>
+      <li>
+        Porter atteinte aux droits de propriété intellectuelle ou industrielle
+        du Titulaire ou de tiers.
+      </li>
+    </ul>
+
+    <h2>4. Propriété intellectuelle et industrielle</h2>
+    <p>
+      Les textes, la structure, la conception et le code du Site web sont la
+      propriété du Titulaire, sans qu’aucun droit d’exploitation les
+      concernant ne puisse être considéré comme cédé à l’Utilisateur au-delà
+      de ce qui est strictement nécessaire à la bonne utilisation du Site web.
+    </p>
+    <p>
+      Certaines photographies proviennent de Wikimedia Commons et d’autres
+      sources sous licences Creative Commons ou appartiennent au domaine
+      public ; dans ce cas, leur auteur est mentionné et la licence applicable
+      est indiquée à côté de l’image ou dans la légende correspondante. Les
+      autres photographies sont la propriété du Titulaire ou sont utilisées
+      avec l’autorisation expresse de tiers.
+    </p>
+
+    <h2>5. Liens vers des tiers</h2>
+    <p>
+      Le Site web contient des liens vers des pages de tiers, telles que des
+      hébergements, des restaurants ou des plateformes d’activités et
+      d’excursions. Ces liens sont proposés uniquement à titre informatif ; le
+      Titulaire ne contrôle pas le contenu, la disponibilité ni les politiques
+      de confidentialité de ces sites et n’en est pas responsable. Certains
+      de ces liens peuvent générer une commission pour le Titulaire si
+      l’Utilisateur souscrit un service par leur intermédiaire, sans aucun
+      coût supplémentaire pour l’Utilisateur.
+    </p>
+
+    <h2>6. Exclusion de garanties et de responsabilité</h2>
+    <p>
+      Le Titulaire ne garantit pas la disponibilité continue du Site web ni
+      l’absence d’erreurs dans ses contenus, bien qu’il mette en œuvre des
+      moyens raisonnables pour les maintenir à jour et exempts d’inexactitudes.
+      Dans la mesure permise par l’ordre juridique, le Titulaire exclut toute
+      responsabilité pour les dommages pouvant résulter de l’indisponibilité
+      ou de l’interruption du fonctionnement du Site web, ou de la présence de
+      virus ou d’autres éléments nuisibles.
+    </p>
+
+    <h2>7. Droit applicable et juridiction</h2>
+    <p>
+      Les présentes Mentions légales sont régies par le droit espagnol. Pour
+      tout litige lié au Site web, le Titulaire et l’Utilisateur, renonçant
+      expressément à toute autre juridiction qui pourrait leur être
+      applicable, se soumettent aux cours et tribunaux de Madrid.
+    </p>
+  </LegalPage>
+</BaseLayout>

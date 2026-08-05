@@ -45,6 +45,12 @@ export const SECTIONS: SectionDef[] = [
         description:
           "The heart of Madrid, element by element: what to see in Puerta del Sol and Kilometre Zero, the point from which Spain's roads are measured.",
       },
+      fr: {
+        label: "La place",
+        title: "La place",
+        description:
+          "Le cœur de Madrid, élément par élément : que voir à la Puerta del Sol et le Kilomètre Zéro, point de départ du réseau routier espagnol.",
+      },
     },
   },
   {
@@ -64,6 +70,12 @@ export const SECTIONS: SectionDef[] = [
         title: "Buildings",
         description:
           "The architecture that shapes the square: the Real Casa de Correos and its clock, and the former Hotel de París, today an Apple store.",
+      },
+      fr: {
+        label: "Édifices",
+        title: "Édifices",
+        description:
+          "L’architecture qui façonne la place : la Real Casa de Correos et son horloge, ainsi que l’ancien Hotel de París, aujourd’hui occupé par Apple.",
       },
     },
   },
@@ -85,6 +97,12 @@ export const SECTIONS: SectionDef[] = [
         description:
           "The symbols that give Puerta del Sol its identity: the Bear and the Strawberry Tree and the historic Tío Pepe sign.",
       },
+      fr: {
+        label: "Monuments",
+        title: "Monuments",
+        description:
+          "Les symboles qui donnent son identité à la Puerta del Sol : l’Ours et l’Arbousier, et l’enseigne historique de Tío Pepe.",
+      },
     },
   },
   {
@@ -104,6 +122,12 @@ export const SECTIONS: SectionDef[] = [
         title: "Stories of Sol",
         description:
           "The living memory of the square: the history of Puerta del Sol and the New Year's Eve chimes tradition.",
+      },
+      fr: {
+        label: "Histoires de Sol",
+        title: "Histoires de Sol",
+        description:
+          "La mémoire vivante de la place : l’histoire de la Puerta del Sol et la tradition des douze coups de minuit du Nouvel An.",
       },
     },
   },

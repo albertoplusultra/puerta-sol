@@ -8,6 +8,7 @@ const abs = (p: string) => new URL(p, SITE_URL).href;
 
 export const GET: APIRoute = async () => {
   const es = await getArticlesByLocale("es");
+  const availableLanguages = activeLocales.map((l) => labelFor(l)).join(", ");
 
   const bullet = (a: (typeof es)[number]) =>
     `- [${a.data.title}](${abs(localizedPath("es", a.data.slug))}): ${a.data.description}`;
@@ -48,7 +49,7 @@ export const GET: APIRoute = async () => {
     `## Idiomas disponibles`,
     ...activeLocales.map((l) => `- ${labelFor(l)}: ${abs(localizedPath(l))}`),
     "",
-    `Texto completo para modelos (español e inglés): ${abs("/llms-full.txt")}`,
+    `Texto completo para modelos (${availableLanguages}): ${abs("/llms-full.txt")}`,
     "",
   ];
 

@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalPage from "../../components/LegalPage.astro";
+import { localizedPath } from "../../i18n/utils";
+
+const alternates = {
+  es: localizedPath("es", "privacidad"),
+  en: localizedPath("en", "privacy-policy"),
+  fr: localizedPath("fr", "politique-de-confidentialite"),
+};
+---
+
+<BaseLayout
+  title="Politique de confidentialité"
+  description="Comment PuertaDelSol.com traite les données de ses visiteurs : sans cookies, avec des statistiques anonymes, conformément au RGPD et à la LOPDGDD."
+  locale="fr"
+  alternates={alternates}
+>
+  <LegalPage locale="fr" title="Politique de confidentialité" updated="Dernière mise à jour : août 2026">
+    <h2>1. Responsable du traitement</h2>
+    <p>
+      Conformément au règlement (UE) 2016/679 du Parlement européen et du
+      Conseil du 27 avril 2016 (RGPD), ainsi qu’à la loi organique espagnole
+      3/2018 du 5 décembre relative à la protection des données à caractère
+      personnel et à la garantie des droits numériques (LOPDGDD), nous vous
+      informons de ce qui suit :
+    </p>
+    <ul>
+      <li><strong>Responsable :</strong> Plus Ultra Properties SL</li>
+      <li><strong>CIF :</strong> B86125986</li>
+      <li><strong>Adresse :</strong> Puerta del Sol, 11, 28013 Madrid, Espagne</li>
+      <li><strong>Téléphone :</strong> +34 919 891 469</li>
+      <li>
+        <strong>Adresse électronique :</strong>{" "}
+        <a href="mailto:recepcion@lafondadelosprincipes.com">
+          recepcion@lafondadelosprincipes.com
+        </a>
+      </li>
+    </ul>
+
+    <h2>2. Ce site web n’utilise pas de cookies</h2>
+    <p>
+      PuertaDelSol.com n’installe aucun cookie propre ou tiers et n’utilise
+      aucune technique équivalente de stockage local (telle que localStorage)
+      pour identifier ou suivre ses visiteurs. Par conséquent, et
+      conformément à l’article 22.2 de la LSSI-CE, il n’est pas nécessaire de
+      demander un consentement au moyen d’un avis ou d’une bannière de
+      cookies. La carte intégrée à certaines pages utilise OpenStreetMap, un
+      service qui n’emploie pas non plus de cookies.
+    </p>
+    <p>
+      Si une technologie nécessitant des cookies devait être intégrée à
+      l’avenir (par exemple, de la publicité de tiers), le consentement
+      préalable de l’Utilisateur serait demandé au moyen de l’avis
+      correspondant et la présente politique serait mise à jour en
+      conséquence.
+    </p>
+
+    <h2>3. Données traitées et finalités du traitement</h2>
+    <p>
+      Ce site ne comporte aucun formulaire, aucune inscription d’utilisateurs
+      ni aucun système de réservation propre ; aucune donnée personnelle
+      fournie volontairement par l’Utilisateur n’est donc collectée. Les
+      seules données traitées sont les suivantes :
+    </p>
+    <ul>
+      <li>
+        <strong>Journaux techniques du serveur :</strong> notre hébergeur
+        (Vercel Inc.) traite temporairement l’adresse IP et les données de la
+        requête HTTP nécessaires à l’affichage des pages, à des fins de
+        sécurité et de fonctionnement technique.
+      </li>
+      <li>
+        <strong>Statistiques d’utilisation agrégées et anonymes :</strong>{" "}
+        nous utilisons Vercel Web Analytics et Vercel Speed Insights pour
+        connaître, sous forme agrégée, les pages les plus consultées et les
+        performances du site. Ces deux outils identifient les visites au moyen
+        d’un hachage généré à partir de la requête, qui est supprimé après
+        24 heures ; ils ne permettent d’identifier individuellement aucun
+        visiteur et ne combinent pas les données de différents sites web.
+      </li>
+    </ul>
+
+    <h2>4. Base juridique</h2>
+    <p>
+      Le traitement décrit repose sur l’intérêt légitime du responsable
+      (article 6, paragraphe 1, point f) du RGPD) à maintenir le site web
+      opérationnel et sécurisé et à améliorer en permanence ses performances
+      et ses contenus, sans incidence significative sur la vie privée de
+      l’Utilisateur puisqu’aucune donnée d’identification n’est collectée.
+    </p>
+
+    <h2>5. Transmission des données et sous-traitants</h2>
+    <p>
+      Les données techniques décrites sont hébergées et traitées par Vercel
+      Inc., qui agit en qualité de sous-traitant et dispose de garanties
+      appropriées pour les transferts internationaux de données (clauses
+      contractuelles types de l’Union européenne). Nous ne transmettons
+      aucune donnée à des tiers à des fins commerciales ou publicitaires.
+    </p>
+    <p>
+      Le Site web contient des liens vers des sites web tiers (hébergements,
+      restaurants, plateformes d’activités). L’accès à ces sites est soumis à
+      leurs propres politiques de confidentialité, qui sont indépendantes du
+      présent responsable.
+    </p>
+
+    <h2>6. Durée de conservation</h2>
+    <p>
+      Les données statistiques sont traitées sous forme agrégée et anonyme ;
+      l’identifiant temporaire utilisé par Vercel Web Analytics et Speed
+      Insights est automatiquement supprimé après 24 heures. Les journaux
+      techniques du serveur sont conservés pendant la durée strictement
+      nécessaire à des fins de sécurité, conformément à la politique de
+      conservation de notre hébergeur.
+    </p>
+
+    <h2>7. Droits de la personne concernée</h2>
+    <p>
+      Bien que ce site n’identifie pas individuellement ses visiteurs, toute
+      personne a le droit d’accéder à ses données personnelles, de les
+      rectifier, de demander leur effacement, de s’opposer à leur traitement
+      ou d’en demander la limitation ou la portabilité. Vous pouvez exercer
+      ces droits en écrivant à{" "}
+      <a href="mailto:recepcion@lafondadelosprincipes.com">
+        recepcion@lafondadelosprincipes.com
+      </a>
+      , en indiquant « Protection des données » dans l’objet.
+    </p>
+    <p>
+      Vous avez également le droit d’introduire une réclamation auprès de
+      l’Agence espagnole de protection des données (AEPD, www.aepd.es) si vous
+      estimez que le traitement de vos données enfreint la réglementation en
+      vigueur.
+    </p>
+
+    <h2>8. Modifications de la présente politique</h2>
+    <p>
+      La présente politique de confidentialité peut être mise à jour afin de
+      s’adapter aux évolutions législatives ou aux changements dans le
+      fonctionnement du Site web. Il est recommandé de la consulter
+      périodiquement.
+    </p>
+  </LegalPage>
+</BaseLayout>

@@ -10,7 +10,7 @@ export const LOCALES = ["es", "en", "fr", "de", "it", "pt"];
 
 // Idiomas que se publican realmente (con contenido). La arquitectura soporta
 // los 6 de LOCALES, pero solo se generan páginas y selector para estos.
-export const ACTIVE_LOCALES = ["es", "en"];
+export const ACTIVE_LOCALES = ["es", "en", "fr"];
 
 // Etiquetas hreflang (BCP-47) por locale
 export const HREFLANG = {

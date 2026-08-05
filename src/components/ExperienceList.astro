@@ -1,12 +1,43 @@
 ---
 import { Image } from "astro:assets";
-import { EXPERIENCES } from "../data/experiences";
+import { getExperiences } from "../data/experiences";
 import { civitatisUrl } from "../config/site.mjs";
+import type { Locale } from "../i18n/utils";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "es" } = Astro.props;
+const experiences = getExperiences(locale);
+
+const labels = {
+  es: {
+    starts: "Sale de Sol",
+    book: "Reservar en Civitatis",
+    notice:
+      "Las reservas se gestionan en Civitatis, plataforma independiente de actividades. Los horarios y precios pueden variar; consulta cada actividad para ver la información actualizada y el punto exacto de encuentro.",
+  },
+  en: {
+    starts: "Starts at Sol",
+    book: "Book on Civitatis",
+    notice:
+      "Bookings are handled by Civitatis, an independent activities platform. Times and prices may vary; check each activity for up-to-date information and the exact meeting point.",
+  },
+  fr: {
+    starts: "Départ de Sol",
+    book: "Réserver sur Civitatis",
+    notice:
+      "Les réservations sont gérées par Civitatis, une plateforme d’activités indépendante. Les horaires et les prix peuvent varier ; consultez chaque activité pour connaître les informations à jour et le lieu de rendez-vous exact.",
+  },
+} as const;
+
+const text = labels[locale === "en" || locale === "fr" ? locale : "es"];
 ---
 
 <div class="not-prose mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2">
   {
-    EXPERIENCES.map((exp) => (
+    experiences.map((exp) => (
       <a
         href={civitatisUrl(exp.path)}
         target="_blank"
@@ -27,7 +58,7 @@ import { civitatisUrl } from "../config/site.mjs";
           {exp.startsAtSol && (
             <span class="absolute left-3 top-3 inline-flex items-center gap-1.5 bg-ink-900/85 px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-ivory-50">
               <span aria-hidden="true">&#9679;</span>
-              Sale de Sol
+              {text.starts}
             </span>
           )}
         </div>
@@ -43,7 +74,7 @@ import { civitatisUrl } from "../config/site.mjs";
           </p>
         )}
         <span class="mt-4 inline-flex items-center gap-1.5 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brand">
-          Reservar en Civitatis
+          {text.book}
           <span
             class="transition-transform duration-300 group-hover:translate-x-1"
             aria-hidden="true"
@@ -56,7 +87,5 @@ import { civitatisUrl } from "../config/site.mjs";
   }
 </div>
 <p class="mt-8 font-serif text-sm leading-relaxed text-muted">
-  Las reservas se gestionan en Civitatis, plataforma independiente de actividades.
-  Los horarios y precios pueden variar; consulta cada actividad para ver la
-  información actualizada y el punto exacto de encuentro.
+  {text.notice}
 </p>
