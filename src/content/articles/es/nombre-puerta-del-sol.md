@@ -25,6 +25,9 @@ faq:
     a: "La explicación más aceptada es que la puerta estaba decorada con un sol —una pintura, un relieve o una pieza— que indicaba su orientación hacia levante, el lugar por el que aparece el sol cada mañana."
   - q: "¿Por qué no se llama plaza del Sol?"
     a: "El nombre oficial sigue siendo Puerta del Sol, no plaza de la Puerta del Sol. La palabra puerta conserva la memoria del origen del lugar: no nació como plaza, sino alrededor de una antigua salida de la ciudad."
+sources:
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 La Puerta del Sol no conserva ninguna puerta. Tampoco existe una muralla, una torre o un arco que permita reconocer el origen de su nombre. Sin embargo, antes de convertirse en plaza fue realmente una de las entradas de Madrid.

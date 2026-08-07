@@ -28,6 +28,11 @@ faq:
     a: "Porque la información oral podía exagerarse o deformarse al pasar de una persona a otra. No significaba que todo fuera falso, sino que las noticias convivían con rumores y versiones difíciles de comprobar."
   - q: "¿Qué sustituyó al convento de San Felipe?"
     a: "Tras su derribo, entre 1842 y 1845 se construyeron en el solar las Casas de Cordero, un gran edificio de viviendas, comercios, fondas y hoteles."
+sources:
+  - title: "Memoria de Madrid · Monasterio de San Felipe"
+    url: "https://www.memoriademadrid.es/view/473611/monasterio-de-san-felipe"
+  - title: "Ayuntamiento de Madrid · Ficha de las Casas de Cordero (PDF)"
+    url: "https://monumentamadrid.es/AM_Edificios4/AM_Edificios4_WEB/pdf/inmana/03293.pdf"
 ---
 
 Antes de las Casas de Cordero, en la entrada de la calle Mayor se levantaba el convento de San Felipe el Real. Su iglesia y sus dependencias ocupaban uno de los lugares más visibles de la antigua Puerta del Sol.

@@ -27,6 +27,13 @@ faq:
     a: "It was the Fonda and Hotel de los Príncipes, the Gran Hotel de la Paix, the Hotel Americano, the Pensión Americana and the Hostal Americano, before recovering its original name in 2026."
   - q: "Can you see the New Year's Eve chimes from La Fonda?"
     a: "Yes. The five balconies of El Mirador de Sol offer a head-on view of the Losada clock, and the building has been used for decades to broadcast the chimes."
+sources:
+  - title: "La Fonda de los Príncipes · Historia de la casa"
+    url: "https://www.lafondadelosprincipes.com/es/historia/"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
+  - title: "Memoria de Madrid · Biblioteca digital"
+    url: "https://www.memoriademadrid.es/"
 ---
 
 La Fonda de los Príncipes opened on 1 October 1861, before work on the new Puerta del Sol had even finished. The [Losada clock](/en/new-years-eve-chimes/) did not yet exist, and many of the square's buildings had only just been built.

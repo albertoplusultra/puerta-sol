@@ -26,6 +26,13 @@ faq:
     a: "By stagecoaches and omnibuses that traveled the roads in stages, changing horses at the post houses. Within Madrid, people used coches de punto, hired carriages that were the forerunners of taxis."
   - q: "When was Puerta del Sol pedestrianized?"
     a: "Sol was closed to traffic in August 2020, and the renovation completed in 2023 consolidated the pedestrian square. Metro and Cercanías continue to operate beneath it."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Before the Metro, the buses or Cercanías existed, Puerta del Sol was already Madrid's principal crossroads. Its streets carried carriages, hired coaches, horses and travelers entering or leaving the city.

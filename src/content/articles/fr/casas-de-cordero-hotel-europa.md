@@ -29,6 +29,11 @@ faq:
     a: "Le couvent de San Felipe el Real occupait le terrain. Il était célèbre pour ses marches, connues sous le nom de Mentidero de la Villa."
   - q: "Quel lien unit l’Hotel Europa à l’édifice ?"
     a: "Une partie des Casas de Cordero abrita l’Hotel Europa, l’un des établissements qui firent de Sol le principal quartier hôtelier de Madrid au XIXe siècle."
+sources:
+  - title: "esMadrid · Casas de Cordero"
+    url: "https://www.esmadrid.com/informacion-turistica/casas-cordero"
+  - title: "Ayuntamiento de Madrid · Ficha de las Casas de Cordero (PDF)"
+    url: "https://monumentamadrid.es/AM_Edificios4/AM_Edificios4_WEB/pdf/inmana/03293.pdf"
 ---
 
 Le grand édifice situé entre la calle Mayor, Esparteros et la plaza de Pontejos porte le nom de Casas de Cordero. Construit entre 1842 et 1845, avant la grande réforme de la Puerta del Sol, il est considéré comme l’un des premiers grands immeubles d’habitation modernes de Madrid.

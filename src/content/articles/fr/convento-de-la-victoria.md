@@ -28,6 +28,9 @@ faq:
     a: "La communauté fut supprimée en 1836 lors du désamortissement et l’édifice finit par être démoli. Le terrain accueillit ensuite de nouvelles rues, des immeubles et des commerces."
   - q: "Reste-t-il des vestiges du couvent ?"
     a: "Aucun élément visible ne subsiste. Son souvenir demeure principalement dans le nom de la calle de la Victoria et dans les représentations historiques de la Puerta del Sol."
+sources:
+  - title: "Universidad Complutense · Convento de la Victoria"
+    url: "https://biblioteca.ucm.es/historica/convento-de-la-victoria"
 ---
 
 Pendant près de trois siècles, une partie importante de l’ancienne Puerta del Sol fut occupée par le couvent de Nuestra Señora de la Victoria.

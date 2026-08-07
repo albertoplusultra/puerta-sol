@@ -26,6 +26,9 @@ faq:
     a: "Most likely Venus. The statue was purchased in Florence in 1625 and was accompanied by a small Cupid and elements associated with the sea."
   - q: "Why is it called Mariblanca?"
     a: "It was not its official name. Madrileños began calling it Mariblanca informally because of the white color of the stone."
+sources:
+  - title: "Ayuntamiento de Madrid · La Mariblanca"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Monumentos/Mariblanca-Replica-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=2318091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 La Mariblanca arrived in Puerta del Sol more than three centuries before the [Bear and the Strawberry Tree](/en/bear-and-strawberry-tree/). The current statue is a replica, but it reproduces the marble figure that, from 1630 onwards, crowned one of the most important fountains of Habsburg Madrid.

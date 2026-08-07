@@ -26,6 +26,9 @@ faq:
     a: "Probablemente representa a Venus. La estatua fue adquirida en Florencia en 1625 y estaba acompañada por un pequeño Cupido y elementos relacionados con el mar."
   - q: "¿Por qué se llama Mariblanca?"
     a: "No era su nombre oficial. Los madrileños comenzaron a llamarla popularmente Mariblanca por el color blanco de la piedra."
+sources:
+  - title: "Ayuntamiento de Madrid · La Mariblanca"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Monumentos/Mariblanca-Replica-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=2318091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 La Mariblanca llegó a la Puerta del Sol más de tres siglos antes que el [Oso y el Madroño](/es/oso-y-madrono/). La estatua actual es una réplica, pero reproduce la figura de mármol que coronó desde 1630 una de las fuentes más importantes del Madrid de los Austrias.

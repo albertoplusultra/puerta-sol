@@ -25,6 +25,11 @@ faq:
     a: "El reloj actual fue construido por el relojero José Rodríguez Losada, que lo donó a Madrid. Se inauguró el 19 de noviembre de 1866 y sus campanadas son las que se retransmiten cada Nochevieja."
   - q: "¿Por qué el Kilómetro Cero está delante de la Casa de Correos?"
     a: "Porque el edificio se encontraba junto al principal cruce de Madrid y a las calles que conducían hacia los grandes caminos nacionales. En diciembre de 1856 se colocó frente a su fachada una primera losa que fijaba el origen común para medir las carreteras radiales."
+sources:
+  - title: "Ayuntamiento de Madrid · Real Casa de Correos"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Real-Casa-de-Correos/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8518f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 La Real Casa de Correos es el edificio más antiguo que se conserva en la Puerta del Sol. Fue construida entre 1766 y 1768 y ha desempeñado funciones muy diferentes: oficina de correos, Ministerio de la Gobernación, sede de la Dirección General de Seguridad y, desde 1985, Presidencia de la Comunidad de Madrid.

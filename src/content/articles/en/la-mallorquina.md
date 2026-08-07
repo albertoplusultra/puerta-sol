@@ -27,6 +27,9 @@ faq:
     a: "Today it is best known for its cream and chocolate napolitanas. In its early years, the ensaimadas and the hot chocolate stood out above all."
   - q: "Does La Mallorquina have a salon?"
     a: "Yes. Its historic upper floor lets you sit down for coffee, hot chocolate and pastries, away from the faster pace of the ground-floor counter."
+sources:
+  - title: "esMadrid · La Mallorquina"
+    url: "https://www.esmadrid.com/compras/la-mallorquina"
 ---
 
 On the corner of the Puerta del Sol and Calle Mayor stands La Mallorquina. It opened in 1894 and is one of the few historic establishments on the square still devoted to the same trade.

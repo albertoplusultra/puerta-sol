@@ -25,6 +25,15 @@ faq:
     a: "Las dos fuentes gemelas fueron retiradas en 1985 e instaladas en el paseo de Federico García Lorca, en Vallecas, donde continúan conservándose."
   - q: "¿Cuándo se construyó la fuente actual de Carlos III?"
     a: "La fuente actual forma parte de la remodelación iniciada en 2022. La estatua ecuestre de Carlos III fue trasladada a su centro en abril de 2023."
+sources:
+  - title: "Ayuntamiento de Madrid · Fuentes de la Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Fuentes-de-la-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=0078091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · La Mariblanca"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Monumentos/Mariblanca-Replica-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=2318091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · La fuente hoy en la Casa de Campo"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Fuente-Casa-de-Campo/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8268091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Traslado de la estatua de Carlos III"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/La-estatua-ecuestre-de-Carlos-III-trasladada-a-su-nueva-ubicacion-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=920b884555e87810VgnVCM1000001d4a900aRCRD"
 ---
 
 La fuente actual de la Puerta del Sol, presidida por la [estatua ecuestre de Carlos III](/es/estatua-carlos-iii/), es la última de una larga serie. Durante cuatro siglos, el agua ha aparecido y desaparecido del centro de la plaza en formas muy diferentes.

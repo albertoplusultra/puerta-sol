@@ -29,6 +29,13 @@ faq:
     a: "The Cercanías station opened in 2009 inside the railway tunnel between Atocha and Chamartín."
   - q: "What happened to the whale of Sol?"
     a: "The great curved glass structure built with the Cercanías station was removed during the redevelopment that began in 2022 and replaced by two lower pavilions."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 Sol station began as one end of a line barely four kilometers long. Today it connects three Metro lines with the Cercanías commuter rail and provides a direct route to the center of Madrid from much of the city and the surrounding region.

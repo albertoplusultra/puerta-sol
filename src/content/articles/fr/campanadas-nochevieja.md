@@ -25,6 +25,13 @@ faq:
     a: "Les douze coups sonnent à minuit dans la nuit du 31 décembre au 1er janvier. Les quatre quarts les précèdent : il faut donc attendre les véritables coups de minuit avant de commencer à manger les raisins."
   - q: "Pourquoi mange-t-on douze raisins ?"
     a: "La tradition consiste à manger un raisin à chacun des douze coups pour attirer la chance pendant les douze mois de l’année. La presse la mentionnait déjà à Madrid en 1896 et 1897, et une campagne commerciale contribua à la populariser en 1909."
+sources:
+  - title: "RTVE · 150 años del reloj de la Puerta del Sol"
+    url: "https://www.rtve.es/noticias/20161119/reloj-puerta-del-sol-cumple-150-anos-marcando-horas-historia/1445122.shtml"
+  - title: "RTVE · Historia de las campanadas en TVE"
+    url: "https://www.rtve.es/rtve/20201226/campanadas-campanadas-tve/1992566.shtml"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
 ---
 
 L’horloge de la Puerta del Sol donne l’heure toute l’année, mais son moment le plus célèbre ne dure que quelques secondes. Chaque 31 décembre, des millions de personnes regardent descendre la boule, écoutent les quatre quarts et mangent douze raisins au rythme des coups de l’horloge.

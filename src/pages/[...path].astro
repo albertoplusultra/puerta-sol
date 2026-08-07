@@ -179,6 +179,7 @@ if (props.kind === "home") {
       updated: entry.data.updated,
       locale,
       image: ogImage,
+      sources: entry.data.sources,
     }),
     breadcrumbSchema([
       { name: t("breadcrumb.home"), url: localizedPath(locale) },

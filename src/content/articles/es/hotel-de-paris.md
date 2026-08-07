@@ -26,6 +26,15 @@ faq:
     a: "La iglesia y el hospital del Buen Suceso, demolidos en 1854 para ensanchar el extremo oriental de la plaza. Durante las obras de Apple aparecieron restos del antiguo hospital en el sótano."
   - q: "¿Cuándo cerró el Hotel de París?"
     a: "El 31 de mayo de 2006, 142 años después de su apertura."
+sources:
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Memoria de Madrid · Café de la Montaña"
+    url: "https://www.memoriademadrid.es/view/507122/cafe-de-la-montana"
+  - title: "Telemadrid · Tertulias en el Café de la Montaña"
+    url: "https://www.telemadrid.es/programas/desmontando-madrid/Tertulias-debates-y-peleas-en-el-Cafe-de-la-Montana-2-2541365872--20230313112400.html"
+  - title: "Ayuntamiento de Madrid · El luminoso de Tío Pepe"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/Tio-Pepe-vuelve-a-lucir-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=c84f60823acd5410VgnVCM1000000b205a0aRCRD"
 ---
 
 El edificio situado entre la calle de Alcalá y la Carrera de San Jerónimo alberga actualmente la tienda de Apple. Durante 142 años fue el Hotel de París, uno de los grandes establecimientos nacidos con la nueva Puerta del Sol.

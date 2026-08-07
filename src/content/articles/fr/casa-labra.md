@@ -27,6 +27,13 @@ faq:
     a: "Elle est connue pour ses morceaux de morue frite et ses croquettes de morue, ainsi que pour avoir accueilli en 1879 la réunion à l’origine du Parti socialiste ouvrier espagnol."
   - q: "Que s’est-il passé à Casa Labra le 2 mai 1879 ?"
     a: "Un petit groupe de typographes, d’ouvriers et d’intellectuels, dont Pablo Iglesias Posse, s’y réunit et fonda le Parti socialiste ouvrier espagnol."
+sources:
+  - title: "esMadrid · Casa Labra"
+    url: "https://www.esmadrid.com/restaurantes/casa-labra"
+  - title: "Diario de Madrid · Restaurantes centenarios protegidos"
+    url: "https://diario.madrid.es/blog/notas-de-prensa/el-ayuntamiento-declara-a-los-restaurantes-centenarios-espacios-culturales-y-turisticos-de-interes-general/"
+  - title: "esMadrid · Una de croquetas"
+    url: "https://blog.esmadrid.com/blog/es/2022/06/07/una-de-croquetas/"
 ---
 
 À quelques pas de la Puerta del Sol, au numéro 12 de la calle de Tetuán, se trouve Casa Labra. La taverne ouvrit en 1860 et reste connue pour les mêmes spécialités qu’il y a plusieurs générations : la morue frite, les croquettes et le vin servi au comptoir.

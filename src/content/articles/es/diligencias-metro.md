@@ -26,6 +26,13 @@ faq:
     a: "En diligencias y ómnibus que recorrían los caminos por etapas y cambiaban los caballos en las postas. Dentro de Madrid se utilizaban coches de punto, antecesores de los taxis."
   - q: "¿Cuándo se peatonalizó la Puerta del Sol?"
     a: "Sol quedó cerrada al tráfico en agosto de 2020 y la remodelación terminada en 2023 consolidó la plaza peatonal. Metro y Cercanías continúan funcionando bajo ella."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Antes de que existieran el Metro, los autobuses o Cercanías, la Puerta del Sol ya era el principal cruce de Madrid. Por sus calles pasaban carruajes, coches de alquiler, caballos y viajeros que entraban o salían de la ciudad.

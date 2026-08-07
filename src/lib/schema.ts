@@ -81,6 +81,7 @@ export function articleSchema(opts: {
   updated: Date;
   locale: string;
   image?: string;
+  sources?: { title: string; url: string }[];
 }) {
   return {
     "@type": "Article",
@@ -90,6 +91,15 @@ export function articleSchema(opts: {
     dateModified: opts.updated.toISOString(),
     mainEntityOfPage: { "@type": "WebPage", "@id": abs(opts.url) },
     ...(opts.image ? { image: abs(opts.image) } : {}),
+    ...(opts.sources?.length
+      ? {
+          citation: opts.sources.map((s) => ({
+            "@type": "CreativeWork",
+            name: s.title,
+            url: s.url,
+          })),
+        }
+      : {}),
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     about: { "@id": `${SITE_URL}/#landmark` },

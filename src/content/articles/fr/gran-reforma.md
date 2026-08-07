@@ -27,6 +27,13 @@ faq:
     a: "Le coût documenté s’éleva à 33 602 250 réaux, une somme qui comprenait les expropriations, les démolitions, l’aménagement urbain et les nouveaux alignements."
   - q: "Quels bâtiments furent démolis et lesquels furent conservés ?"
     a: "Il fallut démolir une trentaine de bâtiments et plusieurs îlots. La Real Casa de Correos et les Casas de Cordero, toujours debout aujourd’hui, furent conservées."
+sources:
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ministerio de Cultura · La Puerta del Sol de Clifford"
+    url: "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/aga/actividades-y-exposiciones/destacados/clifford-puertadelsol.html"
+  - title: "Memoria de Madrid · Biblioteca digital"
+    url: "https://www.memoriademadrid.es/"
 ---
 
 L’actuelle Puerta del Sol naquit entre 1857 et 1862. Avant cette réforme, le lieu était beaucoup plus petit, étroit et irrégulier. Le grand arc d’immeubles face à la [Casa de Correos](/fr/casa-de-correos/) n’existait pas et les rues débouchaient sur un espace encombré, entouré de constructions de hauteurs différentes.

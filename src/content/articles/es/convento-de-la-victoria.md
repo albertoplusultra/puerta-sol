@@ -27,6 +27,9 @@ faq:
     a: "La comunidad fue suprimida en 1836 durante la desamortización y el edificio terminó siendo demolido. El terreno se destinó a nuevas calles, edificios y negocios."
   - q: "¿Queda algún resto del convento?"
     a: "No queda ningún elemento visible. Su recuerdo permanece principalmente en el nombre de la calle de la Victoria y en las representaciones históricas de la Puerta del Sol."
+sources:
+  - title: "Universidad Complutense · Convento de la Victoria"
+    url: "https://biblioteca.ucm.es/historica/convento-de-la-victoria"
 ---
 
 Durante casi tres siglos, una parte importante de la antigua Puerta del Sol estuvo ocupada por el convento de Nuestra Señora de la Victoria.

@@ -28,6 +28,11 @@ faq:
     a: "The convent of San Felipe el Real stood there, famous for its steps, known as the Mentidero de la Villa."
   - q: "What is the Hotel Europa's connection to the building?"
     a: "Part of the Casas de Cordero housed the Hotel Europa, one of the lodgings that made Sol Madrid's principal hotel district during the nineteenth century."
+sources:
+  - title: "esMadrid · Casas de Cordero"
+    url: "https://www.esmadrid.com/informacion-turistica/casas-cordero"
+  - title: "Ayuntamiento de Madrid · Ficha de las Casas de Cordero (PDF)"
+    url: "https://monumentamadrid.es/AM_Edificios4/AM_Edificios4_WEB/pdf/inmana/03293.pdf"
 ---
 
 The great building standing between Calle Mayor, Esparteros and the Plaza de Pontejos is known as the Casas de Cordero. It was built between 1842 and 1845, before the great renovation of the Puerta del Sol, and is considered one of Madrid's first great modern apartment blocks.

@@ -28,6 +28,13 @@ faq:
     a: "Elle s'est appelée Fonda et Hotel de los Príncipes, Gran Hotel de la Paix, Hotel Americano, Pensión Americana et Hostal Americano, avant de retrouver son nom d'origine en 2026."
   - q: "Peut-on voir le carillon du Nouvel An depuis La Fonda ?"
     a: "Oui. Les cinq balcons d'El Mirador de Sol offrent une vue de face sur l'horloge de Losada, et le bâtiment sert depuis des décennies à retransmettre le carillon."
+sources:
+  - title: "La Fonda de los Príncipes · Historia de la casa"
+    url: "https://www.lafondadelosprincipes.com/es/historia/"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
+  - title: "Memoria de Madrid · Biblioteca digital"
+    url: "https://www.memoriademadrid.es/"
 ---
 
 La Fonda de los Príncipes a ouvert ses portes le 1er octobre 1861, alors que les travaux de la nouvelle Puerta del Sol n'étaient pas encore terminés. L'[horloge de Losada](/fr/carillon-nouvel-an/) n'existait pas et de nombreux bâtiments de la place venaient tout juste d'être construits.

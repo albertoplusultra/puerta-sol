@@ -26,6 +26,11 @@ faq:
     a: "Non. C’est un repère historique et administratif servant à mesurer les routes, et non le centre géographique du pays."
   - q: "Quand le Kilomètre Zéro a-t-il été installé ?"
     a: "En décembre 1856, une première dalle fut posée devant la Casa de Correos. La plaque décorative reconnaissable fut installée en 1950 et remplacée par une autre, plus résistante, en 2009."
+sources:
+  - title: "Diario de Madrid · El Kilómetro Cero vuelve a Sol"
+    url: "https://diario.madrid.es/blog/notas-de-prensa/el-kilometro-cero-vuelve-a-la-puerta-del-sol/"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Devant l’entrée principale de la Real [Casa de Correos](/fr/casa-de-correos/) se trouve une petite plaque de granit et de laiton. Elle indique le Kilomètre Zéro, le point à partir duquel les principales routes espagnoles ont commencé à être mesurées.

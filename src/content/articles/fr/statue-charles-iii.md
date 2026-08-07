@@ -27,6 +27,13 @@ faq:
     a: "Les sculpteurs Eduardo Zancada et Miguel Ángel Rodríguez la réalisèrent dans les années 1990 à partir d'un modèle du XVIIIe siècle conservé à la Real Academia de Bellas Artes de San Fernando et attribué à Juan Pascual de Mena."
   - q: "Pourquoi la statue fut-elle déplacée en 2023 ?"
     a: "Le réaménagement de 2022-2023 rendit la place entièrement piétonne et l'organisa autour d'une fontaine centrale. Le monument, qui pèse plusieurs dizaines de tonnes, fut déplacé au centre de cette nouvelle fontaine ovale."
+sources:
+  - title: "Ayuntamiento de Madrid · Traslado de la estatua de Carlos III"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/La-estatua-ecuestre-de-Carlos-III-trasladada-a-su-nueva-ubicacion-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=920b884555e87810VgnVCM1000001d4a900aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Real Casa de Correos"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Real-Casa-de-Correos/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8518f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Au centre de la Puerta del Sol se trouve la statue équestre de Charles III. Le roi apparaît en tenue d'apparat, monté sur un cheval avançant lentement et regardant vers la Real [Casa de Correos](/fr/casa-de-correos/), l'édifice construit sous son règne.

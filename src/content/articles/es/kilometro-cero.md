@@ -26,6 +26,11 @@ faq:
     a: "No. Es una referencia histórica y administrativa para medir las carreteras, no el centro geográfico del país."
   - q: "¿Cuándo se colocó el Kilómetro Cero?"
     a: "En diciembre de 1856 se colocó una primera losa frente a la Casa de Correos. La placa decorativa reconocible se instaló en 1950 y fue sustituida por otra más resistente en 2009."
+sources:
+  - title: "Diario de Madrid · El Kilómetro Cero vuelve a Sol"
+    url: "https://diario.madrid.es/blog/notas-de-prensa/el-kilometro-cero-vuelve-a-la-puerta-del-sol/"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Delante de la entrada principal de la Real [Casa de Correos](/es/casa-de-correos/) se encuentra una pequeña placa de granito y latón. Señala el Kilómetro Cero, el punto desde el que comenzaron a medirse las principales carreteras españolas.

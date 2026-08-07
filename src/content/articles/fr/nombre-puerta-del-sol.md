@@ -27,6 +27,9 @@ faq:
     a: "L’explication la plus admise veut que la porte ait été ornée d’un soleil — peinture, relief ou pièce rapportée — indiquant son orientation vers le levant, là où le soleil apparaît chaque matin."
   - q: "Pourquoi ne s’appelle-t-elle pas plaza del Sol ?"
     a: "Son nom officiel reste Puerta del Sol, et non plaza de la Puerta del Sol. Le mot puerta conserve la mémoire de l’origine du lieu : il n’est pas né comme une place, mais autour d’une ancienne sortie de la ville."
+sources:
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 La Puerta del Sol ne conserve aucune porte. Il n’existe pas davantage de muraille, de tour ou d’arc qui permette de reconnaître l’origine de son nom. Pourtant, avant de devenir une place, elle fut réellement l’une des entrées de Madrid.

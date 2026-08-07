@@ -25,6 +25,11 @@ faq:
     a: "L’horloge actuelle fut construite par l’horloger José Rodríguez Losada, qui l’offrit à Madrid. Elle fut inaugurée le 19 novembre 1866 et ses coups sont ceux que l’on retransmet chaque nuit de la Saint-Sylvestre."
   - q: "Pourquoi le Kilomètre Zéro se trouve-t-il devant la Casa de Correos ?"
     a: "Parce que le bâtiment se trouvait près du principal carrefour de Madrid et des rues menant aux grandes routes nationales. En décembre 1856, une première dalle fixant l’origine commune pour mesurer les routes radiales fut posée devant sa façade."
+sources:
+  - title: "Ayuntamiento de Madrid · Real Casa de Correos"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Real-Casa-de-Correos/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8518f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 La Real Casa de Correos est le plus ancien bâtiment conservé sur la Puerta del Sol. Construite entre 1766 et 1768, elle a rempli des fonctions très diverses : bureau de poste, Ministerio de la Gobernación, siège de la Dirección General de Seguridad et, depuis 1985, Présidence de la Comunidad de Madrid.

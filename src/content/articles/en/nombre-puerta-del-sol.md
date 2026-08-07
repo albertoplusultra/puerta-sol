@@ -25,6 +25,9 @@ faq:
     a: "The most widely accepted explanation is that the gate was decorated with a sun — a painting, a relief or a mounted emblem — indicating its orientation toward the east, where the sun rises each morning."
   - q: "Why isn't it called Plaza del Sol?"
     a: "The official name remains Puerta del Sol, not Plaza de la Puerta del Sol. The word puerta (gate) preserves the memory of the place's origin: it was not born as a square, but grew up around an old exit from the city."
+sources:
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Puerta del Sol has no gate. Nor is there any wall, tower or arch that reveals the origin of its name. And yet, before becoming a square, it really was one of the entrances to Madrid.

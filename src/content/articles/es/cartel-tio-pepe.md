@@ -23,6 +23,13 @@ faq:
     a: "El personaje de la botella fue creado en 1935. El gran luminoso con la botella humanizada, el nombre Tío Pepe y el lema «Sol de Andalucía embotellado» se instaló en 1958."
   - q: "¿Por qué se trasladó el cartel de Tío Pepe?"
     a: "Fue retirado en 2011 para rehabilitar el antiguo Hotel de París. Como no podía regresar a aquella azotea, se adaptó e instaló sobre el número 11, donde volvió a encenderse el 8 de mayo de 2014."
+sources:
+  - title: "Ayuntamiento de Madrid · El luminoso de Tío Pepe"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/Tio-Pepe-vuelve-a-lucir-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=c84f60823acd5410VgnVCM1000000b205a0aRCRD"
+  - title: "González Byass · El cartel en la Nochevieja"
+    url: "https://www.gonzalezbyass.com/es/noticias/el-luminoso-de-tio-pepe-vuelve-iluminar-la-nochevieja"
+  - title: "González Byass · De la Puerta del Sol al mundo digital"
+    url: "https://www.gonzalezbyass.com/es/noticias/nota-de-prensa/tio-pepe-desde-el-luminoso-de-la-puerta-del-sol-madrilena-al-mundo-digital"
 ---
 
 En lo alto del número 11 de la Puerta del Sol, sobre el edificio que hoy alberga [La Fonda de los Príncipes](/es/fonda-de-los-principes/), se encuentra el cartel de Tío Pepe.

@@ -28,6 +28,13 @@ faq:
     a: "La estación de Cercanías abrió en 2009 dentro del túnel ferroviario entre Atocha y Chamartín."
   - q: "¿Qué ocurrió con la ballena de Sol?"
     a: "La gran estructura curva de vidrio construida con la estación de Cercanías fue eliminada durante la remodelación iniciada en 2022 y sustituida por dos pabellones más bajos."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 La estación de Sol comenzó siendo uno de los extremos de una línea de apenas cuatro kilómetros. Hoy conecta tres líneas de Metro con Cercanías y permite llegar directamente al centro de Madrid desde buena parte de la ciudad y de la región.

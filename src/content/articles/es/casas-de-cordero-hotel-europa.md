@@ -27,6 +27,11 @@ faq:
     a: "En el solar se levantaba el convento de San Felipe el Real, famoso por sus gradas, conocidas como el Mentidero de la Villa."
   - q: "¿Qué relación tiene el Hotel Europa con el edificio?"
     a: "Una parte de las Casas de Cordero albergó el Hotel Europa, uno de los alojamientos que hicieron de Sol el principal distrito hotelero madrileño durante el siglo XIX."
+sources:
+  - title: "esMadrid · Casas de Cordero"
+    url: "https://www.esmadrid.com/informacion-turistica/casas-cordero"
+  - title: "Ayuntamiento de Madrid · Ficha de las Casas de Cordero (PDF)"
+    url: "https://monumentamadrid.es/AM_Edificios4/AM_Edificios4_WEB/pdf/inmana/03293.pdf"
 ---
 
 El gran edificio situado entre la calle Mayor, Esparteros y la plaza de Pontejos recibe el nombre de Casas de Cordero. Se construyó entre 1842 y 1845, antes de la gran reforma de la Puerta del Sol, y está considerado uno de los primeros grandes bloques modernos de viviendas de Madrid.

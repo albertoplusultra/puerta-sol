@@ -26,6 +26,13 @@ faq:
     a: "Es conocida por sus tajadas y croquetas de bacalao y por haber acogido en 1879 la reunión de la que surgió el Partido Socialista Obrero Español."
   - q: "¿Qué ocurrió en Casa Labra el 2 de mayo de 1879?"
     a: "Un pequeño grupo de tipógrafos, trabajadores e intelectuales, entre ellos Pablo Iglesias Posse, se reunió allí y fundó el Partido Socialista Obrero Español."
+sources:
+  - title: "esMadrid · Casa Labra"
+    url: "https://www.esmadrid.com/restaurantes/casa-labra"
+  - title: "Diario de Madrid · Restaurantes centenarios protegidos"
+    url: "https://diario.madrid.es/blog/notas-de-prensa/el-ayuntamiento-declara-a-los-restaurantes-centenarios-espacios-culturales-y-turisticos-de-interes-general/"
+  - title: "esMadrid · Una de croquetas"
+    url: "https://blog.esmadrid.com/blog/es/2022/06/07/una-de-croquetas/"
 ---
 
 A pocos pasos de la Puerta del Sol, en el número 12 de la calle de Tetuán, se encuentra Casa Labra. La taberna abrió en 1860 y continúa siendo conocida por lo mismo que hace generaciones: el bacalao frito, las croquetas y el vino servido en la barra.

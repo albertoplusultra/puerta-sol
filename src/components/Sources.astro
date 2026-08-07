@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  items: { title: string; url: string }[];
+}
+
+const { title, items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="mt-14 border-t border-base pt-8" aria-labelledby="sources-heading">
+      <h2 id="sources-heading" class="!mt-0 text-2xl font-semibold">
+        {title}
+      </h2>
+      <ul class="mt-4 text-base">
+        {items.map((item) => (
+          <li>
+            <a href={item.url} rel="noopener" target="_blank">
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

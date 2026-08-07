@@ -27,6 +27,9 @@ faq:
     a: "Elle est aujourd’hui surtout connue pour ses napolitanas à la crème et au chocolat. À ses débuts, ses ensaimadas et son chocolat étaient particulièrement appréciés."
   - q: "La Mallorquina possède-t-elle un salon ?"
     a: "Oui. Son étage historique permet de s’asseoir pour prendre un café, un chocolat et des pâtisseries, loin du rythme plus soutenu du comptoir du rez-de-chaussée."
+sources:
+  - title: "esMadrid · La Mallorquina"
+    url: "https://www.esmadrid.com/compras/la-mallorquina"
 ---
 
 La Mallorquina se trouve à l’angle de la Puerta del Sol et de la calle Mayor. Ouverte en 1894, elle est l’un des rares établissements historiques de la place à exercer encore la même activité.

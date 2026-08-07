@@ -25,6 +25,13 @@ faq:
     a: "Aucun de ces grands cafés où se tenaient les cercles de discussion n’a été conservé. La Mallorquina, ouverte en 1894, se trouve toujours sur la place, mais relève davantage de la tradition des pâtisseries et des salons de thé."
   - q: "Où Valle-Inclán a-t-il perdu son bras ?"
     a: "Au Café de la Montaña, au rez-de-chaussée de l’Hotel de París. En juillet 1899, il se disputa avec le journaliste Manuel Bueno, qui le frappa au bras avec une canne ; la blessure s’infecta et il fallut l’amputer."
+sources:
+  - title: "Gobierno de Canarias · La tertulia del Café Universal"
+    url: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/galdos2020/2019/12/12/la-tertulia-canaria-del-cafe-universal/"
+  - title: "Memoria de Madrid · Café de la Montaña"
+    url: "https://www.memoriademadrid.es/view/507122/cafe-de-la-montana"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Pendant une grande partie du XIXe siècle, la Puerta del Sol fut un immense salon rempli de cafés. Certains occupaient de petits locaux, tandis que d’autres s’étendaient sur des étages entiers, avec des miroirs, des tables de marbre, des billards et des dizaines de serveurs.

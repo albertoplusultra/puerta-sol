@@ -52,6 +52,12 @@ export const GET: APIRoute = async () => {
           parts.push(`P: ${f.q}\nR: ${toPlain(f.a)}`);
         }
       }
+      if (a.data.sources.length) {
+        parts.push("\nFuentes:");
+        for (const s of a.data.sources) {
+          parts.push(`- ${s.title}: ${s.url}`);
+        }
+      }
     }
   }
 

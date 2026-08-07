@@ -26,6 +26,15 @@ faq:
     a: "The twin fountains were removed in 1985 and installed on the paseo de Federico García Lorca, in Vallecas, where they remain to this day."
   - q: "When was the current Charles III fountain built?"
     a: "The current fountain is part of the renovation begun in 2022. The equestrian statue of Charles III was moved to its center in April 2023."
+sources:
+  - title: "Ayuntamiento de Madrid · Fuentes de la Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Fuentes-de-la-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=0078091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · La Mariblanca"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Monumentos/Mariblanca-Replica-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=2318091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · La fuente hoy en la Casa de Campo"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Fuente-Casa-de-Campo/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8268091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Traslado de la estatua de Carlos III"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/La-estatua-ecuestre-de-Carlos-III-trasladada-a-su-nueva-ubicacion-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=920b884555e87810VgnVCM1000001d4a900aRCRD"
 ---
 
 The current fountain of the Puerta del Sol, presided over by the [equestrian statue of Charles III](/en/charles-iii-statue/), is the latest in a long line. For four centuries, water has appeared and disappeared from the center of the square in strikingly different forms.

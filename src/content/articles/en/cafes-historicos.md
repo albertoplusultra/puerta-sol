@@ -24,6 +24,13 @@ faq:
     a: "None of those great tertulia cafés survives. La Mallorquina, opened in 1894, is still in the square, though it belongs more to the tradition of pastry shops and tearooms."
   - q: "Where did Valle-Inclán lose his arm?"
     a: "At the Café de la Montaña, on the ground floor of the Hotel de París. In July 1899 he argued with the journalist Manuel Bueno, who struck his arm with a walking stick; the wound became infected and the arm had to be amputated."
+sources:
+  - title: "Gobierno de Canarias · La tertulia del Café Universal"
+    url: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/galdos2020/2019/12/12/la-tertulia-canaria-del-cafe-universal/"
+  - title: "Memoria de Madrid · Café de la Montaña"
+    url: "https://www.memoriademadrid.es/view/507122/cafe-de-la-montana"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 For much of the 19th century, Puerta del Sol was a grand salon filled with cafés. Some occupied small premises, while others spread across entire floors, with mirrors, marble tables, billiard rooms and dozens of waiters.

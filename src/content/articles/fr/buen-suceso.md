@@ -28,6 +28,11 @@ faq:
     a: "Oui. Lors des travaux de la gare de Cercanías, des vestiges de ses murs, contreforts et fondations furent mis au jour. Une partie est conservée derrière une paroi vitrée dans le hall de la gare de Sol."
   - q: "Quel lien unit le Buen Suceso à l’horloge de la Puerta del Sol ?"
     a: "Sa façade portait une horloge publique. Après la démolition de l’église, le mécanisme fut transféré à la Casa de Correos, puis remplacé par l’horloge de Losada en 1866."
+sources:
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Avant l’[Hotel de París](/fr/hotel-de-paris/) et l’Apple Store, l’extrémité située entre la calle de Alcalá et la Carrera de San Jerónimo était occupée par une église et un hôpital.

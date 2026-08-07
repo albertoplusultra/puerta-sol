@@ -24,6 +24,13 @@ faq:
     a: "No se conserva ninguno de aquellos grandes cafés de tertulia. La Mallorquina, abierta en 1894, continúa en la plaza, aunque pertenece más a la tradición de las pastelerías y salones de té."
   - q: "¿Dónde perdió el brazo Valle-Inclán?"
     a: "En el Café de la Montaña, en los bajos del Hotel de París. En julio de 1899 discutió con el periodista Manuel Bueno, que le golpeó el brazo con un bastón; la herida se infectó y hubo que amputárselo."
+sources:
+  - title: "Gobierno de Canarias · La tertulia del Café Universal"
+    url: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/galdos2020/2019/12/12/la-tertulia-canaria-del-cafe-universal/"
+  - title: "Memoria de Madrid · Café de la Montaña"
+    url: "https://www.memoriademadrid.es/view/507122/cafe-de-la-montana"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Durante buena parte del siglo XIX, la Puerta del Sol fue un gran salón lleno de cafés. Algunos ocupaban pequeños locales y otros se extendían por plantas enteras, con espejos, mesas de mármol, billares y decenas de camareros.

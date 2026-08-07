@@ -27,6 +27,13 @@ faq:
     a: "À bord de diligences et d'omnibus qui parcouraient les routes par étapes et changeaient de chevaux dans les relais de poste. Dans Madrid, on utilisait des voitures de place, ancêtres des taxis."
   - q: "Quand la Puerta del Sol devint-elle piétonne ?"
     a: "Sol fut fermée à la circulation en août 2020 et le réaménagement achevé en 2023 consolida son statut de place piétonne. Le Métro et les trains de banlieue continuent de circuler en dessous."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Avant le Métro, les autobus ou les trains de banlieue, la Puerta del Sol était déjà le principal carrefour de Madrid. Ses rues voyaient passer voitures, véhicules de louage, chevaux et voyageurs entrant dans la ville ou en repartant.

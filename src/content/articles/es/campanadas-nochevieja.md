@@ -24,6 +24,13 @@ faq:
     a: "Las doce campanadas suenan a medianoche del 31 de diciembre al 1 de enero. Antes se marcan los cuatro cuartos, así que hay que esperar a las campanadas propiamente dichas para empezar a comer las uvas."
   - q: "¿Por qué se comen doce uvas?"
     a: "La tradición consiste en comer una uva con cada una de las doce campanadas para atraer la buena suerte durante los doce meses del año. La prensa ya la mencionaba en Madrid en 1896 y 1897, y una campaña comercial ayudó a popularizarla en 1909."
+sources:
+  - title: "RTVE · 150 años del reloj de la Puerta del Sol"
+    url: "https://www.rtve.es/noticias/20161119/reloj-puerta-del-sol-cumple-150-anos-marcando-horas-historia/1445122.shtml"
+  - title: "RTVE · Historia de las campanadas en TVE"
+    url: "https://www.rtve.es/rtve/20201226/campanadas-campanadas-tve/1992566.shtml"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
 ---
 
 El reloj de la Puerta del Sol marca las horas durante todo el año, pero su momento más conocido dura apenas unos segundos. Cada 31 de diciembre, millones de personas observan cómo desciende la bola, escuchan los cuatro cuartos y comen doce uvas al ritmo de sus campanadas.

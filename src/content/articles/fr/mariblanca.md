@@ -27,6 +27,9 @@ faq:
     a: "Elle représente probablement Vénus. La statue fut achetée à Florence en 1625 et était accompagnée d'un petit Cupidon et d'éléments liés à la mer."
   - q: "Pourquoi s'appelle-t-elle Mariblanca ?"
     a: "Ce n'était pas son nom officiel. Les Madrilènes commencèrent à l'appeler familièrement Mariblanca en raison de la couleur blanche de la pierre."
+sources:
+  - title: "Ayuntamiento de Madrid · La Mariblanca"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Monumentos/Mariblanca-Replica-Puerta-del-Sol/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=2318091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 La Mariblanca arriva à la Puerta del Sol plus de trois siècles avant l'[Ours et l'Arbousier](/fr/ours-et-arbousier/). La statue actuelle est une réplique, mais elle reproduit la figure de marbre qui couronna dès 1630 l'une des fontaines les plus importantes du Madrid des Habsbourg.

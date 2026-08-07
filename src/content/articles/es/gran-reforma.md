@@ -26,6 +26,13 @@ faq:
     a: "El coste documentado ascendió a 33.602.250 reales, una cifra que incluía expropiaciones, derribos, urbanización y las nuevas alineaciones."
   - q: "¿Qué edificios se derribaron y cuáles se conservaron?"
     a: "Fue necesario demoler alrededor de treinta edificios y varias manzanas. Se conservaron la Real Casa de Correos y las Casas de Cordero, que siguen en pie hoy."
+sources:
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ministerio de Cultura · La Puerta del Sol de Clifford"
+    url: "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/aga/actividades-y-exposiciones/destacados/clifford-puertadelsol.html"
+  - title: "Memoria de Madrid · Biblioteca digital"
+    url: "https://www.memoriademadrid.es/"
 ---
 
 La Puerta del Sol actual nació entre 1857 y 1862. Antes de aquella reforma, el lugar era mucho más pequeño, estrecho e irregular. No existía el gran arco de edificios frente a la [Casa de Correos](/es/casa-de-correos/) y las calles desembocaban en un espacio congestionado, rodeado por construcciones de diferentes alturas.

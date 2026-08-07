@@ -29,6 +29,13 @@ faq:
     a: "La gare de trains de banlieue ouvrit en 2009, dans le tunnel ferroviaire reliant Atocha à Chamartín."
   - q: "Qu'est devenue la Baleine de Sol ?"
     a: "La grande structure courbe en verre construite avec la gare de trains de banlieue fut supprimée lors du réaménagement commencé en 2022 et remplacée par deux pavillons plus bas."
+sources:
+  - title: "Centenario Antonio Palacios · Obras del Metropolitano"
+    url: "https://www.centenariopalacios.es/ficha/instalaciones-red-metropolitano/"
+  - title: "Renfe · Cercanías Madrid"
+    url: "https://www.renfe.com/es/es/cercanias/cercanias-madrid"
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
 ---
 
 La station Sol était à l'origine l'un des terminus d'une ligne d'à peine quatre kilomètres. Elle relie aujourd'hui trois lignes de Métro aux trains de banlieue et permet de rejoindre directement le centre de Madrid depuis une grande partie de la ville et de la région.

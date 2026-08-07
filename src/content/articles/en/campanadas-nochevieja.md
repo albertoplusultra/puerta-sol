@@ -25,6 +25,13 @@ faq:
     a: "The twelve chimes ring at midnight on December 31, as the year turns. The four quarter chimes come first, so you must wait for the chimes proper before starting to eat the grapes."
   - q: "Why are twelve grapes eaten?"
     a: "The tradition is to eat one grape with each of the twelve chimes to bring good luck for the twelve months of the year. The press was already mentioning it in Madrid in 1896 and 1897, and a commercial campaign helped popularize it in 1909."
+sources:
+  - title: "RTVE · 150 años del reloj de la Puerta del Sol"
+    url: "https://www.rtve.es/noticias/20161119/reloj-puerta-del-sol-cumple-150-anos-marcando-horas-historia/1445122.shtml"
+  - title: "RTVE · Historia de las campanadas en TVE"
+    url: "https://www.rtve.es/rtve/20201226/campanadas-campanadas-tve/1992566.shtml"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
 ---
 
 The Puerta del Sol clock keeps time all year round, but its most famous moment lasts barely a few seconds. Every December 31, millions of people watch the ball descend, listen to the four quarter chimes and eat twelve grapes to the rhythm of its strokes.

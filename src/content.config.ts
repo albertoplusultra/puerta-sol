@@ -9,6 +9,14 @@ const faqItem = z.object({
   a: z.string(),
 });
 
+// Fuente documental consultada al redactar el artículo. El título es una
+// etiqueta corta del tipo "Ayuntamiento de Madrid · Puerta del Sol"; se mantiene
+// en castellano en todos los idiomas porque las páginas enlazadas lo están.
+const sourceItem = z.object({
+  title: z.string(),
+  url: z.string().url(),
+});
+
 /**
  * Artículos y páginas de contenido. Cada archivo vive bajo su carpeta de idioma:
  *   src/content/articles/{lang}/{slug}.md
@@ -66,6 +74,8 @@ const articles = defineCollection({
     heroAlt: z.string().optional(),
     // Preguntas frecuentes -> alimentan el schema FAQPage
     faq: z.array(faqItem).default([]),
+    // Bibliografía -> se publica al final del artículo y alimenta Article.citation
+    sources: z.array(sourceItem).default([]),
   }),
 });
 

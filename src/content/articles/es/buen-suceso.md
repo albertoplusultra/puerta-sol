@@ -27,6 +27,11 @@ faq:
     a: "Sí. Durante las obras de la estación de Cercanías aparecieron restos de sus muros, contrafuertes y cimentaciones. Una parte se conserva tras un cristal en el vestíbulo de la estación de Sol."
   - q: "¿Qué relación tiene el Buen Suceso con el reloj de la Puerta del Sol?"
     a: "En su fachada hubo un reloj público. Al derribarse la iglesia, el mecanismo se trasladó a la Casa de Correos y terminó siendo sustituido por el reloj de Losada en 1866."
+sources:
+  - title: "Ayuntamiento de Madrid · Iglesia y hospital del Buen Suceso"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos/Monumentos-urbanos/Antigua-Iglesia-y-Hospital-del-Buen-Suceso/?vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=e6d8091d1b9c4510091d1b9c45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 Antes del [Hotel de París](/es/hotel-de-paris/) y de la tienda de Apple, el extremo situado entre la calle de Alcalá y la Carrera de San Jerónimo estuvo ocupado por una iglesia y un hospital.

@@ -25,6 +25,13 @@ faq:
     a: "Le personnage de la bouteille fut créé en 1935. La grande enseigne lumineuse représentant la bouteille humanisée, le nom Tío Pepe et le slogan « Sol de Andalucía embotellado » fut installée en 1958."
   - q: "Pourquoi l’enseigne Tío Pepe a-t-elle été déplacée ?"
     a: "Elle fut démontée en 2011 pour rénover l’ancien Hotel de París. Ne pouvant retrouver ce toit, elle fut adaptée et installée au numéro 11, où elle se ralluma le 8 mai 2014."
+sources:
+  - title: "Ayuntamiento de Madrid · El luminoso de Tío Pepe"
+    url: "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Noticias/Tio-Pepe-vuelve-a-lucir-en-la-Puerta-del-Sol/?vgnextchannel=a12149fa40ec9410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=c84f60823acd5410VgnVCM1000000b205a0aRCRD"
+  - title: "González Byass · El cartel en la Nochevieja"
+    url: "https://www.gonzalezbyass.com/es/noticias/el-luminoso-de-tio-pepe-vuelve-iluminar-la-nochevieja"
+  - title: "González Byass · De la Puerta del Sol al mundo digital"
+    url: "https://www.gonzalezbyass.com/es/noticias/nota-de-prensa/tio-pepe-desde-el-luminoso-de-la-puerta-del-sol-madrilena-al-mundo-digital"
 ---
 
 Au sommet du numéro 11 de la Puerta del Sol, sur le bâtiment qui abrite aujourd’hui [La Fonda de los Príncipes](/fr/fonda-de-los-principes/), se trouve l’enseigne Tío Pepe.

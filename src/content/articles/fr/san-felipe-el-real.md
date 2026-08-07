@@ -28,6 +28,11 @@ faq:
     a: "Parce que l'information orale pouvait être exagérée ou déformée en passant d'une personne à l'autre. Cela ne signifiait pas que tout était faux, mais que les nouvelles côtoyaient des rumeurs et des versions difficiles à vérifier."
   - q: "Qu'est-ce qui remplaça le couvent de San Felipe ?"
     a: "Après sa démolition, les Casas de Cordero furent construites sur le terrain entre 1842 et 1845 : un grand immeuble abritant logements, commerces, auberges et hôtels."
+sources:
+  - title: "Memoria de Madrid · Monasterio de San Felipe"
+    url: "https://www.memoriademadrid.es/view/473611/monasterio-de-san-felipe"
+  - title: "Ayuntamiento de Madrid · Ficha de las Casas de Cordero (PDF)"
+    url: "https://monumentamadrid.es/AM_Edificios4/AM_Edificios4_WEB/pdf/inmana/03293.pdf"
 ---
 
 Avant les Casas de Cordero, le couvent de San Felipe el Real s'élevait à l'entrée de la calle Mayor. Son église et ses dépendances occupaient l'un des emplacements les plus visibles de l'ancienne Puerta del Sol.

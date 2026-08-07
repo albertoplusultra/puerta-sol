@@ -9,6 +9,7 @@ import { SITE_NAME } from "../config/site.mjs";
 import Hero from "./Hero.astro";
 import Breadcrumbs from "./Breadcrumbs.astro";
 import Faq from "./Faq.astro";
+import Sources from "./Sources.astro";
 import Card from "./Card.astro";
 import MapEmbed from "./MapEmbed.astro";
 
@@ -79,6 +80,8 @@ const heroCredit = entry.data.hero
       {showMap && <MapEmbed />}
 
       <Faq title={t("faq.title")} items={entry.data.faq} />
+
+      <Sources title={t("sources.title")} items={entry.data.sources} />
     </div>
   </div>
 

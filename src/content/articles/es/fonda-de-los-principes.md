@@ -27,6 +27,13 @@ faq:
     a: "Fue Fonda y Hotel de los Príncipes, Gran Hotel de la Paix, Hotel Americano, Pensión Americana y Hostal Americano, antes de recuperar en 2026 su denominación original."
   - q: "¿Se ven las campanadas desde La Fonda?"
     a: "Sí. Los cinco balcones de El Mirador de Sol ofrecen una vista frontal del reloj de Losada y el edificio se ha utilizado durante décadas para retransmitir las campanadas."
+sources:
+  - title: "La Fonda de los Príncipes · Historia de la casa"
+    url: "https://www.lafondadelosprincipes.com/es/historia/"
+  - title: "Biblioteca Nacional · Hemeroteca Digital"
+    url: "https://hemerotecadigital.bne.es/"
+  - title: "Memoria de Madrid · Biblioteca digital"
+    url: "https://www.memoriademadrid.es/"
 ---
 
 La Fonda de los Príncipes abrió el 1 de octubre de 1861, cuando las obras de la nueva Puerta del Sol todavía no habían terminado. El [reloj de Losada](/es/campanadas/) no existía y muchos de los edificios de la plaza acababan de construirse.

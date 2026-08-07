@@ -25,6 +25,11 @@ faq:
     a: "The current clock was built by the clockmaker José Rodríguez Losada, who donated it to Madrid. It was inaugurated on November 19, 1866, and its chimes are the ones broadcast every New Year's Eve."
   - q: "Why is Kilometre Zero in front of the Casa de Correos?"
     a: "Because the building stood next to Madrid's main crossroads and the streets leading to the great national roads. In December 1856, a first slab was laid in front of its facade, fixing the common origin for measuring the radial highways."
+sources:
+  - title: "Ayuntamiento de Madrid · Real Casa de Correos"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Real-Casa-de-Correos/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=8518f7d9560a4510f7d9560a45102e085a0aRCRD"
+  - title: "Ayuntamiento de Madrid · Puerta del Sol"
+    url: "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Puerta-del-Sol/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4528f7d9560a4510f7d9560a45102e085a0aRCRD"
 ---
 
 The Real Casa de Correos is the oldest surviving building in the Puerta del Sol. It was built between 1766 and 1768 and has served very different purposes: post office, Ministry of the Interior, headquarters of the Directorate-General of Security and, since 1985, seat of the Presidency of the Community of Madrid.

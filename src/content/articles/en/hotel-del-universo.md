@@ -27,6 +27,11 @@ faq:
     a: "Galdós began frequenting it shortly after arriving in Madrid in 1862. There he joined a tertulia of students and residents from the Canary Islands and observed the Madrid social life that would later appear in his novels."
   - q: "When did the Café Universal close?"
     a: "It closed for good in January 1974, after more than a century tied to the life of the Puerta del Sol."
+sources:
+  - title: "Gobierno de Canarias · La tertulia del Café Universal"
+    url: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/galdos2020/2019/12/12/la-tertulia-canaria-del-cafe-universal/"
+  - title: "Gobierno de Canarias · Las casas de huéspedes de Madrid"
+    url: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/galdos2020/2019/12/12/madrid-la-segunda-ciudad-las-casas-de-huespedes/"
 ---
 
 At the end of the Puerta del Sol closest to Calle de Alcalá stood the Hotel del Universo. Its lower floors housed the Café Universal, one of the [great Madrid cafés of the nineteenth century](/en/historic-cafes/).

@@ -26,6 +26,13 @@ faq:
     a: "It is known for its fried cod and cod croquettes, and for having hosted, in 1879, the meeting that gave rise to the Spanish Socialist Workers' Party (PSOE)."
   - q: "What happened at Casa Labra on May 2, 1879?"
     a: "A small group of typographers, workers and intellectuals, among them Pablo Iglesias Posse, met there and founded the Spanish Socialist Workers' Party."
+sources:
+  - title: "esMadrid · Casa Labra"
+    url: "https://www.esmadrid.com/restaurantes/casa-labra"
+  - title: "Diario de Madrid · Restaurantes centenarios protegidos"
+    url: "https://diario.madrid.es/blog/notas-de-prensa/el-ayuntamiento-declara-a-los-restaurantes-centenarios-espacios-culturales-y-turisticos-de-interes-general/"
+  - title: "esMadrid · Una de croquetas"
+    url: "https://blog.esmadrid.com/blog/es/2022/06/07/una-de-croquetas/"
 ---
 
 A few steps from the Puerta del Sol, at number 12, calle de Tetuán, stands Casa Labra. The tavern opened in 1860 and is still known for the same things it was generations ago: fried cod, croquettes and wine served at the bar.
